@@ -1,0 +1,68 @@
+/* TransformStyle3D1.css */
+
+/**************************************************************************
+ * TransformStyleÇÃégÇ¢ï˚ÅFpreserve-3d -ÇPÅB                              *
+ **************************************************************************/
+#stage {
+  width: 500px; height: 380px;
+  background-color: white;
+  position: relative;
+}
+
+#rectBack {
+  top: 0px; left: 0px;
+  width: 500px; height: 380px;
+  background-color: darkgray;
+  position: absolute;
+  
+  perspective: 500px;
+  -webkit-perspective: 500px;
+  
+  perspective-origin: 80% 30%;
+  -webkit-perspective-origin: 80% 30%;
+}
+
+#rectParent {
+  top: 100px; left: 150px;
+  width: 200px; height: 200px;
+  background-color: blue;
+  position: absolute;
+  
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  
+  transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+  
+  transform: rotateY(-20deg);
+  -webkit-transform: rotateY(-20deg);
+  
+  transition: transform 5s ease-in-out;
+  -webkit-transition: -webkit-transform 5s ease-in-out;
+}
+
+#rectChild {
+  top: 0px; left: 0px;
+  width: 200px; height: 200px;
+  background-color: lime;
+  position: absolute;
+  
+  transform-origin: 50% 0%;
+  -webkit-transform-origin: 50% 0%;
+  
+  transform: rotateX(20deg);
+  -webkit-transform: rotateX(20deg);
+  
+  transition: transform 5s ease-in-out;
+  -webkit-transition: -webkit-transform 5s ease-in-out;
+}
+
+#rectBack:hover #rectParent {
+  transform: rotateY(-310deg);
+  -webkit-transform: rotateY(-310deg);
+}
+#rectBack:hover #rectChild {
+  transform: rotateX(100deg);
+  -webkit-transform: rotateX(100deg);
+}
+

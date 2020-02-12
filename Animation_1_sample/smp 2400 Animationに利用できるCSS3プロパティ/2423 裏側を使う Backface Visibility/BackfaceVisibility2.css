@@ -1,0 +1,62 @@
+/* BackfaceVisibility2.css */
+
+/**************************************************************************
+ * backface-visibility‚Ìg‚¢•û‚QB                                        *
+ * iperspective‚ğperspectiveƒvƒƒpƒeƒB‚Åw’è‚µ‚½ê‡j                   *
+ **************************************************************************/
+#stage {
+  margin: 30px 0px 0px 50px;
+  width: 300px; height: 300px;
+  position: relative;
+}
+
+#rect1 {
+  top: 0px; left: 0px;
+  width: 200px; height: 200px;
+  background-color: darkgray;
+  border: solid 50px cyan;
+  position: absolute;
+  
+  perspective: 500px;
+  -webkit-perspective: 500px;
+}
+#rect2-back {
+  top: 0px; left: 0px;
+  width: 200px; height: 200px;
+  background-color: orange;
+  position: absolute;
+  
+  backface-visibility: visible;
+  -webkit-backface-visibility: visible;
+  
+  transition: transform 5s ease-in-out;
+  -webkit-transition: -webkit-transform 5s ease-in-out;
+}
+#rect2-front {
+  top: 0px; left: 0px;
+  width: 200px; height: 200px;
+  background-color: yellow;
+  position: absolute;
+  
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  
+  transition: transform 5s ease-in-out;
+  -webkit-transition: -webkit-transform 5s ease-in-out;
+}
+
+#rect1:hover #rect2-back {
+  transform: rotateY(225deg);
+  -webkit-transform: rotateY(225deg);
+}
+#rect1:hover #rect2-front {
+  transform: rotateY(225deg);
+  -webkit-transform: rotateY(225deg);
+}
+
+code {
+  color: blue;
+  font: bold 16px "‚l‚r ‚oƒSƒVƒbƒN", Osaka, "ƒqƒ‰ƒMƒmŠpƒS Pro", Verdana;
+  line-height: 25px;
+}
+

@@ -1,0 +1,109 @@
+/* CharRotateAnime.css */
+
+#stage {
+  margin: 0px;
+  width: 600px; height: 600px;
+  background-color: #6699FF;
+  border: 20px solid black;
+  position: relative;
+}
+
+#circle {
+  top: 130px; left: 130px;
+  width: 340px; height: 340px;
+  border-radius: 50%;
+  background-color: lightgreen;
+  position: absolute;
+  
+  animation: charanime 15s linear 0s infinite normal;
+  -webkit-animation: charanime 15s linear 0s infinite normal;
+}
+@keyframes charanime {
+  0% { transform: rotateZ(0deg); }
+  100% { transform: rotateZ(-360deg); }
+}
+@-webkit-keyframes charanime {
+  0% { -webkit-transform: rotateZ(0deg); }
+  100% { -webkit-transform: rotateZ(-360deg); }
+}
+
+#circle > span {
+  top: -120px; left: 110px;
+  width: 120px; height: 120px;
+  text-align: center;
+  font: bold 120px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+  color: yellow;
+  
+  text-stroke-width: 4px;
+  text-stroke-color: mediumseagreen;
+  text-fill-color: yellow;
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: mediumseagreen;
+  -webkit-text-fill-color: yellow;
+  text-shadow: 10px 10px 10px #666666;
+  line-height: 120px;     /* webkit系ブラウザと他のブラウザの行間を合わせる */
+  
+  transform-origin: center 290px;
+  -webkit-transform-origin: center 290px;
+  
+  position: absolute;
+}
+
+#circle > span:nth-child(1) {
+  transform: rotateZ(0deg);
+  -webkit-transform: rotateZ(0deg);
+}
+
+#circle > span:nth-child(2) {
+  transform: rotateZ(30deg);
+  -webkit-transform: rotateZ(30deg);
+}
+
+#circle > span:nth-child(3) {
+  transform: rotateZ(60deg);
+}
+
+#circle > span:nth-child(4) {
+  transform: rotateZ(90deg);
+  -webkit-transform: rotateZ(90deg);
+}
+
+#circle > span:nth-child(5) {
+  transform: rotateZ(120deg);
+  -webkit-transform: rotateZ(120deg);
+}
+
+#circle > span:nth-child(6) {
+  transform: rotateZ(150deg);
+  -webkit-transform: rotateZ(150deg);
+}
+
+#circle > span:nth-child(7) {
+  transform: rotateZ(180deg);
+  -webkit-transform: rotateZ(180deg);
+}
+
+#circle > span:nth-child(8) {
+  transform: rotateZ(210deg);
+  -webkit-transform: rotateZ(210deg);
+}
+
+#circle > span:nth-child(9) {
+  transform: rotateZ(240deg);
+  -webkit-transform: rotateZ(240deg);
+}
+
+#circle > span:nth-child(10) {
+  transform: rotateZ(270deg);
+}
+
+#circle > span:nth-child(11) {
+  transform: rotateZ(300deg);
+  -webkit-transform: rotateZ(300deg);
+}
+
+#circle > span:nth-child(12) {
+  transform: rotateZ(330deg);
+  -webkit-transform: rotateZ(330deg);
+}
+

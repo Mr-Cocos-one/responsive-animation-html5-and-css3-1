@@ -1,0 +1,62 @@
+/* OvalAnime2 */
+
+#stage {
+  width: 700px; height: 200px;
+  background-color: skyblue;
+  position: relative;
+}
+
+#slideBox {
+  top: 0px; left: 250px;
+  width: 200px; height: 200px;
+  /* border: 1px solid red; */    /* borderを生かすと、スライドするボックスが見えます */
+  position: absolute;
+  
+  animation: slideAnime 10s linear 0s infinite normal;
+  -webkit-animation: slideAnime 10s linear 0s infinite normal;
+}
+@keyframes slideAnime {
+  0% { left: 250px; animation-timing-function: ease-out;}
+  25% { left: 500px; animation-timing-function: ease-in;}
+  50% { left: 250px; animation-timing-function: ease-out;}
+  75% { left: 0px; animation-timing-function: ease-in;}
+  100% { left: 250px;}
+}
+@-webkit-keyframes slideAnime {
+  0% { left: 250px; -webkit-animation-timing-function: ease-out;}
+  25% { left: 500px; -webkit-animation-timing-function: ease-in;}
+  50% { left: 250px; -webkit-animation-timing-function: ease-out;}
+  75% { left: 0px; -webkit-animation-timing-function: ease-in;}
+  100% { left: 250px;}
+}
+
+#circleBox {
+  top: 100px; left: 100px;
+  /* border: solid 1px red; */    /* borderを生かすと、円運動の中心が見えます */
+  position: absolute;
+  
+  animation: circleAnime 10s linear 0s infinite normal;
+  -webkit-animation: circleAnime 10s linear 0s infinite normal;
+}
+@keyframes circleAnime {
+  0% { transform: rotateZ(0deg); animation-timing-function: ease-in;}
+  25% { transform: rotateZ(90deg); animation-timing-function: ease-out;}
+  50% { transform: rotateZ(180deg); animation-timing-function: ease-in;}
+  75% { transform: rotateZ(270deg); animation-timing-function: ease-out;}
+  100% { transform: rotateZ(360deg);}
+}
+@-webkit-keyframes circleAnime {
+  0% { -webkit-transform: rotateZ(0deg); -webkit-animation-timing-function: ease-in;}
+  25% { -webkit-transform: rotateZ(90deg); -webkit-animation-timing-function: ease-out;}
+  50% { -webkit-transform: rotateZ(180deg); -webkit-animation-timing-function: ease-in;}
+  75% { -webkit-transform: rotateZ(270deg); -webkit-animation-timing-function: ease-out;}
+  100% { -webkit-transform: rotateZ(360deg);}
+}
+
+#circleBox img {
+  top: -85px; left: -32px;     /* topの値を変えることで、中心からの距離を変えられます */
+  width: 64px; height: 35px;
+  /* border: solid 1px red; */
+  position: absolute;
+}
+

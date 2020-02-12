@@ -1,0 +1,47 @@
+/* BackgroundChange2.css */
+
+#stage {
+  width: 490px;
+  height: 390px;
+  background-color: #FFFFFF;
+  position: relative;
+}
+
+/*****************************************************************************
+* バックグラウンドの画像を動かす２（複数の背景画像）
+******************************************************************************/
+#div1 {
+  top: 0px; left: 0px;
+  width: 450px; height: 350px;
+  border: solid 20px rgba(255, 0, 0, 0.3);
+  padding: 20px;
+  text-align: center;
+  line-height: 350px;
+  color: yellow;
+  position: absolute;
+  
+  background-color: orange;
+  background-image: url("images/DSC00149L.jpg"), url("images/DSC00007L.jpg"),
+                    url("images/DSC00131L.jpg"), url("images/DSC00203L.jpg");
+  background-position: left top, 0px 0px, 0% 0%, left top;
+  background-size: 200px 150px, 60% 60%, 350px 262px, auto;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-origin: border-box, content-box;
+  background-clip: border-box;
+  
+  transition: 2s linear 0s;
+  -webkit-transition: 2s linear 0s;
+}
+
+#div1:hover {
+  color: transparent;
+  background-color: cyan;
+  background-position: center center, -100px -80px, 100% 100%, right bottom;
+  background-size: 300px 225px, 30% 30%, 200px 150px, auto;
+}
+
+.font28GothicB {
+  font: bold 28px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+}
+

@@ -1,0 +1,275 @@
+/* 2DPhotoGallery2.css */
+
+/**************************************************************************
+ * matrix関数を一切使用していない。transform関数はrotateZのみ指定。       *
+ **************************************************************************/
+#stage {
+  width: 700px; height: 500px;
+  background-color: orange;
+  border: solid 1px black;
+  position: relative;
+  overflow: hidden;
+}
+
+#galleryTitle {
+  top: 30px; left: 50px;
+  width: 300px; height: 100px;
+  position: absolute;
+  
+  text-align: left;
+  font: bold 128px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+  color: rgba(255, 165, 0, 0.8);
+  
+  text-shadow: 10px 10px 30px rgba(165, 42, 42, 1.0);
+}
+
+/* cherry road (clockwise 10degree) ******************************************/
+#image1 {
+  top: 150px; left: 530px;
+  width: 180px; height: 135px;
+  position: absolute;
+  z-index: 5;
+}
+#image1 img {
+  top: 0px; left: 0px;
+  width: 180px; height: 135px;
+  border: solid 7px white;
+  position: absolute;
+  
+  transform: rotateZ(10deg);
+  -webkit-transform: rotateZ(10deg);
+  
+  transition: 1s ease-out;
+  -webkit-transition: 1s ease-out;
+}
+/* maple leaves (counter clockwise 10degree) **********************************/
+#image2 {
+  top: 250px; left: 500px;
+  width: 180px; height: 135px;
+  position: absolute;
+  z-index: 4;
+}
+#image2 img {
+  top: 0px; left: 0px;
+  width: 180px; height: 135px;
+  border: solid 7px white;
+  position: absolute;
+  
+  transform: rotateZ(-10deg);
+  -webkit-transform: rotateZ(-10deg);
+  
+  transition: 1s ease-out;
+  -webkit-transition: 1s ease-out;
+}
+/* flying carp (clockwise 160degree) *******************************************/
+#image3 {
+  top: 70px; left: 520px;
+  width: 180px; height: 135px;
+  position: absolute;
+  z-index: 2;
+}
+#image3 img {
+  top: 0px; left: 0px;
+  width: 180px; height: 135px;
+  border: solid 7px white;
+  position: absolute;
+  
+  transform: rotateZ(160deg);
+  -webkit-transform: rotateZ(160deg);
+  
+  transition: 1s ease-out;
+  -webkit-transition: 1s ease-out;
+}
+/* bridge and cherry (clockwise 10degree) ************************************/
+#image4 {
+  top: -30px; left: 500px;
+  width: 180px; height: 135px;
+  position: absolute;
+  z-index: 1;
+}
+#image4 img {
+  top: -0px; left: 0px;
+  width: 180px; height: 135px;
+  border: solid 7px white;
+  position: absolute;
+  
+  transform: rotateZ(10deg);
+  -webkit-transform: rotateZ(10deg);
+  
+  transition: 1s ease-out;
+  -webkit-transition: 1s ease-out;
+}
+/* waterfall (counter clockwise 10degree) ************************************/
+#image5{
+  top: 370px; left: 400px;
+  width: 180px; height: 135px;
+  position: absolute;
+  z-index: 0;
+}
+#image5 img {
+  top: 0px; left: 0px;
+  width: 180px; height: 135px;
+  border: solid 7px white;
+  position: absolute;
+  
+  transform: rotateZ(-10deg);
+  -webkit-transform: rotateZ(-10deg);
+  
+  transition: 1s ease-out;
+  -webkit-transition: 1s ease-out;
+}
+/* green road (counter clockwise 170degree) **********************************/
+#image6 {
+  top: 350px; left: 520px;
+  width: 180px; height: 135px;
+  position: absolute;
+  z-index: 3;
+}
+#image6 img {
+  top: 0px; left: 0px;
+  width: 180px; height: 135px;
+  border: solid 7px white;
+  position: absolute;
+  
+  transform: rotateZ(-170deg);
+  -webkit-transform: rotateZ(-170deg);
+  
+  transition: 1s ease-out;
+  -webkit-transition: 1s ease-out;
+}
+/* wall paint (counter clockwise 170degree) ********************************/
+#image7 {
+  top: 390px; left: 210px;
+  width: 180px; height: 135px;
+  position: absolute;
+  z-index: 6;
+}
+#image7 img {
+  top: 0px; left: 0px;
+  width: 180px; height: 135px;
+  border: solid 7px white;
+  position: absolute;
+  
+  transform: rotateZ(-170deg);
+  -webkit-transform: rotateZ(-170deg);
+  
+  transition: 1s ease-out;
+  -webkit-transition: 1s ease-out;
+}
+/* white blossoms (counter clockwise 10degree) ****************************/
+#image8 {
+  top: 380px; left: 30px;
+  width: 180px; height: 135px;
+  position: absolute;
+  z-index: 7;
+}
+#image8 img {
+  top: 0px; left: 0px;
+  width: 180px; height: 135px;
+  border: solid 7px white;
+  position: absolute;
+  
+  transform: rotateZ(-10deg);
+  -webkit-transform: rotateZ(-10deg);
+  
+  transition: 1s ease-out;
+  -webkit-transition: 1s ease-out;
+}
+
+/* hover statement *************************************************************/
+#image1:hover {
+  z-index: 10;
+}
+#image1:hover img {
+  top: -140px; left: -520px;
+  width: 500px; height: 375px;
+  border: solid 15px white;
+  transform: rotateZ(0deg);
+  -webkit-transform: rotateZ(0deg);
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+}
+#image2:hover {
+  z-index: 10;
+}
+#image2:hover img {
+  top: -240px; left: -490px;
+  width: 500px; height: 375px;
+  border: solid 15px white;
+  transform: rotateZ(0deg);
+  -webkit-transform: rotateZ(0deg);
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+}
+#image3:hover {
+  z-index: 10;
+}
+#image3:hover img {
+  top: -60px; left: -510px;
+  width: 500px; height: 375px;
+  border: solid 15px white;
+  transform: rotateZ(0deg);
+  -webkit-transform: rotateZ(0deg);
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+}
+#image4:hover {
+  z-index: 10;
+}
+#image4:hover img {
+  top: 40px; left: -490px;
+  width: 500px; height: 375px;
+  border: solid 15px white;
+  transform: rotateZ(0deg);
+  -webkit-transform: rotateZ(0deg);
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+}
+#image5:hover {
+  z-index: 10;
+}
+#image5:hover img {
+  top: -360px; left: -390px;
+  width: 500px; height: 375px;
+  border: solid 15px white;
+  transform: rotateZ(0deg);
+  -webkit-transform: rotateZ(0deg);
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+}
+#image6:hover {
+  z-index: 10;
+}
+#image6:hover img {
+  top: -340px; left: -510px;
+  width: 500px; height: 375px;
+  border: solid 15px white;
+  transform: rotateZ(0deg);
+  -webkit-transform: rotateZ(0deg);
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+}
+#image7:hover {
+  z-index: 10;
+}
+#image7:hover img {
+  top: -380px; left: -200px;
+  width: 500px; height: 375px;
+  border: solid 15px white;
+  transform: rotateZ(0deg);
+  -webkit-transform: rotateZ(0deg);
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+}
+#image8:hover {
+  z-index: 10;
+}
+#image8:hover img {
+  top: -370px; left: -20px;
+  width: 500px; height: 375px;
+  border: solid 15px white;
+  transform: rotateZ(0deg);
+  -webkit-transform: rotateZ(0deg);
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,133 @@
+/* KissingFishesAnime.css */
+
+/* Attention ********************************************************************
+*   text-stroke-width, text-stroke-color and text-fill-color are supported
+*   only by webkit browsers(Safari, Chrome). 2013-01-03
+*********************************************************************************/
+#stage {
+  width: 600px; height: 200px;
+  background-color: dodgerblue;
+  border: solid 1px black;
+  position: relative;
+}
+
+/* PinkFish ************************************/
+#pinkFish {
+  top: 50px; left: 10px;
+  width: 165px; height: 104px;
+  position: absolute;
+  
+  animation: pinkAnime 4s linear 0s infinite alternate;
+  -webkit-animation: pinkAnime 4s linear 0s infinite alternate;
+}
+#pinkFish img {
+  top: 0px; left: 0px;
+  width: 100%; height: 100%;
+}
+
+@keyframes pinkAnime {
+  from { }
+  25% { left: 10px; animation-timing-function: ease-out; }
+  75% { left: 137px; }
+  to { left: 137px; }
+}
+@-webkit-keyframes pinkAnime {
+  from { }
+  25% { left: 10px; -webkit-animation-timing-function: ease-out; }
+  75% { left: 137px; }
+  to { left: 137px; }
+}
+
+/* YellowFish ************************************/
+#yellowFish {
+  top: 50px; left: 420px;
+  width: 165px; height: 104px;
+  position: absolute;
+  
+  animation: yellowAnime 4s linear 0s infinite alternate;
+  -webkit-animation: yellowAnime 4s linear 0s infinite alternate;
+}
+#yellowFish img {
+  top: 0px; left: 0px;
+  width: 100%; height: 100%;
+}
+
+@keyframes yellowAnime {
+  from { }
+  25% { left: 420px; animation-timing-function: ease-out; }
+  75% { left: 300px; }
+  to { left: 300px; }
+}
+@-webkit-keyframes yellowAnime {
+  from { }
+  25% { left: 420px; -webkit-animation-timing-function: ease-out; }
+  75% { left: 300px; }
+  to { left: 300px; }
+}
+
+/* ÉnÅ[Égïîï™ÇÃîwåi ************************************/
+#heartBack {
+  //top: 0px; //left: 212px;
+  margin: 0px 0px 0px 0px;
+  margin-left: auto; margin-right: auto;
+  //width: 140px; //height: 140px;
+  width: auto; height: auto;
+  text-align: center;
+  font: bold 180px "ÇlÇr ÇoÉSÉVÉbÉN", Osaka, "ÉqÉâÉMÉmäpÉS Pro", Verdana;
+  color: white;
+  line-height: 200px;
+  //position: absolute;
+  position: relative;
+  opacity: 0.0;
+  
+  text-shadow: 3px 3px 3px #FFFFFF, -3px 3px 3px #FFFFFF, 3px -3px 3px #FFFFFF, -3px -3px 3px #FFFFFF;
+  
+  animation: heartBackAnime 4s linear 0s infinite alternate;
+  -webkit-animation: heartBackAnime 4s linear 0s infinite alternate;
+}
+
+@keyframes heartBackAnime {
+  from { }
+  25% { opacity: 0.0; animation-timing-function: ease-out; }
+  75% { opacity: 1.0; }
+  to { opacity: 1.0; }
+}
+@-webkit-keyframes heartBackAnime {
+  from { }
+  25% { opacity: 0.0; -webkit-animation-timing-function: ease-out; }
+  75% { opacity: 1.0; }
+  to { opacity: 1.0; }
+}
+
+/* ÉnÅ[Ég ************************************/
+#heart {
+  //top: 0px; //left: 212px;
+  margin: -200px 0px 0px 0px;
+  margin-left: auto; margin-right: auto;
+  //width: 140px; //height: 140px;
+  width: auto; height: auto;
+  text-align: center;
+  font: bold 180px "ÇlÇr ÇoÉSÉVÉbÉN", Osaka, "ÉqÉâÉMÉmäpÉS Pro", Verdana;
+  color: red;
+  line-height: 200px;
+  //position: absolute;
+  position: relative;
+  opacity: 0.0;
+  
+  animation: heartAnime 4s linear 0s infinite alternate;
+  -webkit-animation: heartAnime 4s linear 0s infinite alternate;
+}
+
+@keyframes heartAnime {
+  from { }
+  25% { opacity: 0.0; animation-timing-function: ease-in; }
+  75% { opacity: 0.6; }
+  to { opacity: 0.6; }
+}
+@-webkit-keyframes heartAnime {
+  from { }
+  25% { opacity: 0.0; -webkit-animation-timing-function: ease-in; }
+  75% { opacity: 0.6; }
+  to { opacity: 0.6; }
+}
+

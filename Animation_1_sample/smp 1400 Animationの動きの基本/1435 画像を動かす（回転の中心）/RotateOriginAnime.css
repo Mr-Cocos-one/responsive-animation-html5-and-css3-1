@@ -1,0 +1,56 @@
+/* RotateOriginAnime */
+
+#stage1 {
+  margin: 0px 10px 10px 0px;
+  width: 300px; height: 300px;
+  background-color: skyblue;
+  position: relative;
+  float: left;
+}
+#stage1 img {
+  top: 80px; left: 50px;
+  width: 192px; height: 147px;
+  position: absolute;
+  
+  transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+  
+  animation: anime1 3s linear 0s infinite normal;
+  -webkit-animation: anime1 3s linear 0s infinite normal;
+}
+@keyframes anime1 {
+  0% { }
+  100% { transform: rotateZ(360deg); }
+}
+@-webkit-keyframes anime1 {
+  0% { }
+  100% { -webkit-transform: rotateZ(360deg); }
+}
+
+#stage2 {
+  margin: 0px 0px 10px 0px;
+  width: 400px; height: 400px;
+  background-color: skyblue;
+  position: relative;
+  float: left;
+}
+#stage2 img {
+  top: 125px; left: 200px;
+  width: 192px; height: 147px;
+  position: absolute;
+  
+  transform-origin: left 50%;
+  -webkit-transform-origin: left 50%;
+  
+  animation: anime2 3s linear 0s infinite normal;
+  -webkit-animation: anime2 3s linear 0s infinite normal;
+}
+@keyframes anime2 {
+  0% { }
+  100% { transform: rotateZ(360deg); }
+}
+@-webkit-keyframes anime2 {
+  0% { }
+  100% { -webkit-transform: rotateZ(360deg); }
+}
+

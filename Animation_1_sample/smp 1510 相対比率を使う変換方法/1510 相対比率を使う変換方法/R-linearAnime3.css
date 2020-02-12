@@ -1,0 +1,42 @@
+/* R-linearAnime3.css */
+
+/* éŒÇﬂà⁄ìÆÅAägëÂ ********************************************************/
+#stage-wrap {
+  margin: 0px;
+  width: 100%;
+  max-width: 700px;
+//  border: 1px solid #000000;
+  position: relative;
+}
+
+#stage {
+  margin: 0px;
+  //width: 700px; //height: 300px;
+  width: 100%;
+  padding-top: 42.9%;
+  background-color: skyblue;
+  position: relative;
+}
+#stage img {
+  //top: 10px; //left: 10px;
+  top: 3.3%; left: 1.4%;
+  //width: 96px; //height: 73px;
+  width: 13.7%; height: 24.3%;
+  position: absolute;
+  
+  transform: rotateZ(20deg);
+  -webkit-transform: rotateZ(20deg);
+  
+  animation: anime3 5s ease-in-out 0s 3 normal;
+  -webkit-animation: anime3 5s ease-in-out 0s 3 normal;
+}
+@keyframes anime3 {
+  0% { }
+  //100% { top: 140px; left: 500px; width: 192px; height: 147px; }
+  100% { top: 46.7%; left: 71.4%; width: 27.4%; height: 49%; }
+}
+@-webkit-keyframes anime3 {
+  0% { }
+  100% { top: 46.7%; left: 71.4%; width: 27.4%; height: 49%; }
+}
+

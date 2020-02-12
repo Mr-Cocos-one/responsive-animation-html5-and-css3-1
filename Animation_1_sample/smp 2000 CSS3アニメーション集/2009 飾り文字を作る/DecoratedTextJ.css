@@ -1,0 +1,343 @@
+/* DecoratedTextJ.css */
+
+#stage {
+  width: 700px; height: 650px;
+  background-color: white;
+  border: solid 1px #000000;
+  position: relative;
+  cursor: default;
+  overflow: hidden;
+}
+/* ‰Ôiclip ƒOƒ‰ƒf[ƒVƒ‡ƒ“j ****************************************************/
+#div1 {
+  top: -10px; left: 10px;
+  width: 140px; height: 180px;
+  text-align: center;
+  font: bold 140px "‚l‚r ‚oƒSƒVƒbƒN", Osaka, "ƒqƒ‰ƒMƒmŠpƒS Pro", Verdana;
+  color: #000000;
+   position: absolute;
+   
+  text-stroke-width: 3px;
+  text-stroke-color: #000000;
+  text-fill-color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #000000;
+  -webkit-text-fill-color: transparent;
+  
+  background-image: linear-gradient(to bottom, #FF0000 20%, #DDFF00 35%, #33FF00 50%,
+                                    #00FFFF 55%, #0000FF 70%, #FF00FF 85%);
+  background-image: -webkit-linear-gradient(top, #FF0000 20%, #DDFF00 35%, #33FF00 50%,
+                                            #00FFFF 55%, #0000FF 70%, #FF00FF 85%);
+  
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+/* ‘Niclip —ÖŠsƒOƒ‰ƒf[ƒVƒ‡ƒ“j ************************************************/
+#div2 {
+  top: -10px; left: 150px;
+  width: 140px; height: 180px;
+  text-align: center;
+  font: bold 128px "‚l‚r ‚oƒSƒVƒbƒN", Osaka, "ƒqƒ‰ƒMƒmŠpƒS Pro", Verdana;
+  color: silver;
+  line-height: 160px;
+  position: absolute;
+  
+  text-stroke-width: 12px;
+  text-stroke-color: transparent;
+  text-fill-color: silver;
+  -webkit-text-stroke-width: 12px;
+  -webkit-text-stroke-color: transparent;
+  -webkit-text-fill-color: silver;
+  
+  background-image: linear-gradient(to bottom, #FF0000 20%, #FFFF00 35%, #00FF00 50%,
+                                    #00FFFF 65%, #0000FF 80%, #FF00FF 100%);
+  background-image: -webkit-linear-gradient(top, #FF0000 20%, #FFFF00 35%, #00FF00 50%,
+                                            #00FFFF 65%, #0000FF 80%, #FF00FF 100%);
+  
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+/* †•—‘Diclip ƒOƒ‰ƒf[ƒVƒ‡ƒ“j **********************************************/
+#div3 {
+  top: 0px; left: 270px;
+  width: 400px; height: 140px;
+  text-align: center;
+  font: bold italic 116px "‚l‚r ‚oƒSƒVƒbƒN", Osaka, "ƒqƒ‰ƒMƒmŠpƒS Pro", Verdana;
+  color: white;
+   position: absolute;
+   
+  text-stroke-width: 0px;
+  text-stroke-color: black;
+  text-fill-color: transparent;
+  -webkit-text-stroke-width: 0px;
+  -webkit-text-stroke-color: black;
+  -webkit-text-fill-color: transparent;
+  
+  background-image: linear-gradient(to right, #FF0000 20%, #DDFF00 35%, #33FF00 50%,
+                                    #00FFFF 55%, #0000FF 70%, #FF00FF 85%);
+  background-image: -webkit-linear-gradient(left, #FF0000 20%, #DDFF00 35%, #33FF00 50%,
+                                            #00FFFF 55%, #0000FF 70%, #FF00FF 85%);
+  
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+/* –q‘’nimask üŒ`ƒOƒ‰ƒf[ƒVƒ‡ƒ“j ********************************************/
+#div4 {
+  top: 130px; left: 10px;
+  width: 250px; height: 100px;
+  text-align: center;
+  font: bold 80px "‚l‚r ‚oƒSƒVƒbƒN", Osaka, "ƒqƒ‰ƒMƒmŠpƒS Pro", Verdana;
+  color: #00FF00;
+  line-height: 120px;
+  position: absolute;
+  
+  text-stroke-width: 3px;
+  text-stroke-color: #339933;
+  text-fill-color: #00FF00;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #339933;
+  -webkit-text-fill-color: #00FF00;
+  
+  mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
+  -webkit-mask-image: -webkit-linear-gradient(left, rgba(0,0,0,1), rgba(0,0,0,0));
+}
+
+/* ‘¾•½—mimask ‰~Œ`ƒOƒ‰ƒf[ƒVƒ‡ƒ“j ********************************************/
+#div5 {
+  top: 130px; left: 280px;
+  width: 260px; height: 100px;
+  text-align: center;
+  font: bold 80px "‚l‚r ‚oƒSƒVƒbƒN", Osaka, "ƒqƒ‰ƒMƒmŠpƒS Pro", Verdana;
+  color: #0000FF;
+  line-height: 120px;
+  position: absolute;
+  
+  text-stroke-width: 3px;
+  text-stroke-color: #9999FF;
+  text-fill-color: #0000FF;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #9999FF;
+  -webkit-text-fill-color: #0000FF;
+  
+  mask-image: repeating-radial-gradient(farthest-side at 50% 60%,
+              rgba(0,0,0,0), rgba(0,0,0,1) 10%, rgba(0,0,0,0) 20%);
+  -webkit-mask-image: -webkit-repeating-radial-gradient(50% 60%, farthest-side,
+                      rgba(0,0,0,0), rgba(0,0,0,1) 10%, rgba(0,0,0,0) 20%);
+}
+
+/* ‡‚ÌŒõiƒVƒƒƒh[j **********************************************************/
+#div6 {
+  top: 240px; left: 10px;
+  width: 250px; height: 100px;
+  text-align: center;
+  font: bold 80px "‚l‚r ‚oƒSƒVƒbƒN", Osaka, "ƒqƒ‰ƒMƒmŠpƒS Pro", Verdana;
+  color: mistyrose;
+  position: absolute;
+  
+  text-stroke-width: 4px;
+  text-stroke-color: mistyrose;
+  text-fill-color: transparent;
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: mistyrose;
+  -webkit-text-fill-color: transparent;
+  
+  text-shadow: 0px 0px 20px rgba(148,0,211,1.0);
+}
+
+/* ‰©‹à’iclip ƒOƒ‰ƒf[ƒVƒ‡ƒ“j ************************************************/
+#div7 {
+  top: 240px; left: 280px;
+  position: absolute;
+}
+#div7 span:nth-child(1) {
+  top: 0px; left: -10px;
+  width: 300px; height: 100px;
+  border-radius: 30px;
+  
+  background-image: radial-gradient(farthest-corner at 50% 50%, red, white 70%);
+  background-image: -webkit-radial-gradient(50% 50%, farthest-corner, red, white 70%);
+  
+  position: absolute;
+}
+#div7 span:nth-child(2) {
+  top: 0px; left: 0px;
+  width: 280px; height: 100px;
+  text-align: center;
+  font: bold 86px "‚l‚r ‚oƒSƒVƒbƒN", Osaka, "ƒqƒ‰ƒMƒmŠpƒS Pro", Verdana;
+  color: gold;
+  line-height: 90px;
+  position: absolute;
+  
+  text-stroke-width: 2px;
+  text-stroke-color: palegoldenrod;
+  text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: palegoldenrod;
+  -webkit-text-fill-color: transparent;
+  
+  background-image: linear-gradient(to bottom, darkgoldenrod 25%, gold 45%, gold 55%,
+                                    darkgoldenrod 75%);
+  background-image: -webkit-linear-gradient(top, darkgoldenrod 25%, gold 45%, gold 55%,
+                                            darkgoldenrod 75%);
+  
+  background-position: 0px 3px;
+  
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+/* œa¯iƒ}ƒXƒNj **************************************************************/
+#div8 {
+  top: 170px; left: 530px;
+  position: absolute;
+}
+#div8 span:nth-child(1) {
+  top: 0px; left: 0px;
+  width: 160px; height: 160px;
+  text-align: center;
+  font: 42px "‚l‚r ‚oƒSƒVƒbƒN", Osaka, "ƒqƒ‰ƒMƒmŠpƒS Pro", Verdana;
+  color: dodgerblue;
+  line-height: 170px;
+  background-color: #FFFF66;
+  position: absolute;
+  
+  text-stroke-width: 2px;
+  text-stroke-color: dodgerblue;
+  text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: dodgerblue;
+  -webkit-text-fill-color: transparent;
+  
+  mask-image: url(images/StarMask.png);
+  mask-position: 0% 0%;
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%;
+  -webkit-mask-image: url(images/StarMask.png);
+  -webkit-mask-position: 0% 0%;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+}
+#div8 span:nth-child(2) {
+  top: 0px; left: 0px;
+  width: 160px; height: 160px;
+  background-image: url(images/StarOutline.png);
+  position: absolute;
+}
+
+/* K•ŸiŠG•¿‚Åü‚ğ•`‚­j *****************************************************/
+#div9 {
+  top: 330px; left: 30px;
+  width: 300px; height: 160px;
+  text-align: center;
+  font: bold 140px "‚l‚r ‚oƒSƒVƒbƒN", Osaka, "ƒqƒ‰ƒMƒmŠpƒS Pro", Verdana;
+  color: #336633;
+  position: absolute;
+  
+  text-stroke-width: 3px;
+  text-stroke-color: #336633;
+  text-fill-color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #336633;
+  -webkit-text-fill-color: transparent;
+  
+  background-image: url(images/Clover3.png);
+  background-repeat: repeat;
+  
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+/* Î‚¢iŠG•¿‚Åü‚ğ•`‚­j *****************************************************/
+#div10 {
+  top: 330px; left: 360px;
+  width: 300px; height: 160px;
+  text-align: center;
+  font: bold 140px "‚l‚r ‚oƒSƒVƒbƒN", Osaka, "ƒqƒ‰ƒMƒmŠpƒS Pro", Verdana;
+  color: orange;
+  position: absolute;
+  
+  text-stroke-width: 0px;
+  text-stroke-color: #000000;
+  text-fill-color: transparent;
+  -webkit-text-stroke-width: 0px;
+  -webkit-text-stroke-color: #000000;
+  -webkit-text-fill-color: transparent;
+  
+  background-image: url(images/PWDots.png);
+  background-repeat: repeat;
+  
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+/* g—tiÊ^‚Åü‚ğ•`‚­j ****************************************************/
+#div11 {
+  top: 480px; left: 30px;
+  width: 300px; height: 160px;
+  text-align: center;
+  font: bold 140px "‚l‚r ‚oƒSƒVƒbƒN", Osaka, "ƒqƒ‰ƒMƒmŠpƒS Pro", Verdana;
+  color: yellow;
+  position: absolute;
+  
+  text-stroke-width: 3px;
+  text-stroke-color: #FF9900;
+  text-fill-color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #FF9900;
+  -webkit-text-fill-color: transparent;
+  
+  background-image: url(images/DSC00007M.jpg);
+  background-repeat: repeat;
+  
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+/* ŠëŒ¯i—ÖŠsÈ–Í—lj ********************************************************/
+#div12 {
+  top: 500px; left: 360px;
+  position: absolute;
+}
+#div12 span:nth-child(1) {
+  top: 0px; left: 0px;
+  width: 300px; height: 140px;
+  text-align: center;
+  font: bold 132px "‚l‚r ‚oƒSƒVƒbƒN", Osaka, "ƒqƒ‰ƒMƒmŠpƒS Pro", Verdana;
+  color: yellow;
+  line-height: 135px;
+  position: absolute;
+  
+  text-stroke-width: 15px;
+  text-stroke-color: transparent;
+  text-fill-color: red;
+  -webkit-text-stroke-width: 15px;
+  -webkit-text-stroke-color: transparent;
+  -webkit-text-fill-color: red;
+  
+  background-image: url(images/BYborderS.png);
+  background-position: 0% 0%;
+  background-repeat: repeat;
+  
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+#div12 span:nth-child(2) {
+  top: 0px; left: 0px;
+  width: 300px; height: 140px;
+  text-align: center;
+  font: bold 132px "‚l‚r ‚oƒSƒVƒbƒN", Osaka, "ƒqƒ‰ƒMƒmŠpƒS Pro", Verdana;
+  color: red;
+  line-height: 135px;
+  position: absolute;
+  
+  text-stroke-width: 2px;
+  text-stroke-color: white;
+  text-fill-color: red;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: white;
+  -webkit-text-fill-color: red;
+}
+

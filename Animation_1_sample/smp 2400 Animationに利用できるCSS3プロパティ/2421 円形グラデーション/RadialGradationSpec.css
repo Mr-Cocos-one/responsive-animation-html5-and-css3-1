@@ -1,0 +1,400 @@
+/* LinearGradationSpec.css */
+#stage {
+  width: 700px;
+  height: 1220px;
+  background-color: #000000;
+  position: relative;
+}
+
+/*****************************************************************************
+* 円形グラデーション１ （ ellipse, center / defaults( ellipse ) ）
+******************************************************************************/
+#div1 {
+  top: 20px; left: 20px;
+  width: 200px; height: 100px;
+  border: solid 1px #000000;
+  
+  /* background: radial-gradient(yellow, green); */
+  /* background: -webkit-radial-gradient(yellow, green); */
+  /* background: -moz-radial-gradient(yellow, green); */
+  
+  /* background: radial-gradient(ellipse at center, yellow 0%, green 100%); */
+  /* background: -webkit-radial-gradient(center, ellipse, yellow 0%, green 100%); */
+  /* background: -moz-radial-gradient(center, ellipse, yellow 0%, green 100%); */
+  
+  background: radial-gradient(farthest-corner at 50% 50%, yellow, green);
+  background: -webkit-radial-gradient(50% 50%, farthest-corner, yellow 0%, green 100%);
+  /* background: -moz-radial-gradient(50% 50%, farthest-corner, yellow 0%, green 100%); */
+  
+  position: absolute;
+}
+/*****************************************************************************
+* 円形グラデーション２ （ circle, center / defaults( farthest-corner ) ）
+******************************************************************************/
+#div2 {
+  top: 20px; left: 240px;
+  width: 200px; height: 100px;
+  border: solid 1px #000000;
+  
+  /* background: radial-gradient(circle, yellow, green); */
+  /* background: -webkit-radial-gradient(circle, yellow, green); */
+  /* background: -moz-radial-gradient(circle, yellow, green); */
+  
+  /* background: radial-gradient(circle at center, yellow 0%, green 100%); */
+  /* background: -webkit-radial-gradient(center, circle, yellow 0%, green 100%); */
+  /* background: -moz-radial-gradient(center, circle, yellow 0%, green 100%); */
+  
+  background: radial-gradient(circle at 50% 50%, yellow 0%, green 100%);
+  background: -webkit-radial-gradient(50% 50%, circle, yellow 0%, green 100%);
+  /* background: -moz-radial-gradient(50% 50%, circle, yellow 0%, green 100%); */
+  
+  position: absolute;
+}
+/*****************************************************************************
+* 円形グラデーション３ （ defaults( ellipse, center, farthest-corner ) ）
+******************************************************************************/
+#div3 {
+  top: 20px; left: 460px;
+  width: 200px; height: 100px;
+  border: solid 1px #000000;
+  background: radial-gradient(red, yellow, green);
+  background: -webkit-radial-gradient(red, yellow, green);
+  /* background: -moz-radial-gradient(red, yellow, green); */
+  
+  position: absolute;
+}
+/*****************************************************************************
+* 円形グラデーション４ （ farthest-side, left bottom / defaults( ellipse ) ）
+******************************************************************************/
+#div4 {
+  top: 140px; left: 20px;
+  width: 200px; height: 100px;
+  border: solid 1px #000000;
+  background: radial-gradient(farthest-side at left bottom, red, yellow 50px, green);
+  background: -webkit-radial-gradient( left bottom, farthest-side, red, yellow 50px, green);
+  /* background: -moz-radial-gradient( left bottom, farthest-side, red, yellow 50px, green); */
+  position: absolute;
+}
+/*****************************************************************************
+* 円形グラデーション５ （ closest-side, numeric position / defaults( ellipse ) ）
+******************************************************************************/
+#div5 {
+  top: 140px; left: 240px;
+  width: 200px; height: 100px;
+  border: solid 1px #000000;
+  background: radial-gradient(closest-side at 20px 30px, red, yellow, green);
+  background: -webkit-radial-gradient(20px 30px, closest-side, red, yellow, green);
+  /* background: -moz-radial-gradient(20px 30px, closest-side, red, yellow, green); */
+  position: absolute;
+}
+/*****************************************************************************
+* 円形グラデーション６ （ closest-side, circle, numeric position ）
+******************************************************************************/
+#div6 {
+  top: 140px; left: 460px;
+  width: 200px; height: 100px;
+  border: solid 1px #000000;
+  background: radial-gradient(closest-side circle at 20px 30px, red, yellow, green);
+  background: -webkit-radial-gradient( 20px 30px, closest-side circle, red, yellow, green);
+  /* background: -moz-radial-gradient( 20px 30px, closest-side circle, red, yellow, green); */
+  position: absolute;
+}
+
+/*****************************************************************************
+* 円形グラデーション７ （ numeric position, numeric radius( H not equal V ) ）
+******************************************************************************/
+#div7 {
+  top: 260px; left: 20px;
+  width: 200px; height: 100px;
+  border: solid 1px #000000;
+  background: radial-gradient(20px 30px at 20px 30px, red, yellow, green);
+  background: -webkit-radial-gradient(20px 30px, 20px 30px, red, yellow, green);
+  /* background: -moz-radial-gradient(20px 30px, 20px 30px, red, yellow, green); */  /* NG */
+  position: absolute;
+}
+/*****************************************************************************
+* 円形グラデーション８ （ numeric position, numeric radius( H equal V ) ）
+******************************************************************************/
+#div8 {
+  top: 260px; left: 240px;
+  width: 200px; height: 100px;
+  border: solid 1px #000000;
+  background: radial-gradient(20px 20px at 20px 30px, red, yellow, green);
+  background: -webkit-radial-gradient( 20px 30px, 20px 20px, red, yellow, green);
+  /* background: -moz-radial-gradient( 20px 30px, 20px 20px, red, yellow, green); */   /* NG */
+  position: absolute;
+}
+
+/*****************************************************************************
+* 円形グラデーション９ （ defaults( ellipse, center, farthest-corner ), color-stop ）
+******************************************************************************/
+#div9 {
+  top: 260px; left: 460px;
+  width: 200px; height: 100px;
+  border: solid 1px #000000;
+  background: radial-gradient(red 40%, yellow 70%, green);
+  background: -webkit-radial-gradient(red 40%, yellow 70%, green);
+  /* background: -moz-radial-gradient(red 40%, yellow 70%, green); */
+  position: absolute;
+}
+
+/*****************************************************************************
+* 円形グラデーション１０ （ defaults( farthest-corner, ellipse, center ), rainbow color ）
+******************************************************************************/
+#div10 {
+  top: 380px; left: 20px;
+  width: 200px; height: 100px;
+  border: solid 1px #000000;
+  background: radial-gradient( #F00, #FF0, #0F0, #0FF, #00F, #F0F );
+  background: -webkit-radial-gradient( #F00, #FF0, #0F0, #0FF, #00F, #F0F );
+  /* background: -moz-radial-gradient( #F00, #FF0, #0F0, #0FF, #00F, #F0F ); */
+  position: absolute;
+}
+
+/*****************************************************************************
+* 円形グラデーション１１ （ farthest-side, defaults( ellipse, center ), rainbow color ）
+******************************************************************************/
+#div11 {
+  top: 380px; left: 240px;
+  width: 200px; height: 100px;
+  border: solid 1px #000000;
+  background: radial-gradient( farthest-side, #F00, #FF0, #0F0, #0FF, #00F, #F0F );
+  background: -webkit-radial-gradient( farthest-side, #F00, #FF0, #0F0, #0FF, #00F, #F0F );
+  /* background: -moz-radial-gradient( farthest-side, #F00, #FF0, #0F0, #0FF, #00F, #F0F ); */
+  position: absolute;
+}
+
+/*****************************************************************************
+* 円形グラデーション１２ （ numeric position, defaults( farthest-corner, ellipse ),
+* rainbow color ）
+******************************************************************************/
+#div12 {
+  top: 380px; left: 460px;
+  width: 200px; height: 100px;
+  border: solid 1px #000000;
+  background: radial-gradient( at 20% 30%, #F00, #FF0, #0F0, #0FF, #00F, #F0F );
+  background: -webkit-radial-gradient( 20% 30%, #F00, #FF0, #0F0, #0FF, #00F, #F0F );
+  /* background: -moz-radial-gradient( 20% 30%, #F00, #FF0, #0F0, #0FF, #00F, #F0F ); */
+  position: absolute;
+}
+
+/*****************************************************************************
+* 円形グラデーション１３ （ numeric position, numeric radius( H not equal V ), 
+* rainbow color ）
+******************************************************************************/
+#div13 {
+  top: 500px; left: 20px;
+  width: 200px; height: 100px;
+  border: solid 1px #000000;
+  background: radial-gradient( 150% 180% at -30px -40px, #F00, #FF0, #0F0, #0FF, #00F, #F0F );
+  background: -webkit-radial-gradient( -30px -40px, 150% 180%, #F00, #FF0, #0F0, #0FF, #00F, #F0F );
+  /* background: -moz-radial-gradient( -30px -40px, 150% 180%, #F00, #FF0, #0F0, #0FF, #00F, #F0F ); */  /* NG */
+  position: absolute;
+}
+
+/*****************************************************************************
+* 円形グラデーション１４ （ circle, defaults( farthest-corner, center ), rainbow color ）
+******************************************************************************/
+#div14 {
+  top: 500px; left: 240px;
+  width: 200px; height: 100px;
+  border: solid 1px #000000;
+  background: radial-gradient( circle, #F00, #FF0, #0F0, #0FF, #00F, #F0F );
+  background: -webkit-radial-gradient( circle, #F00, #FF0, #0F0, #0FF, #00F, #F0F );
+  /* background: -moz-radial-gradient( circle, #F00, #FF0, #0F0, #0FF, #00F, #F0F ); */
+  position: absolute;
+}
+
+/*****************************************************************************
+* 円形グラデーション１５ （ farthest-side, circle, defaults( center ), rainbow color ）
+******************************************************************************/
+#div15 {
+  top: 500px; left: 460px;
+  width: 200px; height: 100px;
+  border: solid 1px #000000;
+  background: radial-gradient( farthest-side circle, #F00, #FF0, #0F0, #0FF, #00F, #F0F );
+  background: -webkit-radial-gradient( farthest-side circle, #F00, #FF0, #0F0, #0FF, #00F, #F0F );
+  /* background: -moz-radial-gradient( farthest-side circle, #F00, #FF0, #0F0, #0FF, #00F, #F0F ); */
+  position: absolute;
+}
+
+/*****************************************************************************
+* 円形グラデーション１６ （ closest-side, circle, defaults( center ), rainbow color ）
+******************************************************************************/
+#div16 {
+  top: 620px; left: 20px;
+  width: 200px; height: 100px;
+  border: solid 1px #000000;
+  background: radial-gradient( closest-side circle, #F00, #FF0, #0F0, #0FF, #00F, #F0F );
+  background: -webkit-radial-gradient( closest-side circle, #F00, #FF0, #0F0, #0FF, #00F, #F0F );
+  /* background: -moz-radial-gradient( closest-side circle, #F00, #FF0, #0F0, #0FF, #00F, #F0F ); */
+  position: absolute;
+}
+
+/*****************************************************************************
+* 円形グラデーション１７  （ circle, left center, defaults( farthest-corner ) ）
+******************************************************************************/
+#div17 {
+  top: 620px; left: 240px;
+  width: 200px; height: 100px;
+  border: solid 1px #000000;
+  background: radial-gradient( circle at left center, #F00, #FF0, #0F0, #0FF, #00F, #F0F );
+  background: -webkit-radial-gradient( left center, circle, #F00, #FF0, #0F0, #0FF, #00F, #F0F );
+  /* background: -moz-radial-gradient( left center, circle, #F00, #FF0, #0F0, #0FF, #00F, #F0F ); */
+  position: absolute;
+}
+
+/*****************************************************************************
+* 円形グラデーション１８ （ circle, numeric position, , defaults( farthest-corner ), 
+* rainbow color ）
+******************************************************************************/
+#div18 {
+  top: 620px; left: 460px;
+  width: 200px; height: 100px;
+  border: solid 1px #000000;
+  background: radial-gradient( circle at 20% 30%, #F00, #FF0, #0F0, #0FF, #00F, #F0F );
+  background: -webkit-radial-gradient( 20% 30%, circle, #F00, #FF0, #0F0, #0FF, #00F, #F0F );
+  /* background: -moz-radial-gradient( 20% 30%, circle, #F00, #FF0, #0F0, #0FF, #00F, #F0F ); */
+  position: absolute;
+}
+
+/*****************************************************************************
+* 円形グラデーション１９ （ numeric position, numeric radius( H not equal V ), rainbow color ）
+******************************************************************************/
+#div19 {
+  top: 740px; left: 20px;
+  width: 200px; height: 100px;
+  border: solid 1px #000000;
+  background: radial-gradient( 80px 80px at 20% 30%, #F00, #FF0, #0F0, #0FF, #00F, #F0F );
+  background: -webkit-radial-gradient( 20% 30%, 80px 80px, #F00, #FF0, #0F0, #0FF, #00F, #F0F );
+  /* background: -moz-radial-gradient( 20% 30%, 80px 80px, #F00, #FF0, #0F0, #0FF, #00F, #F0F ); */ /* NG */
+  /* background: -moz-radial-gradient( 20% 30%, closest-side circle, #F00 0%, #FF0 50%, #0F0 120%,
+                                    #0FF 160%, #00F 200%, #F0F 260%); */
+  position: absolute;
+}
+
+/*****************************************************************************
+* 円形グラデーション２０ （リピート）
+******************************************************************************/
+#div20 {
+  top: 740px; left: 240px;
+  width: 200px; height: 100px;
+  border: solid 1px #000000;
+  background: repeating-radial-gradient( red 0%, #00FF00 10%, blue 20% );
+  background: -webkit-repeating-radial-gradient( red 0%, #00FF00 10%, blue 20% );
+  /* background: -moz-repeating-radial-gradient( red 0%, #00FF00 10%, blue 20% ); */
+  position: absolute;
+}
+/*****************************************************************************
+* 円形グラデーション２１ （リピート１回）
+******************************************************************************/
+#div21 {
+  top: 740px; left: 460px;
+  width: 200px; height: 100px;
+  border: solid 1px #000000;
+  background: repeating-radial-gradient( red 0%, #00FF00 50%, blue 100% );
+  background: -webkit-repeating-radial-gradient( red 0%, #00FF00 50%, blue 100% );
+  /* background: -moz-repeating-radial-gradient( red 0%, #00FF00 50%, blue 100% ); */
+  position: absolute;
+}
+/*****************************************************************************
+* 円形グラデーション２２ （リピート left topから）
+******************************************************************************/
+#div22 {
+  top: 860px; left: 20px;
+  width: 200px; height: 100px;
+  border: solid 1px #000000;
+  background: repeating-radial-gradient( at left top, red 0%, #00FF00 10%, blue 20% );
+  background: -webkit-repeating-radial-gradient( left top, red 0%, #00FF00 10%, blue 20% );
+  /* background: -moz-repeating-radial-gradient( left top, red 0%, #00FF00 10%, blue 20% ); */
+  position: absolute;
+}
+
+/*****************************************************************************
+* 円形グラデーション２３ （リピート 終了色の指定位置以降はリピートされる）
+******************************************************************************/
+#div23 {
+  top: 860px; left: 240px;
+  width: 200px; height: 100px;
+  border: solid 1px #000000;
+  background: repeating-radial-gradient(red, blue 10px, yellow 20px, red 30px);
+  background: -webkit-repeating-radial-gradient(red, blue 10px, yellow 20px, red 30px);
+  /* background: -moz-repeating-radial-gradient(red, blue 10px, yellow 20px, red 30px); */
+  position: absolute;
+}
+/*****************************************************************************
+* 円形グラデーション２４ （リピート ２３の配色を％で指定）
+******************************************************************************/
+#div24 {
+  top: 860px; left: 460px;
+  width: 200px; height: 100px;
+  border: solid 1px #000000;
+  background: repeating-radial-gradient(red, blue 10%, yellow 20%, red 30%);
+  background: -webkit-repeating-radial-gradient(red, blue 10%, yellow 20%, red 30%);
+  /* background: -moz-repeating-radial-gradient(red, blue 10%, yellow 20%, red 30%); */
+  position: absolute;
+}
+/*****************************************************************************
+* 円形グラデーション２５ （リピート）
+******************************************************************************/
+#div25 {
+  top: 980px; left: 20px;
+  width: 200px; height: 100px;
+  border: solid 1px #000000;
+  background: repeating-radial-gradient(circle closest-side at 20px 30px,
+              red, yellow, green);
+  /* background: -webkit-repeating-radial-gradient(closest-side circle, 20px 30px, 
+              red, yellow, green);  "First size, second position is no good." */
+  /* background: -webkit-repeating-radial-gradient(20px 30px, circle closest-side,
+              red, yellow, green); "Chenging order of shape and size is OK."  */
+  background: -webkit-repeating-radial-gradient(20px 30px, closest-side circle,
+              red, yellow, green);
+  /* background: -moz-repeating-radial-gradient(20px 30px, closest-side circle,
+              red, yellow, green); */
+  position: absolute;
+}
+/*****************************************************************************
+* 円形グラデーション２６ （リピート）
+******************************************************************************/
+#div26 {
+  top: 980px; left: 240px;
+  width: 200px; height: 100px;
+  border: solid 1px #000000;
+  background: repeating-radial-gradient(circle closest-side at 20px 30px,
+              red, yellow, green 100%, yellow 150%, red 200%);
+  background: -webkit-repeating-radial-gradient(20px 30px, closest-side circle,
+              red, yellow, green 100%, yellow 150%, red 200%);
+  /* background: -moz-repeating-radial-gradient(20px 30px, closest-side circle,
+              red, yellow, green 100%, yellow 150%, red 200%); */
+  position: absolute;
+}
+/*****************************************************************************
+* 円形グラデーション２７ （リピート）
+******************************************************************************/
+#div27 {
+  top: 980px; left: 460px;
+  width: 200px; height: 100px;
+  border: solid 1px #000000;
+  background: repeating-radial-gradient(circle closest-side at 20px 30px,
+              red 20%, yellow 40%, green 60%);
+  background: -webkit-repeating-radial-gradient(20px 30px, closest-side circle,
+              red 20%, yellow 40%, green 60%);
+  /* background: -moz-repeating-radial-gradient(20px 30px, closest-side circle,
+              red 20%, yellow 40%, green 60%); */
+  background: -webkit-repeating-radial-gradient(20px 30px, closest-side circle,
+              red 20%, yellow 42%, green 60%);
+  position: absolute;
+}
+/*****************************************************************************
+* 円形グラデーション２８ （リピート）形状を数値で指定・・・MozillaはＮＧ
+******************************************************************************/
+#div28 {
+  top: 1100px; left: 20px;
+  width: 200px; height: 100px;
+  border: solid 1px #000000;
+  background: repeating-radial-gradient( 50px 40px at center, red 0%, #00FF00 10%, blue 20% );
+  background: -webkit-repeating-radial-gradient( center, 50px 40px, red 0%, #00FF00 10%, blue 20% );
+  /* background: -moz-repeating-radial-gradient( center, 50px 40px, red 0%, #00FF00 10%, blue 20% ); */  /* NG */
+  position: absolute;
+}
+

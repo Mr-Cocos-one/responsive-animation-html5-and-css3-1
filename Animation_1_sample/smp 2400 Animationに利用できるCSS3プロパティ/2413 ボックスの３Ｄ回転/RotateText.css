@@ -1,0 +1,81 @@
+/* RotateText.css */
+
+#stage {
+  width: 600px; height: 600px;
+  background-color: #000000;
+  position: relative;
+}
+
+#button {
+  top: 20px; left: 247px;
+  width: 100px; height: 50px;
+  border: solid 3px #666666;
+  border-radius: 10px;
+  text-align: center;
+  color: #666666;
+  line-height: 55px;
+  cursor: default;
+  position: absolute;
+}
+#button:hover {
+  background-color: #555555;
+  color: #000000;
+}
+
+#div1 {
+  top: 70px; left: -200px;
+  width: 500px; height: 65px;
+  text-align: center;
+  color: #FF00FF;
+  position: absolute;
+  /* border: 1px solid red; */
+  
+  transition: 5s linear;
+  -webkit-transition: 5s linear;
+}
+#button:hover #div1 {
+  color: #6699FF;
+  transform: rotateY(360deg);
+  -webkit-transform: rotateY(360deg);
+}
+
+#div2 {
+  top: 140px; left: -160px;
+  width: 400px; height: 65px;
+  text-align: center;
+  color: #6699FF;
+  position: absolute;
+  /* border: 1px solid blue; */
+  
+  transition: 5s linear;
+  -webkit-transition: 5s linear;
+}
+#button:hover #div2 {
+  color: #00FF99;
+  transform: rotateX(1080deg);
+  -webkit-transform: rotateX(1080deg);
+}
+
+#div3 {
+  top: 340px; left: -160px;
+  width: 400px; height: 65px;
+  text-align: center;
+  color: #00FF99;
+  position: absolute;
+  /* border: 1px solid green; */
+  
+  transition: 5s linear;
+  -webkit-transition: 5s linear;
+}
+#button:hover #div3 {
+  color: #FF00FF;
+  transform: rotateZ(720deg);
+  -webkit-transform: rotateZ(720deg);
+}
+
+.font28GothicB {
+  font: bold 28px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+}
+.font64GothicB {
+  font: bold 64px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+}

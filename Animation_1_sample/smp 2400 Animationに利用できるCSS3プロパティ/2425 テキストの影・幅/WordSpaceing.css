@@ -1,0 +1,46 @@
+/* WordSpaceing.css */
+
+#stage {
+  width: 600px; height: 250px;
+  background-color: #000000;
+  position: relative;
+}
+
+#button {
+  top: 20px; left: 247px;
+  width: 100px; height: 50px;
+  border: solid 3px #666666;
+  border-radius: 10px;
+  text-align: center;
+  color: #666666;
+  line-height: 55px;
+  cursor: default;
+  position: absolute;
+}
+
+#div1 {
+  top: 100px; left: -180px;
+  /* border: 1px solid red; */
+  position: absolute;
+  text-align: center;
+  color: #99FF00;
+  font: bold 52px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+  white-space: nowrap;
+  word-spacing: normal;
+  
+  transition: 1s linear;
+  -webkit-transition: 1s linear;
+}
+
+#button:hover {
+  background-color: #555555;
+  color: #000000;
+}
+#button:hover #div1 {
+  word-spacing: 50px;
+  left: -230px;
+}
+
+.font28GothicB {
+  font: bold 28px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+}

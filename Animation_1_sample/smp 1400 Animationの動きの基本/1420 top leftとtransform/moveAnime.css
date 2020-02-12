@@ -1,0 +1,26 @@
+/* moveAnime.css */
+
+/* ˆÚ“®•û–@ ********************************************************/
+#stage {
+  margin: 0px;
+  width: 700px; height: 200px;
+  background-color: skyblue;
+  position: relative;
+}
+#stage img {
+  top: 60px; left: 10px;
+  width: 96px; height: 73px;
+  position: absolute;
+  
+  animation: anime1 5s ease-in-out 0s 3 normal;
+  -webkit-animation: anime1 5s ease-in-out 0s 3 normal;
+}
+@keyframes anime1 {
+  0% { }
+  100% { left: 590px; }
+}
+@-webkit-keyframes anime1 {
+  0% { }
+  100% { left: 590px; }
+}
+

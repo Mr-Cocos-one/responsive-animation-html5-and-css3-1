@@ -1,0 +1,71 @@
+/* PierrotOnBall2.css */
+
+#stage {
+  width: 600px; height: 300px;
+  background-color: midnightblue;
+  border: solid 1px black;
+  position: relative;
+}
+
+#button {
+  top: 10px; left: 460px;
+  width: 120px; height: 50px;
+  border: solid 1px black;
+  border-radius: 10px;
+  background-color: red;
+  text-align: center;
+  cursor: default;
+  position: absolute;
+}
+
+#moveH {
+  top: 60px; left: -445px;
+  width: 100px; height: 213px;
+  /* border: solid 1px #FFFFFF; */
+  position: absolute;
+  
+  transition: left 5s ease-in-out;
+  -webkit-transition: left 5s ease-in-out;
+}
+
+#pierrot {
+  top: 0px; left: 5px;
+  width: 88px; height: 117px;
+  position: absolute;
+}
+#pierrot img {
+  top: 0px; left: 0px;
+  width: 100%; height: 100%;
+  position: absolute;
+}
+
+#ball {
+  top: 113px; left: 0px;
+  width: 100px; height: 100px;
+  position: absolute;
+  
+  transition: transform 5s ease-in-out;
+  -webkit-transition: -webkit-transform 5s ease-in-out;
+}
+#ball img {
+  top: 0px; left: 0px;
+  width: 100%; height: 100%;
+  position: absolute;
+}
+
+#button:hover {
+  background-color: green;
+}
+#button:hover div#moveH {
+  left: 25px;
+}
+#button:hover div#ball {
+  transform: rotateZ(720deg);
+  -webkit-transform: rotateZ(720deg);
+}
+
+.font1 {
+  color: black;
+  font: bold 28px "‚l‚r ‚oƒSƒVƒbƒN", Osaka, "ƒqƒ‰ƒMƒmŠpƒS Pro", Verdana;
+  line-height: 50px;
+}

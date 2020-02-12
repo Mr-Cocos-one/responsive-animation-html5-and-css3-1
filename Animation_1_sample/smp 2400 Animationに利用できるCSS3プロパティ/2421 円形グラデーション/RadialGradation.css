@@ -1,0 +1,234 @@
+/* RadialGradation.css */
+
+#stage {
+  width: 600px; height: 570px;
+  background-color: #000000;
+  position: relative;
+}
+
+/*****************************************************************************
+* 四角形　円形グラデーション１
+******************************************************************************/
+#div1 {
+  top: 25px; left: 25px;
+  width: 150px; height: 150px;
+  border: solid 2px #FFFFFF;
+  position: absolute;
+  overflow: hidden;
+}
+#div1 span {
+  top: -50px; left: -175px;
+  width: 500px; height: 250px;
+  background: repeating-radial-gradient( red, blue 10px, yellow 20px, red 30px);
+  background: -webkit-repeating-radial-gradient( red, blue 10px, yellow 20px, red 30px);
+  position: absolute;
+  
+  transform: rotateZ(-45deg);
+  -webkit-transform: rotateZ(-45deg);
+}
+/*****************************************************************************
+* 角丸四角形　円形グラデーション２
+******************************************************************************/
+#div2 {
+  top: 25px; left: 225px;
+  width: 150px; height: 150px;
+  border: solid 2px #FFFFFF;
+  border-radius: 20px;
+  background-color: #000000;
+
+  background-image: repeating-radial-gradient( at left center, rgba(255,0,0,0.5),
+                               rgba(0,255,0,0.5) 10%, rgba(0,0,255,0.5) 20% ),
+                    repeating-radial-gradient( at right center, rgba(255,0,0,0.7),
+                                rgba(0,255,0,0.7) 10%, rgba(0,0,255,0.7) 20% );
+  background-image: -webkit-repeating-radial-gradient( left center, rgba(255,0,0,0.5),
+                                       rgba(0,255,0,0.5) 10%, rgba(0,0,255,0.5) 20% ),
+                    -webkit-repeating-radial-gradient( right center, rgba(255,0,0,0.7),
+                                        rgba(0,255,0,0.7) 10%, rgba(0,0,255,0.7) 20% );
+  background-clip: border-box;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+/*****************************************************************************
+* 四角形　円形グラデーション３
+******************************************************************************/
+#div3 {
+  top: 25px; left: 425px;
+  width: 150px; height: 150px;
+  border: solid 2px #FFFFFF;
+  position: absolute;
+  
+  background-image: repeating-radial-gradient(at left top, blue 20%, yellow 40%),
+                    repeating-radial-gradient(at right top, blue 20%, yellow 40%),
+                    repeating-radial-gradient(at left bottom, blue 20%, yellow 40%),
+                    repeating-radial-gradient(at right bottom, blue 20%, yellow 40%);
+  background-image: -webkit-repeating-radial-gradient(left top, blue 20%, yellow 40%),
+                    -webkit-repeating-radial-gradient(right top, blue 20%, yellow 40%),
+                    -webkit-repeating-radial-gradient(left bottom, blue 20%, yellow 40%),
+                    -webkit-repeating-radial-gradient(right bottom, blue 20%, yellow 40%);
+  background-position: 0px 0px, 75px 0px, 0px 75px, 75px 75px;
+  background-size: 75px 75px;
+  background-clip: border-box;
+  background-repeat: no-repeat;
+}
+
+/*****************************************************************************
+* 丸形　円形グラデーション４
+******************************************************************************/
+#div4 {
+  top: 205px; left: 25px;
+  width: 160px; height: 160px;
+  border-radius: 80px;
+  background: radial-gradient(at 35% 30%, #AAEEFF, #557799 50%, #111144);
+  background: -webkit-radial-gradient(35% 30%, #AAEEFF, #557799 50%, #111144);
+  position: absolute;
+}
+/*****************************************************************************
+* 丸形　円形グラデーション５
+******************************************************************************/
+#div5 {
+  top: 203px; left: 218px;
+  width: 160px; height: 160px;
+  border: solid 2px #666666;
+  border-radius: 82px;
+  position: absolute;
+  
+  background-image: radial-gradient(at bottom, #FFFFFF, #FF0000 80%),
+                    radial-gradient(at top, #FFFFFF, #0000FF 80%);
+  background-image: -webkit-radial-gradient(bottom, #FFFFFF, #FF0000 80%),
+                    -webkit-radial-gradient(top, #FFFFFF, #0000FF 80%);
+  background-position: 0px 0px, 0px 80px;
+  background-size: 160px 80px;
+  background-clip: border-box;
+  background-repeat: no-repeat;
+}
+#div5 > span:nth-child(1) {
+  top: 20px; left: 70px;
+  width: 20px; height: 120px;
+  background: radial-gradient(circle, #FFFFFF, #000000 150%);
+  background: -webkit-radial-gradient(circle, #FFFFFF, #000000 150%);
+  position: absolute;
+  
+  transform: rotateZ(45deg);
+  -webkit-transform: rotateZ(45deg);
+}
+#div5 > span:nth-child(2) {
+  top: 70px; left: 20px;
+  width: 120px; height: 20px;
+  background: radial-gradient(circle, #FFFFFF, #000000 150%);
+  background: -webkit-radial-gradient(circle, #FFFFFF, #000000 150%);
+  position: absolute;
+  
+  transform: rotateZ(45deg);
+  -webkit-transform: rotateZ(45deg);
+}
+/*****************************************************************************
+* 丸形　円形グラデーション６
+******************************************************************************/
+#div6 {
+  top: 205px; left: 415px;
+  width: 160px; height: 160px;
+  border-radius: 80px;
+  position: absolute;
+  
+  background-image: radial-gradient( closest-side, rgba(255,0,0,1), rgba(255,255,0,0) ),
+                    radial-gradient( closest-side, rgba(255,255,0,1), rgba(204,255,0,0) ),
+                    radial-gradient( closest-side, rgba(204,255,0,1), rgba(0,255,0,0) ),
+                    radial-gradient( closest-side, rgba(0,255,0,1), rgba(0,255,153,0) ),
+                    radial-gradient( closest-side, rgba(0,255,153,1), rgba(0,204,204,0) ),
+                    radial-gradient( closest-side, rgba(0,204,204,1), rgba(0,102,255,0) ),
+                    radial-gradient( closest-side, rgba(0,102,255,1), rgba(64,64,255,0) ),
+                    radial-gradient( closest-side, rgba(64,64,255,0), rgba(64,64,128,1) );
+  background-image: -webkit-radial-gradient( closest-side, rgba(255,0,0,1), rgba(255,255,0,0) ),
+                    -webkit-radial-gradient( closest-side, rgba(255,255,0,1), rgba(204,255,0,0) ),
+                    -webkit-radial-gradient( closest-side, rgba(204,255,0,1), rgba(0,255,0,0) ),
+                    -webkit-radial-gradient( closest-side, rgba(0,255,0,1), rgba(0,255,153,0) ),
+                    -webkit-radial-gradient( closest-side, rgba(0,255,153,1), rgba(0,204,204,0) ),
+                    -webkit-radial-gradient( closest-side, rgba(0,204,204,1), rgba(0,102,255,0) ),
+                    -webkit-radial-gradient( closest-side, rgba(0,102,255,1), rgba(64,64,255,0) ),
+                    -webkit-radial-gradient( closest-side, rgba(64,64,255,0), rgba(64,64,128,1) );
+  background-position: 16px 16px, 8px 8px, -16px -16px, -32px -32px, -48px -48px,
+                       -88px -88px, -112px -112px, -96px -96px;
+  background-size: 64px 64px, 96px 96px, 128px 128px, 192px 192px, 224px 224px,
+                   256px 256px, 288px 288px, 320px 320px;
+  background-clip: border-box;
+  background-repeat: no-repeat;
+}
+
+/*****************************************************************************
+* 複数グラデーション　円形グラデーション７
+******************************************************************************/
+#div7 {
+  top: 385px; left: 25px;
+  width: 250px; height: 150px;
+  border: solid 2px #FFFFFF;
+  background-color: #330000;
+  position: absolute;
+  overflow: hidden;
+}
+#div7  > span:nth-child(6) {  /* green small */
+  top: 60px; left: 190px;
+  width: 40px; height: 40px;
+  border-radius: 20px;
+  background: radial-gradient(at 30% 30%, #A7D30C, #019F62 90%, rgba(1,159,98,0) );;
+  background: -webkit-radial-gradient(30% 30%, #A7D30C, #019F62 90%, rgba(1,159,98,0) );
+  position: absolute;
+}
+#div7  > span:nth-child(5) {  /* yellow */
+  top: 60px; left: 160px;
+  width: 180px; height: 180px;
+  background: radial-gradient(closest-side, #F4F201, #E4C700 95%, rgba(228,199,0,0) );
+  background: -webkit-radial-gradient(closest-side, #F4F201, #E4C700 90%, rgba(228,199,0,0) );
+  position: absolute;
+}
+#div7  > span:nth-child(4) {  /* red large */
+  top: 10px; left: 140px;
+  width: 120px; height: 120px;
+  background: radial-gradient(closest-side, #FF5F62, #FF0162 80%, rgba(255,1,98,0));
+  background: -webkit-radial-gradient(closest-side, #FF5F62, #FF0162 80%, rgba(255,1,98,0));
+  position: absolute;
+}
+#div7  > span:nth-child(3) {  /* blue */
+  top: 70px; left: 50px;
+  width: 100px; height: 70px;
+  border-radius: 50px / 35px;
+  background: radial-gradient(at 40% 30%, #66CCFF, #3366E2 60%, rgba(0,201,255,0) );
+  background: -webkit-radial-gradient(40% 30%, #66CCFF, #3366E2 60%, rgba(0,201,255,0) );
+  position: absolute;
+}
+#div7  > span:nth-child(2) {  /* red small */
+  top: 30px; left: 10px;
+  width: 50px; height: 50px;
+  border-radius: 25px;
+  background: radial-gradient(at 30% 30%, #FF99CC, #FF0188 75%, rgba(255,1,136,0) );
+  background: -webkit-radial-gradient(30% 30%, #FF99CC, #FF0188 75%, rgba(255,1,136,0) );
+  position: absolute;
+}
+#div7  > span:nth-child(1) {  /* green large */
+  top: -70px; left: -70px;
+  width: 200px; height: 200px;
+  background: radial-gradient(closest-side, #A7D30C, #019F62 90%, rgba(1,159,98,0) );
+  background: -webkit-radial-gradient(closest-side, #A7D30C, #019F62 90%, rgba(1,159,98,0) );
+  position: absolute;
+}
+
+/*****************************************************************************
+* 四角形　円形グラデーション８
+******************************************************************************/
+#div8 {
+  top: 385px; left: 325px;
+  width: 250px; height: 150px;
+  border: solid 2px #FFFFFF;
+  background-color: black;
+  background: radial-gradient(closest-side, #FFFFCC 30%, #FFCC00 60%, rgba(255,0,0,0) 120%);
+  background: -webkit-radial-gradient(closest-side, #FFFFCC 30%, #FFCC00 60%, rgba(255,0,0,0) 120%);
+  position: absolute;
+}
+#div8 span {
+  top: 40px; left: 90px;
+  width: 70px; height: 70px;
+  border-radius: 35px;
+  background: radial-gradient(at 40% 40%, #FFFFFF, #EEEEFF 50%, #AAAAFF );
+  background: -webkit-radial-gradient(40% 40%, #FFFFFF, #EEEEFF 50%, #AAAAFF );
+  position: absolute;
+}
+

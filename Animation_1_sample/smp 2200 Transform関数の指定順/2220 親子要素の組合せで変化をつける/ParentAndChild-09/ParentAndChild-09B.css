@@ -1,0 +1,59 @@
+/* ParentAndChild-09B.css */
+
+/*************************************************************************************
+ * 親子の要素を組み合わせて変化をつける（０９Ｂ）。                                  *
+ * （親カラーホイールと子カラーホイールの回転の変えて変化をつける。）                *
+ *************************************************************************************/
+#stage {
+  width: 700px; height: 500px;
+  background-color: white;
+  /* border: solid 1px black; */
+  position: relative;
+}
+
+#rect1 {
+  top: 50px; left: 200px;
+  width: 300px; height: 300px;
+  border-radius: 150px;
+  position: absolute;
+}
+#rect1 img {
+  top: 0px; left: 0px;
+  width: 100%; height: 100%;
+  position: absolute;
+}
+
+#rect2 {
+  top: 75px; left: 75px;
+  width: 150px; height: 150px;
+  border-radius: 75px;
+  position: absolute;
+  
+  transform: rotateZ(-90deg);
+  -webkit-transform: rotateZ(-90deg);
+}
+#rect2 img {
+  top: 0px; left: 0px;
+  width: 100%; height: 100%;
+  position: absolute;
+}
+
+.orders09B {
+  transition: transform 10s ease-in-out;
+  -webkit-transition: -webkit-transform 10s ease-in-out;
+}
+
+#rect1:hover {
+  transform: rotateZ(720deg);
+  -webkit-transform: rotateZ(720deg);
+}
+#rect1:hover #rect2 {
+  /* rect2の変化を指定しなければrect1と一緒に回転。
+     rect2の変化としてrect1と反対向き同一角度であれば静止して見える。
+     rect2の変化としてrect1と反対向き２倍の角度であれば反対向きに回転して見える。 */
+  /* -webkit-transform: rotateZ(-90deg); */ /* rect2の変化指定なし+rect2の初角度(-90deg)。この場合は記述しなくても同様。 */
+  /* -webkit-transform: rotateZ(-810deg); */ /* rect1と反対向きに同一角度(-720deg)+rect2の初角度(-90deg) */
+  transform: rotateZ(-1530deg); /* rect1と反対向きに２倍角度(-1440deg)+rect2の初角度(-90deg) */
+  -webkit-transform: rotateZ(-1530deg); /* rect1と反対向きに２倍角度(-1440deg)+rect2の初角度(-90deg) */
+}
+

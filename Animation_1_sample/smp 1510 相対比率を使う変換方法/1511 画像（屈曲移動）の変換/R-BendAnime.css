@@ -1,0 +1,51 @@
+/* R-BendAnime.css */
+
+/* ‹ü‹ÈˆÚ“® ***************************************************************/
+#stage-wrap {
+  margin: 0%;
+  width: 100%;
+  max-width: 700px;
+//  border: 1px solid #000000;
+  position: relative;
+}
+
+#stage {
+  margin: 0%;
+  //width: 700px; //height: 350px;
+  width: 100%;
+  padding-top: 50%;
+  background-color: skyblue;
+  position: relative;
+}
+#stage img {
+  //top: 10px; //left: 10px;
+  top: 2.9%; left: 1.4%;
+  //width: 192px; //height: 147px;
+  width: 27.4%; height: auto;
+  position: absolute;
+  
+  animation: anime1 10s linear 0s infinite normal;
+  -webkit-animation: anime1 10s linear 0s infinite normal;
+}
+@keyframes anime1 {
+  0% { }
+  //20% { top: 10px; left: 500px; }
+  20% { top: 2.9%; left: 71.4%; }
+  //40% { top: 190px; left: 500px; }
+  40% { top: 54.3%; left: 71.4%; }
+  //60% { top: 30px; left: 250px; }
+  60% { top: 8.6%; left: 35.7%; }
+  //80% { top: 190px; left: 10px; }
+  80% { top: 54.3%; left: 1.4%; }
+  //100% { top: 10px;  left: 10px; }
+  100% { top: 2.9%; left: 1.4%; }
+}
+@-webkit-keyframes anime1 {
+  0% { }
+  20% { top: 2.9%; left: 71.4%; }
+  40% { top: 54.3%; left: 71.4%; }
+  60% { top: 8.6%; left: 35.7%; }
+  80% { top: 54.3%; left: 1.4%; }
+  100% { top: 2.9%; left: 1.4%; }
+}
+

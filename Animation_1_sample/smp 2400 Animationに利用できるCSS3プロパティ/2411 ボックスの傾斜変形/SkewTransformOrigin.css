@@ -1,0 +1,219 @@
+/* SkewTransformOrigin.css */
+
+#stage {
+  width: 750px; height: 520px;
+  background-color: white;
+  border: solid 1px black;
+  position: relative;
+  overflow: hidden;
+}
+
+#boundary1 {
+  top: 50px; left: 80px;
+  width: 124px; height: 430px;
+  background-color: gray;
+  position: absolute;
+}
+#boundary2 {
+  top: 50px; left: 300px;
+  width: 124px; height: 430px;
+  background-color: gray;
+  position: absolute;
+}
+#boundary3 {
+  top: 50px; left: 520px;
+  width: 124px; height: 430px;
+  background-color: gray;
+  position: absolute;
+}
+
+#button {
+  top: 10px; left: 300px;
+  width: 120px; height: 30px;
+  border: solid 1px black;
+  border-radius: 10px;
+  background-color: red;
+  text-align: center;
+  cursor: default;
+  position: absolute;
+}
+#button:hover {
+  background-color: green;
+}
+.font1 {
+  color: black;
+  font: bold 24px "ÇlÇr ÇoÉSÉVÉbÉN", Osaka, "ÉqÉâÉMÉmäpÉS Pro", Verdana;
+  line-height: 30px;
+}
+
+/* transform-origin 0% 0%  ********************************************/
+#trans1 {
+  top: 50px; left: -220px;
+  width: 120px; height: 120px;
+  border: solid 1px black;
+  background-color: orange;
+  position: absolute;
+  
+  transform-origin: 0% 0%;
+  -webkit-transform-origin: 0% 0%;
+  
+  transition: transform 3s ease-in-out;
+  -webkit-transition: -webkit-transform 3s ease-in-out;
+}
+
+#button:hover #trans1 {
+  transform: skewX(30deg);
+  -webkit-transform: skewX(30deg);
+}
+
+/* transform-origin 50% 50% Åièâä˙ílÅj **********************************/
+#trans2 {
+  top: 190px; left: -220px;
+  width: 120px; height: 120px;
+  border: solid 1px black;
+  background-color: orange;
+  position: absolute;
+  
+  transition: transform 3s ease-in-out;
+  -webkit-transition: -webkit-transform 3s ease-in-out;
+}
+#button:hover #trans2 {
+  transform: skewX(30deg);
+  -webkit-transform: skewX(30deg);
+}
+
+/* transform-origin 100% 100%  ********************************************/
+#trans3 {
+  top: 330px; left: -220px;
+  width: 120px; height: 120px;
+  border: solid 1px black;
+  background-color: orange;
+  position: absolute;
+  
+  transform-origin: 100% 100%;
+  -webkit-transform-origin: 100% 100%;
+  
+  transition: transform 3s ease-in-out;
+  -webkit-transition: -webkit-transform 3s ease-in-out;
+}
+#button:hover #trans3 {
+  transform: skewX(30deg);
+  -webkit-transform: skewX(30deg);
+}
+
+/* transform-origin 50% 0%  ********************************************/
+#trans4 {
+  top: 50px; left: 0px;
+  width: 120px; height: 120px;
+  border: solid 1px black;
+  background-color: orange;
+  position: absolute;
+  
+  transform-origin: 50% 0%;
+  -webkit-transform-origin: 50% 0%;
+  
+  transition: transform 3s ease-in-out;
+  -webkit-transition: -webkit-transform 3s ease-in-out;
+}
+
+#button:hover #trans4 {
+  transform: skewX(30deg);
+  -webkit-transform: skewX(30deg);
+}
+
+/* transform-origin 0% 50%  ********************************************/
+#trans5 {
+  top: 190px; left: 0px;
+  width: 120px; height: 120px;
+  border: solid 1px black;
+  background-color: orange;
+  position: absolute;
+  
+  transform-origin: 0% 50%;
+  -webkit-transform-origin: 0% 50%;
+  
+  transition: transform 3s ease-in-out;
+  -webkit-transition: -webkit-transform 3s ease-in-out;
+}
+#button:hover #trans5 {
+  transform: skewX(30deg);
+  -webkit-transform: skewX(30deg);
+}
+
+/* transform-origin 0% 100%  ********************************************/
+#trans6 {
+  top: 330px; left: 0px;
+  width: 120px; height: 120px;
+  border: solid 1px black;
+  background-color: orange;
+  position: absolute;
+  
+  transform-origin: 0% 100%;
+  -webkit-transform-origin: 0% 100%;
+  
+  transition: transform 3s ease-in-out;
+  -webkit-transition: -webkit-transform 3s ease-in-out;
+}
+#button:hover #trans6 {
+  transform: skewX(30deg);
+  -webkit-transform: skewX(30deg);
+}
+
+/* transform-origin 0% -20%  ********************************************/
+#trans7 {
+  top: 50px; left: 220px;
+  width: 120px; height: 120px;
+  border: solid 1px black;
+  background-color: orange;
+  position: absolute;
+  
+  transform-origin: 0% -20%;
+  -webkit-transform-origin: 0% -20%;
+  
+  transition: transform 3s ease-in-out;
+  -webkit-transition: -webkit-transform 3s ease-in-out;
+}
+
+#button:hover #trans7 {
+  transform: skewX(30deg);
+  -webkit-transform: skewX(30deg);
+}
+
+/* transform-origin 0% 120%  ********************************************/
+#trans8 {
+  top: 190px; left: 220px;
+  width: 120px; height: 120px;
+  border: solid 1px black;
+  background-color: orange;
+  position: absolute;
+  
+  transform-origin: 0% 120%;
+  -webkit-transform-origin: 0% 120%;
+  
+  transition: transform 3s ease-in-out;
+  -webkit-transition: -webkit-transform 3s ease-in-out;
+}
+#button:hover #trans8 {
+  transform: skewX(30deg);
+  -webkit-transform: skewX(30deg);
+}
+
+/* transform-origin 0px 150px  ********************************************/
+#trans9 {
+  top: 330px; left: 220px;
+  width: 120px; height: 120px;
+  border: solid 1px black;
+  background-color: orange;
+  position: absolute;
+  
+  transform-origin: 0px 150px;
+  -webkit-transform-origin: 0px 150px;
+  
+  transition: transform 3s ease-in-out;
+  -webkit-transition: -webkit-transform 3s ease-in-out;
+}
+#button:hover #trans9 {
+  transform: skewX(30deg);
+  -webkit-transform: skewX(30deg);
+}
+

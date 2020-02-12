@@ -1,0 +1,107 @@
+/* Nth-Child1.css */
+
+/*************************************************************************************
+ * 親子の要素を組み合わせて変化をつける（Nth-Child）１。                             *
+ * （子要素のdivをnth-child(n)を使用して制御する。）                                 *
+ *************************************************************************************/
+#stage {
+  width: 700px; height: 510px;
+  background-color: black;
+  position: relative;
+}
+
+#box1 {
+  top: 210px; left: 310px;
+  width: 80px; height: 80px;
+  border: solid 2px cyan;
+  position: absolute;
+  
+  transition: border-radius 3s ease-in, background-color 3s ease-in,
+              transform 3s ease-in-out;
+  -webkit-transition: border-radius 3s ease-in, background-color 3s ease-in,
+                      -webkit-transform 3s ease-in-out;
+}
+
+.children {
+  top: 0px; left: 0px;
+  width: 80px; height: 80px;
+  position: absolute;
+  opacity: 0;
+  
+  transition: opacity 3s ease-in, border-radius 3s ease-in,
+              transform 3s ease-in-out;
+  -webkit-transition: opacity 3s ease-in, border-radius 3s ease-in,
+                      -webkit-transform 3s ease-in-out;
+}
+
+#box1 > div:nth-child(1) {
+  background-color: yellow;
+}
+#box1 > div:nth-child(2) {
+  background-color: salmon;
+}
+#box1 > div:nth-child(3) {
+  background-color: yellowgreen;
+}
+#box1 > div:nth-child(4) {
+  background-color: lightgray;
+}
+#box1 > div:nth-child(5) {
+  background-color: pink;
+}
+#box1 > div:nth-child(6) {
+  background-color: orange;
+}
+#box1 > div:nth-child(7) {
+  background-color: violet;
+}
+#box1 > div:nth-child(8) {
+  background-color: skyblue;
+}
+
+#box1:hover {
+  background-color: cyan;
+  border-radius: 84px; /* 速く四角形から丸形に変形させるために、42pxではなく84pxにしている。 */
+  
+  transform: scale(1.5, 1.5);
+  -webkit-transform: scale(1.5, 1.5);
+}
+
+#box1:hover > .children {
+  opacity: 1;
+  border-radius: 80px;
+}
+
+#box1:hover > div:nth-child(1) {
+  transform: rotateZ(0deg) translateX(120px);
+  -webkit-transform: rotateZ(0deg) translateX(120px);
+}
+#box1:hover > div:nth-child(2) {
+  transform: rotateZ(45deg) translateX(120px);
+  -webkit-transform: rotateZ(45deg) translateX(120px);
+}
+#box1:hover > div:nth-child(3) {
+  transform: rotateZ(90deg) translateX(120px);
+  -webkit-transform: rotateZ(90deg) translateX(120px);
+}
+#box1:hover > div:nth-child(4) {
+  transform: rotateZ(135deg) translateX(120px);
+  -webkit-transform: rotateZ(135deg) translateX(120px);
+}
+#box1:hover > div:nth-child(5) {
+  transform: rotateZ(180deg) translateX(120px);
+  -webkit-transform: rotateZ(180deg) translateX(120px);
+}
+#box1:hover > div:nth-child(6) {
+  transform: rotateZ(225deg) translateX(120px);
+  -webkit-transform: rotateZ(225deg) translateX(120px);
+}
+#box1:hover > div:nth-child(7) {
+  transform: rotateZ(270deg) translateX(120px);
+  -webkit-transform: rotateZ(270deg) translateX(120px);
+}
+#box1:hover > div:nth-child(8) {
+  transform: rotateZ(315deg) translateX(120px);
+  -webkit-transform: rotateZ(315deg) translateX(120px);
+}
+

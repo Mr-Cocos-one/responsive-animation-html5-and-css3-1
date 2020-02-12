@@ -1,0 +1,39 @@
+/* TransitionProperty1.css */
+
+#box1 {
+  margin: 30px 0px 0px 50px;
+  width: 100px; height: 100px;
+  background-color: lightgray;
+  border: solid 5px gray;
+  
+  transition-property: all;
+  transition-duration: 2s;
+  transition-timing-function: ease-in-out;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 2s;
+  -webkit-transition-timing-function: ease-in-out;
+}
+#box1.anime1 {
+  width:150px; height:150px;
+  background-color: yellow;
+  border-color: orange;
+}
+
+#box2 {
+  margin: 30px 0px 0px 50px;
+  width: 100px; height: 100px;
+  background-color: lightgray;
+  border: solid 5px gray;
+  
+  transition-property: all;
+  transition-duration: 2s;
+  transition-timing-function: ease-in-out;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 2s;
+  -webkit-transition-timing-function: ease-in-out;
+}
+#box2:hover {
+  width:150px; height:150px;
+  background-color: pink;
+  border-color: magenta;
+}

@@ -1,0 +1,8 @@
+/* DivBox.css */
+
+#box1 {
+  margin: 30px 0px 0px 50px;
+  width: 100px; height: 100px;
+  background-color: lightgray;
+  border: solid 5px gray;
+}

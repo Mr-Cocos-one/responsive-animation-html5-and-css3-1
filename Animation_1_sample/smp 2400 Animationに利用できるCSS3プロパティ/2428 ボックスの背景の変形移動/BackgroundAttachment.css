@@ -1,0 +1,62 @@
+/* BackgroundAttachment.css */
+#stage {
+  height: 924px;
+  background-color: #FFFFFF;
+  border: solid 1px #000000;
+  position: relative;
+  
+  background-image: url("images/Earth-Asia.jpg");
+  background-position: -100px -100px;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-origin: border-box;
+  background-clip: border-box;
+  
+  overflow: auto;
+}
+
+/*****************************************************************************
+* バックグラウンド アタッチメント
+******************************************************************************/
+.rect {
+  width: 200px; height: 500px;
+  border: solid 5px rgba(0, 255, 0, 0.7);
+  border-radius: 10px;
+  position: absolute;
+  overflow: auto;
+  
+  background-image: url("images/Earth-Asia.jpg");
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  background-clip: border-box;
+}
+
+.rect2 {
+  top: 100px; left: 0px;
+  height: 800px;
+  position: absolute;
+  text-align: center;
+  color: yellow;
+  font: bold 24px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+}
+
+#div1 {
+  top: 10px; left: 10px;
+  
+  background-position: -110px -110px;
+  background-attachment: scroll;
+}
+
+#div2 {
+  top: 10px; left: 230px;
+  
+  background-position: -90px -50px;
+  background-attachment: fixed;
+}
+
+#div3 {
+  top: 10px; left: 450px;
+  
+  background-position:  -550px -110px;
+  background-attachment: local;
+}

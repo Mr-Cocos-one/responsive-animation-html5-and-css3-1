@@ -1,0 +1,62 @@
+/* Tag_EnsmallImages.css */
+
+#stage {
+  width: 600px; height: 500px;
+  background-color: black;
+  border: solid 1px black;
+  position: relative;
+}
+
+#button {
+  top: 10px; left:460px;
+  width: 120px; height: 40px;
+  border: solid 2px #CCCCCC;
+  border-radius: 10px;
+  text-align: center;
+  color: #CCCCCC;
+  line-height: 50px;
+  cursor: default;
+  position: absolute;
+}
+.font28GothicB {
+  font: bold 28px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+}
+
+#image01 {
+  top: 50px; left: -445px;
+  width: 280px; height: 210px;
+  position: absolute;
+}
+#image02 {
+  top: 50px; left: -155px;
+  width: 280px; height: 210px;
+  position: absolute;
+}
+#image03 {
+  top: 270px; left: -445px;
+  width: 280px; height: 210px;
+  position: absolute;
+}
+#image04 {
+  top: 270px; left: -155px;
+  width: 280px; height: 210px;
+  position: absolute;
+}
+
+/* imgタグに画像の動きのtransitionを指定しておく。 */
+img {
+  transition: transform 3s ease-in;
+  -webkit-transition: -webkit-transform 3s ease-in;
+}
+
+#button:hover {
+  border-color: #555555;
+  color: #555555;
+}
+
+/* imgタグを使用して、画像を一緒に縮小する。 */
+#button:hover img {
+  transform: scale(0, 0);
+  -webkit-transform: scale(0, 0);
+}
+

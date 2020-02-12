@@ -1,0 +1,122 @@
+/* BorderImageTransitionForSafari.css ( For Safari only.) */
+
+#stage {
+  width: 700px; height: 160px;
+  border: solid 1px black;
+  text-align: center;
+  font: bold 28px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+  color: black;
+  cursor: default;
+  position: relative;
+}
+
+/*************************************************************************/
+#div1 {
+  top: 30px; left: 20px;
+  position: absolute;
+}
+#div1 > span:nth-child(1) {
+  top: 0px; left: 0px;
+  width: 260px; height: 60px;
+  background-color: #FFFFCC;
+  border: solid 20px orange;
+  
+  border-image: linear-gradient( to bottom, blue, skyblue, white, 
+            skyblue, blue ) 100% stretch stretch; /* ・・・機能しません */
+  -webkit-border-image: -webkit-linear-gradient( top, blue, skyblue,
+                        white, skyblue, blue ) 100% stretch stretch;
+  
+  position: absolute;
+  opacity: 1.0;
+  
+  transition: 2s linear;
+  -webkit-transition: 2s linear;
+}
+#div1 > span:nth-child(2) {
+  top: 0px; left: 0px;
+  width: 260px; height: 60px;
+  background-color: #FFFFCC;
+  border: solid 20px orange;
+  
+  border-image: radial-gradient( white, skyblue, blue ) 100% 
+                stretch stretch; /* ・・・機能しません */
+  -webkit-border-image: -webkit-radial-gradient( white, skyblue,
+                        blue ) 100% stretch stretch;
+  
+  position: absolute;
+  opacity: 0.0;
+  
+  transition: 2s linear;
+  -webkit-transition: 2s linear;
+}
+#div1 > span:nth-child(3) {
+  top: 0px; left: 0px;
+  width: 260px; height: 60px;
+  border: solid 20px transparent;
+  background-color: transparent;
+  line-height: 60px;
+  position: absolute;
+}
+
+#div1:hover > span:nth-child(1) {
+  opacity: 0.0;
+}
+#div1:hover > span:nth-child(2) {
+  opacity: 1.0;
+}
+
+/*************************************************************************/
+#div2 {
+  top: 30px; left: 370px;
+  position: absolute;
+}
+#div2 > span:nth-child(1) {
+  top: 0px; left: 0px;
+  width: 260px; height: 60px;
+  background-color: #FFFFCC;
+  border: solid 20px orange;
+  
+  border-image: linear-gradient( 70deg, red, red 20%, white,
+       forestgreen 80%, forestgreen ) 100% stretch stretch; /* ・・・機能しません */
+  -webkit-border-image: -webkit-linear-gradient( 70deg, red, red 20%, white,
+                        forestgreen 80%, forestgreen ) 100% stretch stretch;
+  
+  position: absolute;
+  opacity: 1.0;
+  
+  transition: 2s linear;
+  -webkit-transition: 2s linear;
+}
+#div2 > span:nth-child(2) {
+  top: 0px; left: 0px;
+  width: 260px; height: 60px;
+  background-color: #FFFFCC;
+  border: solid 20px orange;
+  
+  border-image: linear-gradient( -70deg, darkviolet, darkviolet 20%, white,
+                orange 80%, orange ) 100% stretch stretch; /* ・・・機能しません */
+  -webkit-border-image: -webkit-linear-gradient( -70deg, darkviolet, darkviolet 20%,
+                        white, orange 80%, orange ) 100% stretch stretch;
+  
+  position: absolute;
+  opacity: 0.0;
+  
+  transition: 2s linear;
+  -webkit-transition: 2s linear;
+}
+#div2 > span:nth-child(3) {
+  top: 0px; left: 0px;
+  width: 260px; height: 60px;
+  border: solid 20px transparent;
+  background-color: transparent;
+  line-height: 60px;
+  position: absolute;
+}
+
+#div2:hover > span:nth-child(1) {
+  opacity: 0.0;
+}
+#div2:hover > span:nth-child(2) {
+  opacity: 1.0;
+}
+

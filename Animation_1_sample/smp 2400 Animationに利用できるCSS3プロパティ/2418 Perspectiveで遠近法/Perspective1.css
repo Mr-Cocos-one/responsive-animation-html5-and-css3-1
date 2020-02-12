@@ -1,0 +1,106 @@
+/* Perspective1.css */
+
+#stage {
+  width: 700px; height: 400px;
+  background-color: white;
+  border: solid 1px black;
+  position: relative;
+}
+
+#button {
+  top: 20px; left: 300px;
+  width: 120px; height: 50px;
+  border: solid 1px black;
+  border-radius: 10px;
+  background-color: red;
+  text-align: center;
+  cursor: default;
+  position: absolute;
+}
+.font1 {
+  color: black;
+  font: bold 28px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+  line-height: 50px;
+}
+
+#image1 {
+  top: 110px; left:-260px;
+  width: 280px; height: 210px;
+  border: solid 1px red;
+  position: absolute;
+  
+  perspective: 500px;
+  -webkit-perspective: 500px;
+  
+  perspective-origin: 50% 50%;
+  -webkit-perspective-origin: 50% 50%;
+}
+#image1 img {
+  top: 0px; left: 0px;
+  width: 100%; height: 100%;
+  position: absolute;
+  
+  transform-origin: 50% 70%;
+  -webkit-transform-origin: 50% 70%;
+  
+  transform: rotateX(30deg);
+  -webkit-transform: rotateX(30deg);
+  
+  transition: transform 3s ease-in-out;
+  -webkit-transition: -webkit-transform 3s ease-in-out;
+}
+
+#image2 {
+  top: 110px; left: 80px;
+  width: 280px; height: 210px;
+  border: solid 1px blue;
+  position: absolute;
+  
+  perspective: 800px;
+  -webkit-perspective: 800px;
+  
+  perspective-origin: 50% 50%;
+  -webkit-perspective-origin: 50% 50%;
+  
+  transition: perspective 3s ease-in-out,
+              perspective-origin 3s ease-in-out;
+  -webkit-transition: all 3s ease-in-out;
+  /* -webkit-transition: -webkit-perspective 3s ease-in-out,
+                      -webkit-perspective-origin 3s ease-in-out;
+     Safariは-webkit-transition-propertyをallで指定しないと、
+     -webkit-perspective-origin がアニメーションしない。 */
+}
+#image2 img {
+  top: 0px; left: 0px;
+  width: 100%; height: 100%;
+  position: absolute;
+  
+  transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+  
+  transform: rotateY(-20deg) rotateZ(-20deg);
+  -webkit-transform: rotateY(-20deg) rotateZ(-20deg);
+  
+  transition: transform 3s ease-in-out;
+  -webkit-transition: -webkit-transform 3s ease-in-out;
+}
+
+#button:hover {
+  background-color: green;
+}
+#button:hover #image1 img {
+  transform: rotateX(-40deg);
+  -webkit-transform: rotateX(-40deg);
+}
+#button:hover #image2 {
+  perspective: 400px;
+  -webkit-perspective: 400px;
+  
+  perspective-origin: 80% 20%;
+  -webkit-perspective-origin: 80% 20%;
+}
+#button:hover #image2 img {
+  transform: rotateY(70deg) rotateZ(30deg);
+  -webkit-transform: rotateY(70deg) rotateZ(30deg);
+}
+

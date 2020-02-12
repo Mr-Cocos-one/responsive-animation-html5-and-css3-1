@@ -1,0 +1,199 @@
+/* R-ViewFlowAnime.css */
+
+#stage-wrap {
+  margin: 0px;
+  width: 100%;
+  max-width: 600px;
+  max-width: 900px;
+  position: relative;
+}
+
+#stage {
+  //width: 600px; //height: 400px;
+  width: 100%;
+  padding-top: 66.7%;
+  background-color: #CCCCCC;
+  border: solid 1px black;
+  position: relative;
+  overflow: hidden;
+}
+
+#stage img {
+  width: 100%; height: 100%;
+}
+
+/* ãÛÇ∆éRÇÃâÊëú ********************************************************/
+#view1A {
+  //top: 14px; //left: 0px;
+  top: 3.5%; left: 0%;
+  //width: 600px; //height: 300px;
+  width: 100%; height: 75%;
+  position: absolute;
+  
+  animation: ViewAnimeA 50s linear 0s infinite normal;
+  -webkit-animation: ViewAnimeA 50s linear 0s infinite normal;
+}
+#view1B {
+  //top: 14px; //left: 600px;
+  top: 3.5%; left: 100%;
+  //width: 600px; //height: 300px;
+  width: 100%; height: 75%;
+  position: absolute;
+  
+  animation: ViewAnimeB 50s linear 0s infinite normal;
+  -webkit-animation: ViewAnimeB 50s linear 0s infinite normal;
+}
+
+/* ëóìdê¸ÇÃâÊëú *******************************************************/
+#view2A {
+  //top: 164px; //left: 0px;
+  top: 41%; left: 0%;
+  //width: 600px; //height: 84px;
+  width:100%; height: 21%;
+  position: absolute;
+  
+  animation: ViewAnimeA 20s linear 0s infinite normal;
+  -webkit-animation: ViewAnimeA 20s linear 0s infinite normal;
+}
+#view2B {
+  //top: 164px; //left: 600px;
+  top: 41%; left: 100%;
+  //width: 600px; //height: 84px;
+  width:100%; height: 21%;
+  position: absolute;
+  
+  animation: ViewAnimeB 20s linear 0s infinite normal;
+  -webkit-animation: ViewAnimeB 20s linear 0s infinite normal;
+}
+
+/* åöï®Ç∆ñÿÇÃâÊëú ****************************************************/
+#view3A {
+  //top: 194px; //left: 0px;
+  top: 48.5%; left: 0%;
+  //width: 600px; //height: 120px;
+  width: 100%; height: 30%;
+  position: absolute;
+  
+  animation: ViewAnimeA 10s linear 0s infinite normal;
+  -webkit-animation: ViewAnimeA 10s linear 0s infinite normal;
+}
+#view3B {
+  //top: 194px; //left: 600px;
+  top: 48.5%; left: 100%;
+  //width: 600px; //height: 120px;
+  width: 100%; height: 30%;
+  position: absolute;
+  
+  animation: ViewAnimeB 10s linear 0s infinite normal;
+  -webkit-animation: ViewAnimeB 10s linear 0s infinite normal;
+}
+
+@keyframes ViewAnimeA {
+  //0% { left: 0px; }
+  //100% { left: -600px; }
+  0% { left: 0%; }
+  100% { left: -100%; }
+}
+@-webkit-keyframes ViewAnimeA {
+  0% { left: 0%; }
+  100% { left: -100%; }
+}
+@keyframes ViewAnimeB {
+  //0% { left: 600px; }
+  //100% { left: 0px; }
+  0% { left: 100%; }
+  100% { left: 0%; }
+}
+@-webkit-keyframes ViewAnimeB {
+  0% { left: 100%; }
+  100% { left: 0%; }
+}
+
+/* ìdé‘ÇÃëãògÇÃâÊëú *************************************************/
+#cabin {
+  //top: 0px; //left: 0px;
+  top: 0%; left: 0%;
+  //width: 600px; //height: 400px;
+  width: 100%; height: 100%;
+  position: absolute;
+  
+  animation: CabinAnime 10s linear 0s infinite normal;
+  -webkit-animation: CabinAnime 10s linear 0s infinite normal;
+}
+@keyframes CabinAnime {
+  //0% { top: 0px; }
+  //20% { top: 0px; }
+  //21% { top: -3px; }
+ //22% { top: 0px; }
+  //23% { top: -3px; }
+  //24% { top: 0px; }
+  //25% { top: -3px; }
+  //26% { top: 0px; }
+  //40% { top: 0px; }
+  //41% { top: -3px; }
+  //42% { top: 0px; }
+  //50% { top: 0px; }
+  //51% { top: -4px; }
+  //52% { top: 0px; }
+  //53% { top: -4px; }
+  //54% { top: 0px; }
+  //55% { top: -4px; }
+  //56% { top: 0px; }
+  //57% { top: -4px; }
+  //58% { top: 0px; }
+  //80% { top: 0px; }
+  //81% { top: -3px; }
+  //82% { top: 0px; }
+  //100% { top: 0px; }
+  0% { top: 0%; }
+  20% { top: 0%; }
+  21% { top: -0.8%; }
+  22% { top: 0%; }
+  23% { top: -0.8%; }
+  24% { top: 0%; }
+  25% { top: -0.8%; }
+  26% { top: 0%; }
+  40% { top: 0%; }
+  41% { top: -0.8%; }
+  42% { top: 0%; }
+  50% { top: 0%; }
+  51% { top: -1%; }
+  52% { top: 0%; }
+  53% { top: -1%; }
+  54% { top: 0%; }
+  55% { top: -1%; }
+  56% { top: 0%; }
+  57% { top: -1%; }
+  58% { top: 0%; }
+  80% { top: 0%; }
+  81% { top: -0.8%; }
+  82% { top: 0%; }
+  100% { top: 0%; }
+}
+@-webkit-keyframes CabinAnime {
+  0% { top: 0%; }
+  20% { top: 0%; }
+  21% { top: -0.8%; }
+  22% { top: 0%; }
+  23% { top: -0.8%; }
+  24% { top: 0%; }
+  25% { top: -0.8%; }
+  26% { top: 0%; }
+  40% { top: 0%; }
+  41% { top: -0.8%; }
+  42% { top: 0%; }
+  50% { top: 0%; }
+  51% { top: -1%; }
+  52% { top: 0%; }
+  53% { top: -1%; }
+  54% { top: 0%; }
+  55% { top: -1%; }
+  56% { top: 0%; }
+  57% { top: -1%; }
+  58% { top: 0%; }
+  80% { top: 0%; }
+  81% { top: -0.8%; }
+  82% { top: 0%; }
+  100% { top: 0%; }
+}
+

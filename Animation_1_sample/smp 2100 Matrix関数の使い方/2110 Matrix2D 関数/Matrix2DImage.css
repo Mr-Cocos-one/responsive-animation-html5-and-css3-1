@@ -1,0 +1,155 @@
+/* Matrix2DImage.css */
+
+/* matrix parameters ***********************************************************************************************
+     matrix( x方向の倍率, y方向の傾斜率, x方向の傾斜率, y方向の倍率, x方向の移動距離, y方向の移動距離 );
+     を指定します。
+     matrix(1, 0, 0, 1, 0, 0);  は単位行列  --> 変化なし（初期値）
+     回転させたい時
+      ・時計回りに回転 matrix( cos, sin, -sin, cos, 0, 0 );
+         matrix(0.70710678, 0.70710678, -0.70710678, 0.70710678, 0, 0);  --> clockwise 45degree
+         matrix(0, 1, -1, 0, 0, 0);  clockwise 90degree
+         matrix(-0.01745241, -0.9998477, 0.9998477, -0.01745241, 0, 0);  --> clockwise 179degree
+      ・反時計回りに回転 matrix( cos, -sin, sin, cos, 0, 0 );
+         matrix(0.70710678, -0.70710678, 0.70710678, 0.70710678, 0, 0);  --> counter clockwise 45degree
+         matrix(0, -1, 1, 0, 0, 0);  --> counter clockwise 90degree
+         matrix(-1, 0, 0, -1, 0, 0);  --> counter clockwise 180degree
+*********************************************************************************************************************/
+
+#stage {
+  width: 700px; height: 550px;
+  background-color: white;
+  border: solid 1px black;
+  position: relative;
+  overflow: hidden;
+}
+
+#button {
+  top: 10px; left: 300px;
+  width: 120px; height: 50px;
+  border: solid 1px black;
+  border-radius: 10px;
+  background-color: red;
+  text-align: center;
+  cursor: default;
+  position: absolute;
+}
+
+.font1 {
+  color: black;
+  font: bold 28px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+  line-height: 50px;
+}
+
+#image1 {
+  top: 60px; left:-200px;
+  width: 180px; height: 135px;
+  border: solid 1px red;
+  position: absolute;
+}
+#image1 img {
+  top: 0px; left: 0px;
+  width: 100%; height: 100%;
+  position: absolute;
+  
+  transition: transform 3s ease-in-out;
+  -webkit-transition: -webkit-transform 3s ease-in-out;
+}
+
+#image2 {
+  top: 60px; left: 130px;
+  width: 180px; height: 135px;
+  border: solid 1px blue;
+  position: absolute;
+}
+#image2 img {
+  top: 0px; left: 0px;
+  width: 100%; height: 100%;
+  position: absolute;
+  
+  transition: transform 3s ease-in-out;
+  -webkit-transition: -webkit-transform 3s ease-in-out;
+}
+
+#image3 {
+  top: 220px; left:-200px;
+  width: 180px; height: 135px;
+  border: solid 1px green;
+  position: absolute;
+}
+#image3 img {
+  top: 0px; left: 0px;
+  width: 100%; height: 100%;
+  position: absolute;
+  
+  transition: transform 3s ease-in-out;
+  -webkit-transition: -webkit-transform 3s ease-in-out;
+}
+
+#image4 {
+  top: 380px; left:-200px;
+  width: 180px; height: 135px;
+  border: solid 1px magenta;
+  position: absolute;
+  
+  transition: transform 3s ease-in-out;
+  -webkit-transition: -webkit-transform 3s ease-in-out;
+}
+#image4 img {
+  top: 0px; left: 0px;
+  width: 100%; height: 100%;
+  position: absolute;
+  
+  transition: transform 3s ease-in-out;
+  -webkit-transition: -webkit-transform 3s ease-in-out;
+}
+
+#button:hover {
+  background-color: green;
+}
+/**********************************************************************************
+ * 変形マトリックス                                                               *
+ * （ｘ軸方向を0.8倍に縮小し、ｙ軸方向を1.2倍に拡大、ｙ軸方向に0.3倍傾斜および    *
+ *   ｘ軸方向に0.2倍傾斜させます。）                                              *
+ **********************************************************************************/
+#button:hover div#image1 img {
+  transform: matrix( 0.8, 0.3, 0.2, 1.2, 0, 0 );
+  -webkit-transform: matrix( 0.8, 0.3, 0.2, 1.2, 0, 0 );
+}
+/**********************************************************************************
+ * 回転マトリックス                                                               *
+ * （時計回りに30度回転させます。）                                               *
+ **********************************************************************************/
+#button:hover div#image2 img {
+  transform: matrix( 0.8660254, 0.5, -0.5, 0.8660254, 0, 0 );
+  -webkit-transform: matrix( 0.8660254, 0.5, -0.5, 0.8660254, 0, 0 );
+}
+/* 合成パターン１ *****************************************************************
+ * matrixを２つ書けないため、回転を伴う場合は、matrixで変形しrotateZで回転させ    *
+ * ます。この場合matrixを先にrotateZを後に書きます。                              *
+ * （ｘ軸方向を0.8倍に縮小し、左右反転、ｙ軸方向を1.2倍に拡大、ｙ軸方向に         *
+ *   0.3倍傾斜、ｘ軸方向に0.2倍傾斜、ｘ軸の正方向（右）へ300px、ｙ軸の            *
+ *   負方向（上）へ30px移動。合わせて反時計回りに30度回転を同時に行います。）     *
+ **********************************************************************************/
+#button:hover div#image3 img {
+  transform: matrix( -0.8, 0.3, 0.2, 1.2, 300, -30 ) rotateZ(-30deg);
+  -webkit-transform: matrix( -0.8, 0.3, 0.2, 1.2, 300, -30 ) rotateZ(-30deg);
+}
+/* 合成パターン２ *****************************************************************
+ * matrixを２つ使う場合は、親ボックス（div#image4）と子ボックス（div#image4 img） *
+ * で変形のmatrixと回転のmatrixを分けて記述すれば、動きが合成されます。           *
+ * （ｘ軸方向を0.8倍に縮小し、左右反転、ｙ軸方向を1.2倍に拡大、ｙ軸方向に         *
+ *   0.3倍傾斜、ｘ軸方向に0.2倍傾斜、ｘ軸の正方向（右）へ300px、ｙ軸の            *
+ *   負方向（上）へ30px移動。合わせて反時計回りに30度回転を同時に行います。）     *
+ **********************************************************************************/
+#button:hover div#image4 {
+  transform: matrix( -0.8, 0.3, 0.2, 1.2, 300, -30 );
+  -webkit-transform: matrix( -0.8, 0.3, 0.2, 1.2, 300, -30 );
+}
+#button:hover div#image4 img {
+  transform: matrix( 0.8660254, -0.5, 0.5, 0.8660254, 0, 0 );
+  -webkit-transform: matrix( 0.8660254, -0.5, 0.5, 0.8660254, 0, 0 );
+}
+
+
+
+

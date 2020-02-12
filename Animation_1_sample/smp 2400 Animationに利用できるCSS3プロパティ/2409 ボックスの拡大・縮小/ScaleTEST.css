@@ -1,0 +1,109 @@
+/* ScaleTEST.css */
+#stage {
+  width: 600px; height: 300px;
+  background-color: black;
+  border: solid 1px black;
+}
+
+#button {
+  margin: 20px 0px 0px 20px;
+  width: 120px; height: 50px;
+  border: solid 1px black;
+  border-radius: 10px;
+  background-color: red;
+  text-align: center;
+  cursor: default;
+  position: absolute;
+}
+
+#Pierrot1 {
+  top: 110px; left: 10px;
+  width: 88px; height: 117px;
+  position: absolute;
+  
+  -webkit-transition: -webkit-transform 2s linear;
+  transition: transform 2s linear;
+}
+#Pierrot1 img {
+  top: 0px; left: 0px;
+  width: 100%; height: 100%;
+  position: absolute;
+}
+
+#Pierrot2 {
+  top: 110px; left: 110px;
+  width: 88px; height: 117px;
+  position: absolute;
+  -webkit-transition: -webkit-transform 2s linear;
+  transition: transform 2s linear;
+}
+#Pierrot2 img {
+  top: 0px; left: 0px;
+  width: 100%; height: 100%;
+  position: absolute;
+}
+
+#Pierrot3 {
+  top: 110px; left: 210px;
+  width: 88px; height: 117px;
+  position: absolute;
+  -webkit-transition: -webkit-transform 2s linear;
+  transition: transform 2s linear;
+}
+#Pierrot3 img {
+  top: 0px; left: 0px;
+  width: 100%; height: 100%;
+  position: absolute;
+}
+
+#Pierrot4 {
+  top: 110px; left: 310px;
+  width: 88px; height: 117px;
+  position: absolute;
+  -webkit-transition: -webkit-transform 2s linear;
+  transition: transform 2s linear;
+}
+#Pierrot4 img {
+  top: 0px; left: 0px;
+  width: 100%; height: 100%;
+  position: absolute;
+}
+
+#Pierrot5 {
+  top: 110px; left: 410px;
+  width: 88px; height: 117px;
+  position: absolute;
+  -webkit-transition: -webkit-transform 2s linear;
+  transition: transform 2s linear;
+}
+#Pierrot5 img {
+  top: 0px; left: 0px;
+  width: 100%; height: 100%;
+  position: absolute;
+}
+
+#button:hover {
+  background-color: green;
+}
+#button:hover div#Pierrot2 {
+  -webkit-transform: scale(0, 0);
+  transform: scale(0, 0);
+}
+#button:hover div#Pierrot3 {
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+}
+#button:hover div#Pierrot4 {
+  -webkit-transform: scaleZ(0.5);
+  transform: scaleZ(0.5);
+}
+#button:hover div#Pierrot5 {
+  -webkit-transform: scale(-1.8, -1.8);
+  transform: scale(-1.8, -1.8);
+}
+
+.font1 {
+  color: black;
+  font: bold 28px "‚l‚r ‚oƒSƒVƒbƒN", Osaka, "ƒqƒ‰ƒMƒmŠpƒS Pro", Verdana;
+  line-height: 50px;
+}

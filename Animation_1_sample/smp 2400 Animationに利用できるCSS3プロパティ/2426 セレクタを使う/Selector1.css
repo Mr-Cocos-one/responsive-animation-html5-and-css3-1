@@ -1,0 +1,21 @@
+/* Selector1.css */
+
+div {
+  top: 100px; left: 100px;
+  width: 100px; height: 100px;
+  background-color: yellow;
+  position: absolute;
+}
+
+div:hover {
+  background-color: red;
+}
+
+#idSelector:hover {
+  background-color: green;
+}
+
+.classSelector:hover {
+  background-color: blue;
+}
+

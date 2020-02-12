@@ -1,0 +1,71 @@
+/* PositionTopLeft.css */
+
+#stage {
+  margin: 0px;
+  width: 450px; height: 400px;
+  background-color: white;
+  border: solid 1px black;
+  position: relative;
+}
+
+#box1 {
+  top: 50px; left: 50px;
+  width: 100px; height: 100px;
+  background-color: lightgray;
+  border: solid 5px gray;
+  text-align: center;
+  position: absolute;
+}
+#box1.anime1 {
+  width: 120px; height: 120px;
+  background-color: yellow;
+  border-color: orange;
+}
+
+#box2 {
+  top: 200px; left: 50px;
+  width: 100px; height: 100px;
+  background-color: lightgray;
+  border: solid 5px gray;
+  text-align: center;
+  position: absolute;
+}
+#box2:hover {
+  width: 120px; height: 120px;
+  background-color: pink;
+  border-color: magenta;
+}
+
+#box3 {
+  top: 50px; left: 220px;
+  width: 100px; height: 100px;
+  background-color: lightgray;
+  border: solid 5px gray;
+  text-align: center;
+  position: absolute;
+}
+#box3.anime3 {
+  left: 300px;
+  background-color: lightgreen;
+  border-color: limegreen;
+}
+
+#box4 {
+  top: 200px; left: 220px;
+  width: 100px; height: 100px;
+  background-color: lightgray;
+  border: solid 5px gray;
+  text-align: center;
+  position: absolute;
+}
+#box4:hover {
+  left: 300px;
+  background-color: skyblue;
+  border-color: blue;
+}
+
+.font1 {
+  color: black;
+  font: bold 28px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+  line-height: 100px;
+}

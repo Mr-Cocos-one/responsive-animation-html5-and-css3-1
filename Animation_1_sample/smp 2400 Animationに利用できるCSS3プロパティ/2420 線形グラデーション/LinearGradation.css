@@ -1,0 +1,157 @@
+/* LinearGradation.css */
+
+#stage {
+  width: 600px; height: 400px;
+  background-color: #000000;
+  position: relative;
+}
+
+/*****************************************************************************
+* 縞模様　線形グラデーション１
+******************************************************************************/
+#div1 {
+  top: 23px; left: 18px;
+  width: 160px; height: 150px;
+  border: solid 2px #FFFFFF;
+  position: absolute;
+  
+  /* background-image: repeating-linear-gradient( 45deg, blue 20%, yellow 40% ),  NG
+                    repeating-linear-gradient( 135deg, blue 20%, yellow 40% ),    NG
+                    repeating-linear-gradient( 45deg, blue 20%, yellow 40% ),     NG
+                    repeating-linear-gradient( 135deg, blue 20%, yellow 40% );    NG */
+  background-image: repeating-linear-gradient( 45deg, blue 20%, yellow 40% ),
+                    repeating-linear-gradient( 135deg, yellow 20%, blue 40% ),
+                    repeating-linear-gradient( 45deg, blue 20%, yellow 40% ),
+                    repeating-linear-gradient( 135deg, yellow 20%, blue 40% );
+  background-image: -webkit-repeating-linear-gradient( 45deg, blue 20%, yellow 40% ),
+                    -webkit-repeating-linear-gradient( 135deg, blue 20%, yellow 40% ),
+                    -webkit-repeating-linear-gradient( 45deg, blue 20%, yellow 40% ),
+                    -webkit-repeating-linear-gradient( 135deg, blue 20%, yellow 40% );
+  background-position: 0px 0px, 40px 0px, 80px 0px, 120px 0px;
+  background-size: 40px 150px;
+  background-clip: border-box;
+  background-repeat: no-repeat;
+}
+/*****************************************************************************
+* 角丸四角形　線形グラデーション２
+******************************************************************************/
+#div2 {
+  top: 23px; left: 223px;
+  width: 150px; height: 150px;
+  border: solid 2px #FFFFFF;
+  border-radius: 24px;
+  background: linear-gradient( to right bottom, darkcyan, aquamarine );
+  background: -webkit-linear-gradient( left top, darkcyan, aquamarine );
+  position: absolute;
+}
+#div2 > span:nth-child(1) {
+  top: 25px; left: 25px;
+  width: 100px; height: 100px;
+  border-radius: 10px;
+  background: linear-gradient( to right bottom, mistyrose, deeppink );
+  background: -webkit-linear-gradient( left top, mistyrose, deeppink );
+  position: absolute;
+}
+#div2 > span:nth-child(2) {
+  top: 50px; left: 50px;
+  width: 50px; height: 50px;
+  border-radius: 5px;
+  background: linear-gradient( to right bottom, orangered, khaki );
+  background: -webkit-linear-gradient( left top, orangered, khaki );
+  position: absolute;
+}
+/*****************************************************************************
+* 丸形　線形グラデーション３
+******************************************************************************/
+#div3 {
+  top: 25px; left: 418px;
+  width: 160px; height: 160px;
+  border: solid 2px #FFFFFF;
+  border-radius: 84px;
+  background: linear-gradient( to bottom, #00F, #AFF 50%, #FAF 50%, #F00 );
+  background: -webkit-linear-gradient( top, #00F, #AFF 50%, #FAF 50%, #F00 );
+  position: absolute;
+}
+/*****************************************************************************
+* 四角形　線形グラデーション４
+******************************************************************************/
+#div4 {
+  top: 225px; left: 25px;
+  width: 150px; height: 150px;
+  position: absolute;
+  
+  background-image: linear-gradient(#CCC, #000, #CCC),
+                    linear-gradient( to right, #CCC, #000, #CCC),
+                    linear-gradient( #F00, #FF0, #0F0, #0FF, #00F, #F0F );
+  background-image: -webkit-linear-gradient(#CCC, #000, #CCC),
+                    -webkit-linear-gradient( left, #CCC, #000, #CCC),
+                    -webkit-linear-gradient( #F00, #FF0, #0F0, #0FF, #00F, #F0F );
+  background-position: 65px 15px, 15px 65px, 0px 0px;
+  background-size: 20px 120px, 120px 20px, 150px 150px;
+  background-clip: border-box;
+  background-repeat: no-repeat;
+}
+
+/*****************************************************************************
+* 角丸四角形　線形グラデーション５
+******************************************************************************/
+#div5 {
+  top: 225px; left: 225px;
+  width: 150px; height: 150px;
+  border-radius: 20px;
+  background: linear-gradient( 135deg, #FFD700, #D2691E);
+  background: -webkit-linear-gradient( -45deg, #FFD700, #D2691E );
+  position: absolute;
+}
+ #div5 > span:nth-child(1) {
+  top: 10px; left: 10px;
+  width: 65px; height: 65px;
+  border-radius: 15px 0px 0px 0px / 15px 0px 0px 0px;
+  background: linear-gradient( 135deg, #0CF, #FFF );
+  background: -webkit-linear-gradient( -45deg, #0CF, #FFF );
+  position: absolute;
+}
+#div5 > span:nth-child(2) {
+  top: 10px; left: 75px;
+  width: 65px; height: 65px;
+  border-radius: 0px 15px 0px 0px / 0px 15px 0px 0px;
+  background: linear-gradient( 225deg, #F00, #FFF );
+  background: -webkit-linear-gradient( -135deg, #F00, #FFF );
+  position: absolute;
+}
+#div5 > span:nth-child(3) {
+  top: 75px; left: 75px;
+  width: 65px; height: 65px;
+  border-radius: 0px 0px 15px 0px / 0px 0px 15px 0px;
+  background: linear-gradient( -45deg, #00F, #FFF );
+  background: -webkit-linear-gradient( 135deg, #00F, #FFF );
+  position: absolute;
+}
+#div5 > span:nth-child(4) {
+  top: 75px; left: 10px;
+  width: 65px; height: 65px;
+  border-radius: 0px 0px 0px 15px / 0px 0px 0px 15px;
+  background: linear-gradient( 45deg, #0F0, #FFF );
+  background: -webkit-linear-gradient( 45deg, #0F0, #FFF );
+  position: absolute;
+}
+/*****************************************************************************
+* 縞模様　線形グラデーション６
+******************************************************************************/
+#div6 {
+  top: 225px; left: 425px;
+  width: 150px; height: 150px;
+  position: absolute;
+  
+  background-image: repeating-linear-gradient( mistyrose, lightpink 5%, deeppink 10% ),
+                    repeating-linear-gradient( to right, aquamarine, aqua 5%, lightseagreen 10% ),
+                    linear-gradient( to right bottom, red, orange, yellow );
+  background-image: -webkit-repeating-linear-gradient( mistyrose, lightpink 5%, deeppink 10% ),
+                    -webkit-repeating-linear-gradient( left, aquamarine, aqua 5%, lightseagreen 10% ),
+                    -webkit-linear-gradient( left top, red, orange, yellow );
+  background-position: 0px 0px, 50px 75px, 50px 0px;
+  background-size: 50px 150px, 100px 75px, 20px 15px;
+  background-clip: border-box;
+  background-repeat: no-repeat, no-repeat, repeat;
+}
+

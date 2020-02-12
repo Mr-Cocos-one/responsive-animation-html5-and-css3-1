@@ -1,0 +1,68 @@
+/* WindingAnime1.css */
+
+#stage {
+  width: 700px; height: 400px;
+  background-color: skyblue;
+  position: relative;
+  overflow: hidden;
+}
+
+#boxX {
+  top: 0px; left: -64px;
+  width: 64px; height: 400px;
+  /* border: 1px solid red; */
+  position: absolute;
+  
+  animation: moveXAnime 12s linear 0s infinite normal;
+  -webkit-animation: moveXAnime 12s linear 0s infinite normal;
+}
+@keyframes moveXAnime {
+  0% { }
+  100% { left: 700px; }
+}
+@-webkit-keyframes moveXAnime {
+  0% { }
+  100% { left: 700px; }
+}
+
+#boxY {
+  top: 50px; left: 0px;
+  width: 64px; height: 35px;
+  /* border: 1px solid red; */
+  position: absolute;
+  
+  animation: moveYAnime 3s ease-in-out 0s infinite alternate;
+  -webkit-animation: moveYAnime 3s ease-in-out 0s infinite alternate;
+}
+@keyframes moveYAnime {
+  0% { }
+  100% { top: 315px; }
+}
+@-webkit-keyframes moveYAnime {
+  0% { }
+  100% { top: 315px; }
+}
+
+#boxY img {
+  top: 0px; left: 0px;
+  width: 64px; height: 35px;
+  position: absolute;
+  
+  animation: rotateAnime 6s linear 0s infinite normal;
+  -webkit-animation: rotateAnime 6s linear 0s infinite normal;
+}
+@keyframes rotateAnime {
+  0% { transform: rotateZ(0deg); animation-timing-function: ease-out;}
+  25% { transform: rotateZ(60deg); animation-timing-function: ease-in; }
+  50% { transform: rotateZ(0deg); animation-timing-function: ease-out; }
+  75% { transform: rotateZ(-60deg); animation-timing-function: ease-in; }
+  100% { transform: rotateZ(0deg); }
+}
+@-webkit-keyframes rotateAnime {
+  0% { -webkit-transform: rotateZ(0deg); -webkit-animation-timing-function: ease-out;}
+  25% { -webkit-transform: rotateZ(60deg); -webkit-animation-timing-function: ease-in; }
+  50% { -webkit-transform: rotateZ(0deg); -webkit-animation-timing-function: ease-out; }
+  75% { -webkit-transform: rotateZ(-60deg); -webkit-animation-timing-function: ease-in; }
+  100% { -webkit-transform: rotateZ(0deg); }
+}
+

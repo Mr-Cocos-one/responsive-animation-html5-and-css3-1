@@ -1,0 +1,165 @@
+/* ParentAndChild-07CClick */
+
+/*************************************************************************************
+ * 親子の要素を組み合わせて変化をつける（０７ＣClick）。                             *
+ * （親要素から多数の子要素が螺旋運動及び四角から丸へ変形しながら飛び出した後、      *
+ * Ｚ軸回転とＹ軸回転する。ただし、clickをトリガーにすれば戻りはない。）             *
+ *************************************************************************************/
+#stage {
+  width: 700px; height: 510px;
+  background-color: black;
+  /* border: solid 1px black; */
+  position: relative;
+  overflow: hidden;
+}
+
+#wrap2 {
+  top: 210px; left: 310px;
+  width: 84px; height: 84px;
+  position: absolute;
+  
+  transition: transform 12s ease-in-out 3s;
+  -webkit-transition: -webkit-transform 12s ease-in-out 3s;
+}
+
+#wrap {
+  top: 0px; left: 0px;
+  width: 84px; height: 84px;
+  position: absolute;
+  
+  transition: transform 12s ease-in-out 3s;
+  -webkit-transition: -webkit-transform 12s ease-in-out 3s;
+}
+
+#box1 {
+  top: 0px; left: 0px;
+  width: 80px; height: 80px;
+  border: solid 2px cyan;
+  position: absolute;
+  
+  transition: border-radius 3s ease-in, background-color 3s ease-in, transform 3s ease-in-out;
+  -webkit-transition: border-radius 3s ease-in, background-color 3s ease-in, -webkit-transform 3s ease-in-out;
+}
+
+#rect1 {
+  background-color: yellow;
+}
+
+#rect2 {
+  background-color: salmon;
+}
+
+#rect3 {
+  background-color: yellowgreen;
+}
+
+#rect4 {
+  background-color: lightgray;
+}
+
+#rect5 {
+  background-color: pink;
+}
+
+#rect6 {
+  background-color: orange;
+}
+
+#rect7 {
+  background-color: violet;
+}
+
+#rect8 {
+  background-color: skyblue;
+}
+
+.orders07 {          /* #rect1～#rect8の共通スタイル */
+  top: 0px; left: 0px;
+  width: 80px; height: 80px;
+  position: absolute;
+  opacity: 0;
+  
+  transition: opacity 3s ease-in, border-radius 3s ease-in, transform 3s ease-in-out;
+  -webkit-transition: opacity 3s ease-in, border-radius 3s ease-in,  -webkit-transform 3s ease-in-out;
+}
+
+#wrap2.anime1 {
+  transform: rotateY(360deg);
+  -webkit-transform: rotateY(360deg);
+}
+
+#wrap2.anime1 #wrap {
+  transform: rotateZ(720deg);
+  -webkit-transform: rotateZ(720deg);
+}
+
+#wrap2.anime1 #box1 {
+  background-color: cyan;
+  border-radius: 84px; /* 速く四角形から丸形に変形させるために、42pxではなく84pxにしている。 */
+  
+  transform: scale(1.5, 1.5);
+  -webkit-transform: scale(1.5, 1.5);
+}
+
+#wrap2.anime1 .orders07 {    /* #rect1～#rect8の共通スタイルをclassセレクタ.orders07で一緒に変化させる */
+  opacity: 1;
+  border-radius: 80px;
+}
+
+#wrap2.anime1 #rect1 {
+  opacity: 1;
+  border-radius: 80px;
+  
+  transform: rotateZ(0deg) translateX(120px);
+  -webkit-transform: rotateZ(0deg) translateX(120px);
+}
+#wrap2.anime1 #rect2 {
+  opacity: 1;
+  border-radius: 80px;
+  
+  transform: rotateZ(45deg) translateX(120px);
+  -webkit-transform: rotateZ(45deg) translateX(120px);
+}
+#wrap2.anime1 #rect3 {
+  opacity: 1;
+  border-radius: 80px;
+  
+  transform: rotateZ(90deg) translateX(120px);
+  -webkit-transform: rotateZ(90deg) translateX(120px);
+}
+#wrap2.anime1 #rect4 {
+  opacity: 1;
+  border-radius: 80px;
+  
+  transform: rotateZ(135deg) translateX(120px);
+  -webkit-transform: rotateZ(135deg) translateX(120px);
+}
+#wrap2.anime1 #rect5 {
+  opacity: 1;
+  border-radius: 80px;
+  
+  transform: rotateZ(180deg) translateX(120px);
+  -webkit-transform: rotateZ(180deg) translateX(120px);
+}
+#wrap2.anime1 #rect6 {
+  opacity: 1;
+  border-radius: 80px;
+  
+  transform: rotateZ(225deg) translateX(120px);
+  -webkit-transform: rotateZ(225deg) translateX(120px);
+}
+#wrap2.anime1 #rect7 {
+  opacity: 1;
+  border-radius: 80px;
+  
+  transform: rotateZ(270deg) translateX(120px);
+  -webkit-transform: rotateZ(270deg) translateX(120px);
+}
+#wrap2.anime1 #rect8 {
+  opacity: 1;
+  border-radius: 80px;
+  
+  transform: rotateZ(315deg) translateX(120px);
+  -webkit-transform: rotateZ(315deg) translateX(120px);
+}
+

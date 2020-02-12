@@ -1,0 +1,90 @@
+/* M-linearAnime3.css */
+
+/* éŒÇﬂà⁄ìÆÅAägëÂ ********************************************************/
+/*******************************************************************/
+/* screen width over 980px (Base)                                  */
+/*******************************************************************/
+#stage {
+  margin: 0px;
+  //width: 700px; //height: 300px;
+  width: 1000px; height: 429px;
+  background-color: skyblue;
+  position: relative;
+}
+#stage img {
+  //top: 10px; //left: 10px;
+  top: 14px; left: 14px;
+  //width: 96px; //height: 73px;
+  width: 137px; height: 104px;
+  position: absolute;
+  
+  transform: rotateZ(20deg);
+  -webkit-transform: rotateZ(20deg);
+  
+  animation: anime3 5s ease-in-out 0s 3 normal;
+  -webkit-animation: anime3 5s ease-in-out 0s 3 normal;
+}
+@keyframes anime3 {
+  0% { }
+  //100% { top: 140px; left: 500px; width: 192px; height: 147px; }
+  100% { top: 200px; left: 715px; width: 275px; height: 210px; }
+}
+@-webkit-keyframes anime3 {
+  0% { }
+  100% { top: 200px; left: 715px; width: 275px; height: 210px; }
+}
+
+
+/*******************************************************************/
+/* screen width from 600px to 979px                                */
+/*******************************************************************/
+@media only screen and (min-width:600px) and (max-width:979px) {
+  #stage {
+    width: 700px; height: 300px;
+  }
+  #stage img {
+    top: 10px; left: 10px;
+    width: 96px; height: 73px;
+    
+    animation: anime3-m 5s ease-in-out 0s 3 normal;
+    -webkit-animation: anime3-m 5s ease-in-out 0s 3 normal;
+  }
+  @keyframes anime3-m {
+    0% { }
+    100% { top: 140px; left: 500px; width: 192px; height: 147px; }
+  }
+  @-webkit-keyframes anime3-m {
+    0% { }
+    100% { top: 140px; left: 500px; width: 192px; height: 147px; }
+  }
+}
+
+
+/*******************************************************************/
+/* screen width under 599px                                        */
+/*******************************************************************/
+@media only screen and (max-width:599px) {
+  #stage {
+    //width: 700px; //height: 300px;
+    width: 300px; height: 129px;
+  }
+  #stage img {
+    //top: 10px; left: //10px;
+    top: 4px; left: 4px;
+    //width: 96px; //height: 73px;
+    width: 41px; height: 31px;
+    
+    animation: anime3-s 5s ease-in-out 0s 3 normal;
+    -webkit-animation: anime3-s 5s ease-in-out 0s 3 normal;
+  }
+  @keyframes anime3-s {
+    0% { }
+    //100% { top: 140px; left: 500px; width: 192px; height: 147px; }
+    100% { top: 60px; left: 215px; width: 83px; height: 63px; }
+  }
+  @-webkit-keyframes anime3-s {
+    0% { }
+    100% { top: 60px; left: 215px; width: 83px; height: 63px; }
+  }
+}
+

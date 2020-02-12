@@ -1,0 +1,67 @@
+/* MultiplyMatrix2D.css */
+
+#stage {
+  width: 700px; height: 550px;
+  border: solid 1px black;
+  position: relative;
+}
+
+#button {
+  top: 10px; left: 300px;
+  width: 120px; height: 50px;
+  border: solid 1px black;
+  border-radius: 10px;
+  background-color: red;
+  text-align: center;
+  cursor: default;
+  position: absolute;
+}
+
+/************************************************************************************
+* matrix‚ğg—p‚µ‚È‚¢ê‡i‚˜•ûŒü‚Ö300pxˆÚ“®AŒv‰ñ‚è30“x‰ñ“]A•‚Æ‚‚³‚ğ2”{Šg‘åA  *
+* Y²•ûŒü‚Ö10“xŒXÎj                                                               *
+************************************************************************************/
+#box1 {
+  top: 110px; left:-200px;
+  width: 100px; height: 100px;
+  background-color: orange;
+  position: absolute;
+  
+  transition: transform 3s ease-in-out;
+  -webkit-transition: -webkit-transform 3s ease-in-out;
+}
+#button:hover #box1 {
+  transform: translateX(300px) rotateZ(30deg) scale(2, 2) skewY(10deg);
+  -webkit-transform: translateX(300px) rotateZ(30deg) scale(2, 2) skewY(10deg);
+}
+
+/***********************************************************************************
+* matrix‚ğg—p‚·‚éê‡i‚˜•ûŒü‚Ö300pxˆÚ“®AŒv‰ñ‚è30“x‰ñ“]A•‚Æ‚‚³‚ğ2”{Šg‘åA   *
+* Y²•ûŒü‚Ö10“xŒXÎjB                                                            *
+* matrix‚Å‰ñ“]AŒXÎAŠg‘å‚ğ“¯‚És‚¤‚Æ‚«‚ÍAmatrix‚ÌŠ|‚¯Z‚ª•K—vB               *
+***********************************************************************************/
+#box2 {
+  top: 310px; left: -200px;
+  width: 100px; height: 100px;
+  background-color: cyan;
+  position: absolute;
+  
+  transition: transform 3s ease-in-out;
+  -webkit-transition: -webkit-transform 3s ease-in-out;
+}
+#button:hover #box2 {
+  transform: matrix( 1.5520508, 1.311769144, -1, 1.7320508, 300, 0 );
+  -webkit-transform: matrix( 1.5520508, 1.311769144, -1, 1.7320508, 300, 0 );
+}
+
+/***************************************************************************/
+#button:hover {
+  background-color: green;
+}
+
+.font1 {
+  color: black;
+  font: bold 28px "‚l‚r ‚oƒSƒVƒbƒN", Osaka, "ƒqƒ‰ƒMƒmŠpƒS Pro", Verdana;
+  line-height: 50px;
+}
+

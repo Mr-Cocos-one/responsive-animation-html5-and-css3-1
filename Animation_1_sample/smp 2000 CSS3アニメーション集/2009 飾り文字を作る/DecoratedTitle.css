@@ -1,0 +1,211 @@
+/* DecoratedTitle.css */
+
+#stage {
+  width: 670px; height: 150px;
+  background-color: #6699FF;
+  position: relative;
+}
+#div1 {
+  padding: 0px 0px 0px 10px;
+  text-align: center;
+  font: bold 108px "‚l‚r ‚oƒSƒVƒbƒN", Osaka, "ƒqƒ‰ƒMƒmŠpƒS Pro", Verdana;
+  color: orange;
+}
+
+#div1 span {
+  /* display: inline-block; */   /* ƒeƒLƒXƒg‚ð“®‚©‚³‚È‚¢‚Ì‚Å‚±‚ÌŽw’è‚Í•s—vB */
+  /* border: 1px solid blue; */
+  /* padding: 0px 10px 0px 10px; */  /* •¶ŽšŠÔ‚ð‹ó‚¯‚éŽž‚Í¶‰E‚Ìpadding‚ðŽw’è‚·‚éB */
+  float: left;
+}
+
+/* ƒ^ *********************************************************************/
+#div1 > span:nth-child(1) {
+  text-stroke-width: 3px;
+  text-stroke-color: #000000;
+  text-fill-color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #000000;
+  -webkit-text-fill-color: transparent;
+  
+  background-image: linear-gradient(to bottom, #FF0000 20%, #DDFF00 35%, #33FF00 50%,
+                                    #00FFFF 55%, #0000FF 70%, #FF00FF 85%);
+  background-image: -webkit-linear-gradient(top, #FF0000 20%, #DDFF00 35%, #33FF00 50%,
+                                            #00FFFF 55%, #0000FF 70%, #FF00FF 85%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  
+  animation: char1anime 12s ease-in 0s infinite normal;
+  -webkit-animation: char1anime 12s ease-in 0s infinite normal;
+}
+
+/* ƒC *********************************************************************/
+#div1 > span:nth-child(2) {
+  text-stroke-width: 4px;
+  text-stroke-color: mistyrose;
+  text-fill-color: transparent;
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: mistyrose;
+  -webkit-text-fill-color: transparent;
+  
+  text-shadow: 0px 0px 20px rgba(148,0,211,1.0);
+  
+  animation: char2anime 12s ease-in 0s infinite normal;
+  -webkit-animation: char2anime 12s ease-in 0s infinite normal;
+}
+
+/* ƒg *********************************************************************/
+#div1 > span:nth-child(3) {
+  text-stroke-width: 10px;
+  text-stroke-color: transparent;
+  text-fill-color: silver;
+  -webkit-text-stroke-width: 10px;
+  -webkit-text-stroke-color: transparent;
+  -webkit-text-fill-color: silver;
+  
+  background-image: linear-gradient(to bottom, #FF0000 20%, #FFFF00 35%, #00FF00 50%,
+                                    #00FFFF 65%, #0000FF 80%, #FF00FF 100%);
+  background-image: -webkit-linear-gradient(top, #FF0000 20%, #FFFF00 35%, #00FF00 50%,
+                                            #00FFFF 65%, #0000FF 80%, #FF00FF 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  
+  animation: char3anime 12s ease-in 0s infinite normal;
+  -webkit-animation: char3anime 12s ease-in 0s infinite normal;
+}
+
+/* ƒ‹ *********************************************************************/
+#div1 > span:nth-child(4) {
+  text-stroke-width: 2px;
+  text-stroke-color: palegoldenrod;
+  text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: palegoldenrod;
+  -webkit-text-fill-color: transparent;
+  
+  background-image: linear-gradient(to bottom, darkgoldenrod 25%, gold 45%, gold 55%,
+                                    darkgoldenrod 75%);
+  background-image: -webkit-linear-gradient(top, darkgoldenrod 25%, gold 45%, gold 55%,
+                                            darkgoldenrod 75%);
+  background-position: 0px 3px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  
+  animation: char4anime 12s ease-in 0s infinite normal;
+  -webkit-animation: char4anime 12s ease-in 0s infinite normal;
+}
+
+/* •¶ *********************************************************************/
+#div1 > span:nth-child(5) {
+  text-stroke-width: 0px;
+  text-stroke-color: #000000;
+  text-fill-color: transparent;
+  -webkit-text-stroke-width: 0px;
+  -webkit-text-stroke-color: #000000;
+  -webkit-text-fill-color: transparent;
+  
+  background-image: url(images/PWDots.png);
+  background-repeat: repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  
+  animation: char5anime 12s ease-in 0s infinite normal;
+  -webkit-animation: char5anime 12s ease-in 0s infinite normal;
+}
+
+/* Žš *********************************************************************/
+#div1 > span:nth-child(6) {
+  text-stroke-width: 3px;
+  text-stroke-color: #FF9900;
+  text-fill-color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #FF9900;
+  -webkit-text-fill-color: transparent;
+  
+  background-image: url(images/DSC00007M.jpg);
+  background-repeat: repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  
+  animation: char6anime 12s ease-in 0s infinite normal;
+  -webkit-animation: char6anime 12s ease-in 0s infinite normal;
+}
+
+@keyframes char1anime {
+  0% { opacity: 0.0; }
+  10% { opacity: 0.0; }
+  20% { opacity: 1.0; }
+  100% { opacity: 1.0; }
+}
+@-webkit-keyframes char1anime {
+  0% { opacity: 0.0; }
+  10% { opacity: 0.0; }
+  20% { opacity: 1.0; }
+  100% { opacity: 1.0; }
+}
+
+@keyframes char2anime {
+  0% { opacity: 0.0;}
+  20% { opacity: 0.0;}
+  30% { opacity: 1.0;}
+  100% { opacity: 1.0;}
+}
+@-webkit-keyframes char2anime {
+  0% { opacity: 0.0;}
+  20% { opacity: 0.0;}
+  30% { opacity: 1.0;}
+  100% { opacity: 1.0;}
+}
+
+@keyframes char3anime {
+  0% { opacity: 0.0;}
+  30% { opacity: 0.0;}
+  40% { opacity: 1.0;}
+  100% { opacity: 1.0;}
+}
+@-webkit-keyframes char3anime {
+  0% { opacity: 0.0;}
+  30% { opacity: 0.0;}
+  40% { opacity: 1.0;}
+  100% { opacity: 1.0;}
+}
+
+@keyframes char4anime {
+  0% { opacity: 0.0;}
+  40% { opacity: 0.0;}
+  50% { opacity: 1.0;}
+  100% { opacity: 1.0;}
+}
+@-webkit-keyframes char4anime {
+  0% { opacity: 0.0;}
+  40% { opacity: 0.0;}
+  50% { opacity: 1.0;}
+  100% { opacity: 1.0;}
+}
+
+@keyframes char5anime {
+  0% { opacity: 0.0;}
+  50% { opacity: 0.0;}
+  60% { opacity: 1.0;}
+  100% { opacity: 1.0;}
+}
+@-webkit-keyframes char5anime {
+  0% { opacity: 0.0;}
+  50% { opacity: 0.0;}
+  60% { opacity: 1.0;}
+  100% { opacity: 1.0;}
+}
+
+@keyframes char6anime {
+  0% { opacity: 0.0;}
+  60% { opacity: 0.0;}
+  70% { opacity: 1.0;}
+  100% { opacity: 1.0;}
+}
+@-webkit-keyframes char6anime {
+  0% { opacity: 0.0;}
+  60% { opacity: 0.0;}
+  70% { opacity: 1.0;}
+  100% { opacity: 1.0;}
+}
+

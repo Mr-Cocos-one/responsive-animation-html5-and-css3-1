@@ -1,0 +1,44 @@
+/* KeyFrames.css */
+/* how to use @Kyeframe rule */
+
+#stage {
+  width: 600px; height: 160px;
+  background-color: #FFFFFF;
+  border: solid 1px #000000;
+  position: relative;
+}
+
+#ball {
+  top: 30px; left: 5px;
+  width: 100px; height: 100px;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  
+  animation: trans 5s linear, colorChg 5s linear;
+  -webkit-animation: trans 5s linear, colorChg 5s linear;
+}
+@keyframes trans {
+  from { }
+  to { left: 495px; }
+}
+@-webkit-keyframes trans {
+  from { }
+  to { left: 495px; }
+}
+
+@keyframes colorChg {
+  0% { }
+  25% { background-color: yellow; }
+  50% { background-color: lime; }
+  75% { background-color: blue; }
+  100% { background-color: magenta; }
+}
+@-webkit-keyframes colorChg {
+  0% { }
+  25% { background-color: yellow; }
+  50% { background-color: lime; }
+  75% { background-color: blue; }
+  100% { background-color: magenta; }
+}
+

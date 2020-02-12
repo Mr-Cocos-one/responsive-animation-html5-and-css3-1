@@ -1,0 +1,74 @@
+/* Rotate3DTranslate3D.css */
+
+#stage {
+  width: 700px; height: 400px;
+  background-color: white;
+  border: solid 1px black;
+  position: relative;
+}
+
+#button {
+  top: 20px; left: 300px;
+  width: 120px; height: 50px;
+  border: solid 1px black;
+  border-radius: 10px;
+  background-color: red;
+  text-align: center;
+  cursor: default;
+  position: absolute;
+}
+.font1 {
+  color: black;
+  font: bold 28px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+  line-height: 50px;
+}
+
+#image1 {
+  top: 110px; left:-260px;
+  width: 280px; height: 210px;
+  border: solid 1px red;
+  position: absolute;
+  
+  perspective: 500px;
+  -webkit-perspective: 500px;
+}
+#image1 img {
+  top: 0px; left: 0px;
+  width: 280px; height: 210px;
+  position: absolute;
+  
+  transition: transform 3s ease-in-out;
+  -webkit-transition: -webkit-transform 3s ease-in-out;
+}
+
+#image2 {
+  top: 110px; left: 70px;
+  width: 280px; height: 210px;
+  border: solid 1px blue;
+  position: absolute;
+}
+#image2 img {
+  top: 0px; left: 0px;
+  width: 280px; height: 210px;
+  position: absolute;
+  
+  transition: transform 3s ease-in-out;
+  -webkit-transition: -webkit-transform 3s ease-in-out;
+}
+
+/* hover statement **************************************************/
+#button:hover {
+  background-color: green;
+}
+
+/* rotate3d **********************************************/
+#button:hover #image1 img {
+  transform: rotate3d(0.69, 0.51, 0.51, 160deg);
+  -webkit-transform: rotate3d(0.69, 0.51, 0.51, 160deg);
+}
+
+/* translate3d *********************************************/
+#button:hover #image2 img {
+  transform: perspective(500px) translate3d(150px, 100px, -1000px);
+  -webkit-transform: perspective(500px) translate3d(150px, 100px, -1000px);
+}

@@ -1,0 +1,118 @@
+/* Transparency.css */
+
+#stage {
+  width: 700px; height: 300px;
+  border: solid 1px #000000;
+  background-color: black;
+  position: relative;
+}
+
+#button {
+  top: 20px; left: 297px;
+  width: 100px; height: 50px;
+  border: solid 3px #666666;
+  text-align: center;
+  color: #666666;
+  line-height: 55px;
+  cursor: default;
+  position: absolute;
+  
+  border-radius: 10px;
+}
+#button:hover {
+  background-color: #555555;
+  color: #000000;
+}
+.font28GothicB {
+  font: bold 28px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+}
+
+.yellowRect {
+  width: 150px; height: 150px;
+  border: solid 2px #FFFFFF;
+  background-color: #FFFF00;
+  position: absolute;
+  
+  transition: 2s linear 0s;
+  -webkit-transition: 2s linear 0s;
+}
+.blueDots {
+  top: 0px; left:0px;
+  width: 88px; height: 88px;
+  border-radius: 44px;
+  background-color:  #0000FF;
+  position: absolute;
+  
+  transition: 2s linear;
+  -webkit-transition: 2s linear;
+}
+.greenDots {
+  top: 62px; left: 62px;
+  width: 88px; height: 88px;
+  border-radius: 44px;
+  background-color: #00FF00;
+  position: absolute;
+  
+  transition: 2s linear;
+  -webkit-transition: 2s linear;
+}
+
+/********************************************************************************
+* １．親のopacityが1の場合は子のopacityは適用される。                           *
+*********************************************************************************/
+#div1 {
+  top: 90px; left: -285px;
+}
+#button:hover div#div1 > span:nth-child(1) {
+  opacity: 0.3;
+}
+#button:hover div#div1 > span:nth-child(2) {
+  opacity: 0.6;
+}
+
+/************************************************************************************
+* ２．親のopacityが子のopacityより小さい場合、親のopacityが継承され子のopacityは    *
+*     適用されない。                                                                *
+*************************************************************************************/
+#div2 {
+  top: 90px; left: -112px;
+}
+#button:hover div#div2 {
+  opacity: 0.3;
+}
+#button:hover div#div2 > span:nth-child(1) {
+  opacity: 0.5;
+}
+#button:hover div#div2 > span:nth-child(2) {
+  opacity: 1.0;
+}
+
+/**********************************************************************************
+* ３．colorは継承されないので、親だけ透明にしたい場合はcolorをtransparentにする。 *
+*     （transparent は透明のみであり、透明度の調整はできない。）                  *
+***********************************************************************************/
+#div3 {
+  top: 90px; left: 60px;
+}
+#button:hover div#div3 {
+  border-color: transparent;
+  background-color: transparent;
+}
+#button:hover div#div3 > span:nth-child(1) {
+  opacity: 0.6;
+}
+
+/************************************************************************************
+* ４．rgba値で指定すると、継承されず透明度も調整できる。                            *
+*************************************************************************************/
+#div4 {
+  top: 90px; left: 230px;
+}
+#button:hover div#div4 {
+  border-color: rgba( 255, 255, 255, 0.1 );
+  background-color: rgba( 255, 255, 0, 0.4 );
+}
+#button:hover div#div4 > span:nth-child(1) {
+  background-color: rgba( 0, 0, 255, 0.6 );
+}
+

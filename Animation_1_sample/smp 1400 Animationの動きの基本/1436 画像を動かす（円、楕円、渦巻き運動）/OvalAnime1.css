@@ -1,0 +1,53 @@
+/* OvalAnime1 */
+
+#stage {
+  width: 700px; height: 400px;
+  background-color: skyblue;
+  position: relative;
+}
+
+#slideBox {
+  top: 0px; left: 150px;
+  width: 400px; height: 400px;
+  //border: 1px solid red;    /* borderを生かすと、スライドするボックスが見えます */
+  position: absolute;
+  
+  animation: slideAnime 10s linear 0s infinite normal;
+  -webkit-animation: slideAnime 10s linear 0s infinite normal;
+}
+@keyframes slideAnime {
+  0% { left: 150px; animation-timing-function: ease-out;}
+  25% { left: 300px; animation-timing-function: ease-in;}
+  50% { left: 150px; animation-timing-function: ease-out;}
+  75% { left: 0px; animation-timing-function: ease-in;}
+  100% { left: 150px;}
+}
+@-webkit-keyframes slideAnime {
+  0% { left: 150px; -webkit-animation-timing-function: ease-out;}
+  25% { left: 300px; -webkit-animation-timing-function: ease-in;}
+  50% { left: 150px; -webkit-animation-timing-function: ease-out;}
+  75% { left: 0px; -webkit-animation-timing-function: ease-in;}
+  100% { left: 150px;}
+}
+
+#slideBox img {
+  top: 25px; left: 168px;     /* topの値を変えることで、中心からの距離を変えられます */
+  width: 64px; height: 35px;
+  /* border: solid 1px blue; */
+  position: absolute;
+  
+  transform-origin: 50% 500%;
+  -webkit-transform-origin: 50% 500%;
+  
+  animation: circleAnime 10s linear 0s infinite normal;
+  -webkit-animation: circleAnime 10s linear 0s infinite normal;
+}
+@keyframes circleAnime {
+  0% { }
+  100% { transform: rotateZ(360deg); }
+}
+@-webkit-keyframes circleAnime {
+  0% { }
+  100% { -webkit-transform: rotateZ(360deg); }
+}
+

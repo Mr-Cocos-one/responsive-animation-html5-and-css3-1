@@ -1,0 +1,655 @@
+/* BearWalk2Anime.css */
+
+#stage {
+  width: 600px; height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 背景の画像 *****************************************************/
+#views {
+  top: 0px; left: 0px;
+  width: 600px; height: 300px;
+  position: absolute;
+}
+
+#views img {
+  width: 100%; height: 100%;
+  position: absolute;
+}
+
+/* 空と山の画像 */
+#view1A {
+  top: 0px; left: 0px;
+  width: 600px; height: 300px;
+  position: absolute;
+  
+  animation: ViewAnimeA 80s linear 0s infinite normal;
+  -webkit-animation: ViewAnimeA 80s linear 0s infinite normal;
+}
+#view1B {
+  top: 0px; left: 600px;
+  width: 600px; height: 300px;
+  position: absolute;
+  
+  animation: ViewAnimeB 80s linear 0s infinite normal;
+  -webkit-animation: ViewAnimeB 80s linear 0s infinite normal;
+}
+
+/* 森の木々の画像 */
+#view2A {
+  top: 130px; left: 0px;
+  width: 600px; height: 84px;
+  position: absolute;
+  
+  animation: ViewAnimeA 50s linear 0s infinite normal;
+  -webkit-animation: ViewAnimeA 50s linear 0s infinite normal;
+}
+#view2B {
+  top: 130px; left: 600px;
+  width: 600px; height: 84px;
+  position: absolute;
+  
+  animation: ViewAnimeB 50s linear 0s infinite normal;
+  -webkit-animation: ViewAnimeB 50s linear 0s infinite normal;
+}
+
+/* 草と花の画像 */
+#view3A {
+  top: 180px; left: 0px;
+  width: 600px; height: 120px;
+  position: absolute;
+  
+  animation: ViewAnimeA 20s linear 0s infinite normal;
+  -webkit-animation: ViewAnimeA 20s linear 0s infinite normal;
+}
+#view3B {
+  top: 180px; left: 600px;
+  width: 600px; height: 120px;
+  position: absolute;
+  
+  animation: ViewAnimeB 20s linear 0s infinite normal;
+  -webkit-animation: ViewAnimeB 20s linear 0s infinite normal;
+}
+
+@keyframes ViewAnimeA {
+  0% { left: 0px; }
+  100% { left: -600px; }
+}
+@-webkit-keyframes ViewAnimeA {
+  0% { left: 0px; }
+  100% { left: -600px; }
+}
+@keyframes ViewAnimeB {
+  0% { left: 600px; }
+  100% { left: 0px; }
+}
+@-webkit-keyframes ViewAnimeB {
+  0% { left: 600px; }
+  100% { left: 0px; }
+}
+
+/* クマの歩行 *****************************************************/
+#bear {
+  top: 90px; left: -120px;
+  /* border: solid 1px #FFFFFF; */
+  position: absolute;
+  
+  animation: bearAnime 10s linear 0s infinite normal;
+  -webkit-animation: bearAnime 10s linear 0s infinite normal;
+}
+@keyframes bearAnime {
+  0% { }
+  100% { left: 640px; }
+}
+@-webkit-keyframes bearAnime {
+  0% { }
+  100% { left: 640px; }
+}
+
+#bearBody {
+  top: 0px; left: 0px;
+  width: 72px; height: 152px;
+  /* border: solid 1px red; */
+  position: absolute;
+  
+  /* Safari(for Windows)では次のアニメーションの指定がなければクマのボディが表示されない。 */
+  animation: bearBodyAnime 10s linear 0s infinite normal;
+  -webkit-animation: bearBodyAnime 10s linear 0s infinite normal;
+}
+@keyframes bearBodyAnime {
+  0% { left: 0px; }
+  100% { left: 0px; }
+}
+@-webkit-keyframes bearBodyAnime {
+  0% { left: 0px; }
+  100% { left: 0px; }
+}
+
+#bearArmLeft {
+  top: 60px; left: 15px;
+  width: 28px; height: 84px;
+  position: absolute;
+  
+  transform-origin: center 10%;
+  -webkit-transform-origin: center 10%;
+  transform: rotateZ(-45deg);
+  -webkit-transform: rotateZ(-45deg);
+  
+  animation: bearArmLeftAnime 0.6s ease-in-out 0s infinite alternate;
+  -webkit-animation: bearArmLeftAnime 0.6s ease-in-out 0s infinite alternate;
+}
+@keyframes bearArmLeftAnime {
+  0% { transform: rotateZ(-45deg); }
+  100% { transform: rotateZ(45deg); }
+}
+@-webkit-keyframes bearArmLeftAnime {
+  0% { -webkit-transform: rotateZ(-45deg); }
+  100% { -webkit-transform: rotateZ(45deg); }
+}
+
+#bearArmRight {
+  top: 60px; left: 15px;
+  width: 28px; height: 84px;
+  position: absolute;
+  
+  transform-origin: center 10%;
+  -webkit-transform-origin: center 10%;
+  transform: rotateZ(45deg);
+  -webkit-transform: rotateZ(45deg);
+  
+  animation: bearArmRightAnime 0.6s ease-in-out 0s infinite alternate;
+  -webkit-animation: bearArmRightAnime 0.6s ease-in-out 0s infinite alternate;
+}
+@keyframes bearArmRightAnime {
+  0% { transform: rotateZ(45deg); }
+  100% { transform: rotateZ(-45deg); }
+}
+@-webkit-keyframes bearArmRightAnime {
+  0% { -webkit-transform: rotateZ(45deg); }
+  100% { -webkit-transform: rotateZ(-45deg); }
+}
+
+#bearFootLeft {
+  top: 120px; left: 15px;
+  width: 50px; height: 84px;
+  position: absolute;
+  
+  transform-origin: 30% 10%;
+  -webkit-transform-origin: 30% 10%;
+  transform: rotateZ(45deg);
+  -webkit-transform: rotateZ(45deg);
+  
+  animation: bearFootLeftAnime 0.6s ease-in-out 0s infinite alternate;
+  -webkit-animation: bearFootLeftAnime 0.6s ease-in-out 0s infinite alternate;
+}
+@keyframes bearFootLeftAnime {
+  0% { transform: rotateZ(45deg); }
+  100% { transform: rotateZ(-45deg); }
+}
+@-webkit-keyframes bearFootLeftAnime {
+  0% { -webkit-transform: rotateZ(45deg); }
+  100% { -webkit-transform: rotateZ(-45deg); }
+}
+
+#bearFootRight {
+  top: 120px; left: 15px;
+  width: 50px; height: 84px;
+  position: absolute;
+  
+  transform-origin: 30% 10%;
+  -webkit-transform-origin: 30% 10%;
+  transform: rotateZ(-45deg);
+  -webkit-transform: rotateZ(-45deg);
+  
+  animation: bearFootRightAnime 0.6s ease-in-out 0s infinite alternate;
+  -webkit-animation: bearFootRightAnime 0.6s ease-in-out 0s infinite alternate;
+}
+@keyframes bearFootRightAnime {
+  0% { transform: rotateZ(-45deg); }
+  100% { transform: rotateZ(45deg); }
+}
+@-webkit-keyframes bearFootRightAnime {
+  0% { -webkit-transform: rotateZ(-45deg); }
+  100% { -webkit-transform: rotateZ(45deg); }
+}
+
+/* 白い蝶の舞い *********************************************************/
+#fly1H {
+  top: 20px; left: 610px;
+  /* border: solid 1px red; */
+  position: absolute;
+  
+  animation: fly1HAnime 40s linear 0s infinite normal;
+  -webkit-animation: fly1HAnime 40s linear 0s infinite normal;
+}
+@keyframes fly1HAnime {
+  0% { }
+  20% { left: -100px; }
+  100% { left: -100px; }
+}
+@-webkit-keyframes fly1HAnime {
+  0% { }
+  20% { left: -100px; }
+  100% { left: -100px; }
+}
+#fly1V {
+  top: 0px; left: 0px;
+  /* border: solid 1px blue; */
+  position: absolute;
+  
+  animation: fly1VAnime 40s linear 0s infinite normal;
+  -webkit-animation: fly1VAnime 40s linear 0s infinite normal;
+}
+@keyframes fly1VAnime {
+  0% { }
+  1% { top: 30px; animation-timing-function: ease-in-out; }
+  2% { top: 0px; animation-timing-function: ease-in-out; }
+  3% { top: 30px; animation-timing-function: ease-in-out; }
+  4% { top: 0px; animation-timing-function: ease-in-out; }
+  5% { top: 60px; animation-timing-function: ease-in-out; }
+  6% { top: 0px; animation-timing-function: ease-in-out; }
+  7% { top: 30px; animation-timing-function: ease-in-out; }
+  8% { top: 0px; animation-timing-function: ease-in-out; }
+  9% { top: 30px; animation-timing-function: ease-in-out; }
+  10% { top: 0px; animation-timing-function: ease-in-out; }
+  11% { top: 30px; animation-timing-function: ease-in-out; }
+  12% { top: 60px; animation-timing-function: ease-in-out; }
+  13% { top: 30px; animation-timing-function: ease-in-out; }
+  14% { top: 60px; animation-timing-function: ease-in-out; }
+  15% { top: 30px; animation-timing-function: ease-in-out; }
+  16% { top: 90px; animation-timing-function: ease-in-out; }
+  17% { top: 30px; animation-timing-function: ease-in-out; }
+  18% { top: 60px; animation-timing-function: ease-in-out; }
+  19% { top: 0px; animation-timing-function: ease-in-out; }
+  20% { top: 30px; animation-timing-function: ease-in-out; }
+  100% { top: 30px; }
+}
+@-webkit-keyframes fly1VAnime {
+  0% { }
+  1% { top: 30px; -webkit-animation-timing-function: ease-in-out; }
+  2% { top: 0px; -webkit-animation-timing-function: ease-in-out; }
+  3% { top: 30px; -webkit-animation-timing-function: ease-in-out; }
+  4% { top: 0px; -webkit-animation-timing-function: ease-in-out; }
+  5% { top: 60px; -webkit-animation-timing-function: ease-in-out; }
+  6% { top: 0px; -webkit-animation-timing-function: ease-in-out; }
+  7% { top: 30px; -webkit-animation-timing-function: ease-in-out; }
+  8% { top: 0px; -webkit-animation-timing-function: ease-in-out; }
+  9% { top: 30px; -webkit-animation-timing-function: ease-in-out; }
+  10% { top: 0px; -webkit-animation-timing-function: ease-in-out; }
+  11% { top: 30px; -webkit-animation-timing-function: ease-in-out; }
+  12% { top: 60px; -webkit-animation-timing-function: ease-in-out; }
+  13% { top: 30px; -webkit-animation-timing-function: ease-in-out; }
+  14% { top: 60px; -webkit-animation-timing-function: ease-in-out; }
+  15% { top: 30px; -webkit-animation-timing-function: ease-in-out; }
+  16% { top: 90px; -webkit-animation-timing-function: ease-in-out; }
+  17% { top: 30px; -webkit-animation-timing-function: ease-in-out; }
+  18% { top: 60px; -webkit-animation-timing-function: ease-in-out; }
+  19% { top: 0px; -webkit-animation-timing-function: ease-in-out; }
+  20% { top: 30px; -webkit-animation-timing-function: ease-in-out; }
+  100% { top: 30px; }
+}
+#butterfly1 {
+  top: 0px; left: 0px;
+  width: 48px; height: 30px;
+  position: absolute;
+  
+  transform: rotateZ(10deg);
+  -webkit-transform: rotateZ(10deg);
+  
+  /* Safari(for Windows)では次のアニメーションの指定がなければ白い蝶が表示されない。 */
+  animation: fly1BodyAnime 40s linear 0s infinite normal;
+  -webkit-animation: fly1BodyAnime 40s linear 0s infinite normal;
+}
+@keyframes fly1BodyAnime {
+  0% { }
+  100% { left: 0px; }
+}
+@-webkit-keyframes fly1BodyAnime {
+  0% { }
+  100% { left: 0px; }
+}
+
+/* トンボの旋回 *********************************************************/
+#dragonFlyH1 {
+  top: 20px; left: -260px;
+  /* border: solid 1px red; */
+  position: absolute;
+  opacity: 0.0;
+  
+  animation: dragonFlyH1Anime 40s linear 0s infinite normal;
+  -webkit-animation: dragonFlyH1Anime 40s linear 0s infinite normal;
+}
+@keyframes dragonFlyH1Anime {
+  0% { left: -260px; opacity: 0.0; }
+  24% { left: -260px; opacity: 0.0; }
+  25% { left: -260px; opacity: 1.0; }
+  45% { left: 500px; opacity: 1.0; }
+  46% { left: 500px; opacity: 0.0; }
+  100% { left: 500px; opacity: 0.0; }
+}
+@-webkit-keyframes dragonFlyH1Anime {
+  0% { left: -260px; opacity: 0.0; }
+  24% { left: -260px; opacity: 0.0; }
+  25% { left: -260px; opacity: 1.0; }
+  45% { left: 500px; opacity: 1.0; }
+  46% { left: 500px; opacity: 0.0; }
+  100% { left: 500px; opacity: 0.0; }
+}
+
+#dragonFlyH2 {;
+  top: 0px; left: 75px;
+  /* border: solid 1px blue; */
+  position: absolute;
+  
+  animation: dragonFlyH2Anime 2.5s linear 0s infinite normal;
+  -webkit-animation: dragonFlyH2Anime 2.5s linear 0s infinite normal;
+}
+@keyframes dragonFlyH2Anime {
+  0% { left: 75px; animation-timing-function: ease-out; }
+  25% { left: 150px; animation-timing-function: ease-in; }
+  50% { left: 75px; animation-timing-function: ease-out; }
+  75% { left: 0px; animation-timing-function: ease-in; }
+  100% { left: 75px; }
+}
+@-webkit-keyframes dragonFlyH2Anime {
+  0% { left: 75px; -webkit-animation-timing-function: ease-out; }
+  25% { left: 150px; -webkit-animation-timing-function: ease-in; }
+  50% { left: 75px; -webkit-animation-timing-function: ease-out; }
+  75% { left: 0px; -webkit-animation-timing-function: ease-in; }
+  100% { left: 75px; }
+}
+
+#dragonFly {
+  top: 0px; left: 0px;
+  width: 48px; height: 70px;
+  position: absolute;
+  
+  transform-origin: center 150%;
+  -webkit-transform-origin: center 150%;
+  
+  animation: rotateAnime 10s linear 0s infinite normal;
+  -webkit-animation: rotateAnime 10s linear 0s infinite normal;
+}
+@keyframes rotateAnime {
+  0% { }
+  100% { transform: rotateZ(1440deg); }
+}
+@-webkit-keyframes rotateAnime {
+  0% { }
+  100% { -webkit-transform: rotateZ(1440deg); }
+}
+
+/* 黄色い蝶の舞い *********************************************************/
+#fly2H {
+  top: 20px; left: -210px;
+  /* border: solid 1px blue; */
+  position: absolute;
+  
+  animation: fly2HAnime 40s linear 0s infinite normal;
+  -webkit-animation: fly2HAnime 40s linear 0s infinite normal;
+}
+@keyframes fly2HAnime {
+  0% { left: -210px; }
+  49% { left: -210px; }
+  50% { left: -210px; }
+  60% { left: 150px; animation-timing-function: ease-in; }
+  70% { left: 610px; animation-timing-function: ease-out; }
+  71% { left: 610px; }
+  100% { left: 610px; }
+}
+@-webkit-keyframes fly2HAnime {
+  0% { left: -210px; }
+  49% { left: -210px; }
+  50% { left: -210px; }
+  60% { left: 150px; -webkit-animation-timing-function: ease-in; }
+  70% { left: 610px; -webkit-animation-timing-function: ease-out; }
+  71% { left: 610px; }
+  100% { left: 610px; }
+}
+
+#fly2V {
+  top: 0px; left: 0px;
+  /* border: solid 1px red; */
+  position: absolute;
+  
+  animation: fly2VAnime 40s linear 0s infinite normal;
+  -webkit-animation: fly2VAnime 40s linear 0s infinite normal;
+}
+@keyframes fly2VAnime {
+  0% { top: 0px; }
+  50% { top: 0px; }
+  51% { top: 60px; animation-timing-function: ease-in-out; }
+  52% { top: 0px; animation-timing-function: ease-in-out; }
+  53% { top: 60px; animation-timing-function: ease-in-out; }
+  54% { top: 0px; animation-timing-function: ease-in-out; }
+  55% { top: 60px; animation-timing-function: ease-in-out; }
+  56% { top: 0px; animation-timing-function: ease-in-out; }
+  57% { top: 60px; animation-timing-function: ease-in-out; }
+  58% { top: 0px; animation-timing-function: ease-in-out; }
+  59% { top: 60px; animation-timing-function: ease-in-out; }
+  60% { top: 0px; animation-timing-function: ease-in-out; }
+  61% { top: 60px; animation-timing-function: ease-in-out; }
+  62% { top: 0px; animation-timing-function: ease-in-out; }
+  63% { top: 60px; animation-timing-function: ease-in-out; }
+  64% { top: 0px; animation-timing-function: ease-in-out; }
+  65% { top: 60px; animation-timing-function: ease-in-out; }
+  66% { top: 0px; animation-timing-function: ease-in-out; }
+  67% { top: 60px; animation-timing-function: ease-in-out; }
+  68% { top: 0px; animation-timing-function: ease-in-out; }
+  69% { top: 60px; animation-timing-function: ease-in-out; }
+  70% { top: 0px; animation-timing-function: ease-in-out; }
+  100% { top: 0px; }
+}
+@-webkit-keyframes fly2VAnime {
+  0% { top: 0px; }
+  50% { top: 0px; }
+  51% { top: 60px; -webkit-animation-timing-function: ease-in-out; }
+  52% { top: 0px; -webkit-animation-timing-function: ease-in-out; }
+  53% { top: 60px; -webkit-animation-timing-function: ease-in-out; }
+  54% { top: 0px; -webkit-animation-timing-function: ease-in-out; }
+  55% { top: 60px; -webkit-animation-timing-function: ease-in-out; }
+  56% { top: 0px; -webkit-animation-timing-function: ease-in-out; }
+  57% { top: 60px; -webkit-animation-timing-function: ease-in-out; }
+  58% { top: 0px; -webkit-animation-timing-function: ease-in-out; }
+  59% { top: 60px; -webkit-animation-timing-function: ease-in-out; }
+  60% { top: 0px; -webkit-animation-timing-function: ease-in-out; }
+  61% { top: 60px; -webkit-animation-timing-function: ease-in-out; }
+  62% { top: 0px; -webkit-animation-timing-function: ease-in-out; }
+  63% { top: 60px; -webkit-animation-timing-function: ease-in-out; }
+  64% { top: 0px; -webkit-animation-timing-function: ease-in-out; }
+  65% { top: 60px; -webkit-animation-timing-function: ease-in-out; }
+  66% { top: 0px; -webkit-animation-timing-function: ease-in-out; }
+  67% { top: 60px; -webkit-animation-timing-function: ease-in-out; }
+  68% { top: 0px; -webkit-animation-timing-function: ease-in-out; }
+  69% { top: 60px; -webkit-animation-timing-function: ease-in-out; }
+  70% { top: 0px; -webkit-animation-timing-function: ease-in-out; }
+  100% { top: 0px; }
+}
+
+#butterfly2 {
+  top: 0px; left: 0px;
+  width: 48px; height: 48px;
+  position: absolute;
+  
+  transform: rotateZ(90deg);
+  -webkit-transform: rotateZ(90deg);
+  
+  animation: butterfly2Anime 40s linear 0s infinite normal;
+  -webkit-animation: butterfly2Anime 40s linear 0s infinite normal;
+}
+@keyframes butterfly2Anime {
+  0% { transform: rotateZ(90deg); }
+  50% { transform: rotateZ(90deg); }
+  50.5% { transform: rotateZ(160deg); animation-timing-function: ease-in-out; }
+  51% { transform: rotateZ(90deg); animation-timing-function: ease-in-out; }
+  51.5% { transform: rotateZ(20deg); animation-timing-function: ease-in-out; }
+  52% { transform: rotateZ(90deg); animation-timing-function: ease-in-out; }
+  52.5% { transform: rotateZ(160deg); animation-timing-function: ease-in-out; }
+  53% { transform: rotateZ(90deg); animation-timing-function: ease-in-out; }
+  53.5% { transform: rotateZ(20deg); animation-timing-function: ease-in-out; }
+  54% { transform: rotateZ(90deg); animation-timing-function: ease-in-out; }
+  54.5% { transform: rotateZ(160deg); animation-timing-function: ease-in-out; }
+  55% { transform: rotateZ(90deg); animation-timing-function: ease-in-out; }
+  55.5% { transform: rotateZ(20deg); animation-timing-function: ease-in-out; }
+  56% { transform: rotateZ(90deg); animation-timing-function: ease-in-out; }
+  56.5% { transform: rotateZ(160deg); animation-timing-function: ease-in-out; }
+  57% { transform: rotateZ(90deg); animation-timing-function: ease-in-out; }
+  57.5% { transform: rotateZ(20deg); animation-timing-function: ease-in-out; }
+  58% { transform: rotateZ(90deg); animation-timing-function: ease-in-out; }
+  58.5% { transform: rotateZ(160deg); animation-timing-function: ease-in-out; }
+  59% { transform: rotateZ(90deg); animation-timing-function: ease-in-out; }
+  59.5% { transform: rotateZ(20deg); animation-timing-function: ease-in-out; }
+  60% { transform: rotateZ(90deg); animation-timing-function: ease-in-out; }
+  60.5% { transform: rotateZ(160deg); animation-timing-function: ease-in-out; }
+  61% { transform: rotateZ(90deg); animation-timing-function: ease-in-out; }
+  61.5% { transform: rotateZ(20deg); animation-timing-function: ease-in-out; }
+  62% { transform: rotateZ(90deg); animation-timing-function: ease-in-out; }
+  62.5% { transform: rotateZ(160deg); animation-timing-function: ease-in-out; }
+  63% { transform: rotateZ(90deg); animation-timing-function: ease-in-out; }
+  63.5% { transform: rotateZ(20deg); animation-timing-function: ease-in-out; }
+  64% { transform: rotateZ(90deg); animation-timing-function: ease-in-out; }
+  64.5% { transform: rotateZ(160deg); animation-timing-function: ease-in-out; }
+  65% { transform: rotateZ(90deg); animation-timing-function: ease-in-out; }
+  65.5% { transform: rotateZ(20deg); animation-timing-function: ease-in-out; }
+  66% { transform: rotateZ(90deg); animation-timing-function: ease-in-out; }
+  66.5% { transform: rotateZ(160deg); animation-timing-function: ease-in-out; }
+  67% { transform: rotateZ(90deg); animation-timing-function: ease-in-out; }
+  67.5% { transform: rotateZ(20deg); animation-timing-function: ease-in-out; }
+  68% { transform: rotateZ(90deg); animation-timing-function: ease-in-out; }
+  68.5% { transform: rotateZ(160deg); animation-timing-function: ease-in-out; }
+  69% { transform: rotateZ(90deg); animation-timing-function: ease-in-out; }
+  69.5% { transform: rotateZ(20deg); animation-timing-function: ease-in-out; }
+  70% { transform: rotateZ(90deg); animation-timing-function: ease-in-out; }
+  100% { transform: rotateZ(90deg); }
+}
+@-webkit-keyframes butterfly2Anime {
+  0% { -webkit-transform: rotateZ(90deg); }
+  50% { -webkit-transform: rotateZ(90deg); }
+  50.5% { -webkit-transform: rotateZ(160deg); -webkit-animation-timing-function: ease-in-out; }
+  51% { -webkit-transform: rotateZ(90deg); -webkit-animation-timing-function: ease-in-out; }
+  51.5% { -webkit-transform: rotateZ(20deg); -webkit-animation-timing-function: ease-in-out; }
+  52% { -webkit-transform: rotateZ(90deg); -webkit-animation-timing-function: ease-in-out; }
+  52.5% { -webkit-transform: rotateZ(160deg); -webkit-animation-timing-function: ease-in-out; }
+  53% { -webkit-transform: rotateZ(90deg); -webkit-animation-timing-function: ease-in-out; }
+  53.5% { -webkit-transform: rotateZ(20deg); -webkit-animation-timing-function: ease-in-out; }
+  54% { -webkit-transform: rotateZ(90deg); -webkit-animation-timing-function: ease-in-out; }
+  54.5% { -webkit-transform: rotateZ(160deg); -webkit-animation-timing-function: ease-in-out; }
+  55% { -webkit-transform: rotateZ(90deg); -webkit-animation-timing-function: ease-in-out; }
+  55.5% { -webkit-transform: rotateZ(20deg); -webkit-animation-timing-function: ease-in-out; }
+  56% { -webkit-transform: rotateZ(90deg); -webkit-animation-timing-function: ease-in-out; }
+  56.5% { -webkit-transform: rotateZ(160deg); -webkit-animation-timing-function: ease-in-out; }
+  57% { -webkit-transform: rotateZ(90deg); -webkit-animation-timing-function: ease-in-out; }
+  57.5% { -webkit-transform: rotateZ(20deg); -webkit-animation-timing-function: ease-in-out; }
+  58% { -webkit-transform: rotateZ(90deg); -webkit-animation-timing-function: ease-in-out; }
+  58.5% { -webkit-transform: rotateZ(160deg); -webkit-animation-timing-function: ease-in-out; }
+  59% { -webkit-transform: rotateZ(90deg); -webkit-animation-timing-function: ease-in-out; }
+  59.5% { -webkit-transform: rotateZ(20deg); -webkit-animation-timing-function: ease-in-out; }
+  60% { -webkit-transform: rotateZ(90deg); -webkit-animation-timing-function: ease-in-out; }
+  60.5% { -webkit-transform: rotateZ(160deg); -webkit-animation-timing-function: ease-in-out; }
+  61% { -webkit-transform: rotateZ(90deg); -webkit-animation-timing-function: ease-in-out; }
+  61.5% { -webkit-transform: rotateZ(20deg); -webkit-animation-timing-function: ease-in-out; }
+  62% { -webkit-transform: rotateZ(90deg); -webkit-animation-timing-function: ease-in-out; }
+  62.5% { -webkit-transform: rotateZ(160deg); -webkit-animation-timing-function: ease-in-out; }
+  63% { -webkit-transform: rotateZ(90deg); -webkit-animation-timing-function: ease-in-out; }
+  63.5% { -webkit-transform: rotateZ(20deg); -webkit-animation-timing-function: ease-in-out; }
+  64% { -webkit-transform: rotateZ(90deg); -webkit-animation-timing-function: ease-in-out; }
+  64.5% { -webkit-transform: rotateZ(160deg); -webkit-animation-timing-function: ease-in-out; }
+  65% { -webkit-transform: rotateZ(90deg); -webkit-animation-timing-function: ease-in-out; }
+  65.5% { -webkit-transform: rotateZ(20deg); -webkit-animation-timing-function: ease-in-out; }
+  66% { -webkit-transform: rotateZ(90deg); -webkit-animation-timing-function: ease-in-out; }
+  66.5% { -webkit-transform: rotateZ(160deg); -webkit-animation-timing-function: ease-in-out; }
+  67% { -webkit-transform: rotateZ(90deg); -webkit-animation-timing-function: ease-in-out; }
+  67.5% { -webkit-transform: rotateZ(20deg); -webkit-animation-timing-function: ease-in-out; }
+  68% { -webkit-transform: rotateZ(90deg); -webkit-animation-timing-function: ease-in-out; }
+  68.5% { -webkit-transform: rotateZ(160deg); -webkit-animation-timing-function: ease-in-out; }
+  69% { -webkit-transform: rotateZ(90deg); -webkit-animation-timing-function: ease-in-out; }
+  69.5% { -webkit-transform: rotateZ(20deg); -webkit-animation-timing-function: ease-in-out; }
+  70% { -webkit-transform: rotateZ(90deg); -webkit-animation-timing-function: ease-in-out; }
+  100% { -webkit-transform: rotateZ(90deg); }
+}
+
+/* ツバメの飛翔 *********************************************************/
+#swaH {
+  top: -20px; left: 610px;
+  /* border: solid 1px red; */
+  position: absolute;
+  
+  animation: swaHAnime 40s linear 0s infinite normal;
+  -webkit-animation: swaHAnime 40s linear 0s infinite normal;
+}
+@keyframes swaHAnime {
+  0% { left: 610px; }
+  75% { left: 610px; animation-timing-function: ease-in-out; }
+  84.9% { left: -70px; }
+  85.1% { left: -70px; animation-timing-function: ease-in-out; }
+  95% { left: 680px; }
+  100% { left: 680px; }
+}
+@-webkit-keyframes swaHAnime {
+  0% { left: 610px; }
+  75% { left: 610px; -webkit-animation-timing-function: ease-in-out; }
+  84.9% { left: -70px; }
+  85.1% { left: -70px; -webkit-animation-timing-function: ease-in-out; }
+  95% { left: 680px; }
+  100% { left: 680px; }
+}
+
+#swaV {
+  top: 0px; left: 0px;
+  /* border: solid 1px blue; */
+  position: absolute;
+  
+  animation: swaVAnime 40s linear 0s infinite normal;
+  -webkit-animation: swaVAnime 40s linear 0s infinite normal;
+}
+@keyframes swaVAnime {
+  0% { top: 0px; }
+  75% { top: 0px; animation-timing-function: ease-out; }
+  80% { top: 50px; animation-timing-function: ease-in; }
+  84.9% { top: 0px; }
+  85.1% { top: 0px; animation-timing-function: ease-out; }
+  90% { top: 50px; animation-timing-function: ease-in; }
+  95% { top: 0px; }
+  100% { top: 0px; }
+}
+@-webkit-keyframes swaVAnime {
+  0% { top: 0px; }
+  75% { top: 0px; -webkit-animation-timing-function: ease-out; }
+  80% { top: 50px; -webkit-animation-timing-function: ease-in; }
+  84.9% { top: 0px; }
+  85.1% { top: 0px; -webkit-animation-timing-function: ease-out; }
+  90% { top: 50px; -webkit-animation-timing-function: ease-in; }
+  95% { top: 0px; }
+  100% { top: 0px; }
+}
+
+#swallow {
+  top: 0px; left: 0px;
+  width: 64px; height: 42px;
+  position: absolute;
+  
+  animation: swallowAnime 40s linear 0s infinite normal;
+  -webkit-animation: swallowAnime 40s linear 0s infinite normal;
+}
+@keyframes swallowAnime {
+  0% { transform: rotateZ(0deg); }
+  75% { transform: rotateZ(-20deg); animation-timing-function: ease-out; }
+  80% { transform: rotateZ(0deg); animation-timing-function: ease-in; }
+  84.9% { transform: rotateZ(20deg); }
+  85.1% { transform: rotateZ(20deg) rotateY(180deg); animation-timing-function: ease-out; }
+  90% { transform: rotateZ(0deg) rotateY(180deg); animation-timing-function: ease-in; }
+  95% { transform: rotateZ(-20deg) rotateY(180deg); }
+  100% { transform: rotateZ(0deg) rotateY(180deg); }
+}
+@-webkit-keyframes swallowAnime {
+  0% { -webkit-transform: rotateZ(0deg); }
+  75% { -webkit-transform: rotateZ(-20deg); -webkit-animation-timing-function: ease-out; }
+  80% { -webkit-transform: rotateZ(0deg); -webkit-animation-timing-function: ease-in; }
+  84.9% { -webkit-transform: rotateZ(20deg); }
+  85.1% { -webkit-transform: rotateZ(20deg) rotateY(180deg); -webkit-animation-timing-function: ease-out; }
+  90% { -webkit-transform: rotateZ(0deg) rotateY(180deg); -webkit-animation-timing-function: ease-in; }
+  95% { -webkit-transform: rotateZ(-20deg) rotateY(180deg); }
+  100% { -webkit-transform: rotateZ(0deg) rotateY(180deg); }
+}
+

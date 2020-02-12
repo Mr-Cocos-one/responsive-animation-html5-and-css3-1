@@ -1,0 +1,59 @@
+/* BoxChange.css */
+
+#box1 {
+  margin: 10px 0px 0px 10px;
+  width: 100px; height: 100px;
+  background-color: lightgray;
+  border: solid 5px gray;
+  text-align: center;
+}
+#box1.anime1 {
+  width: 120px; height: 120px;
+  background-color: yellow;
+  border-color: orange;
+}
+
+#box2 {
+  margin: 10px 0px 0px 10px;
+  width: 100px; height: 100px;
+  background-color: lightgray;
+  border: solid 5px gray;
+  text-align: center;
+}
+#box2:hover {
+  width: 120px; height: 120px;
+  background-color: pink;
+  border-color: magenta;
+}
+
+#box3 {
+  margin: 10px 0px 0px 10px;
+  width: 100px; height: 100px;
+  background-color: lightgray;
+  border: solid 5px gray;
+  text-align: center;
+}
+#box3.anime3 {
+  margin-left: 200px;
+  background-color: lightgreen;
+  border-color: limegreen;
+}
+
+#box4 {
+  margin: 10px 0px 0px 10px;
+  width: 100px; height: 100px;
+  background-color: lightgray;
+  border: solid 5px gray;
+  text-align: center;
+}
+#box4:hover {
+  margin-left: 200px;
+  background-color: skyblue;
+  border-color: blue;
+}
+
+.font1 {
+  color: black;
+  font: bold 28px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+  line-height: 100px;
+}

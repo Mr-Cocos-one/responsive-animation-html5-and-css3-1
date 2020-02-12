@@ -1,0 +1,30 @@
+/* CircleAnime1.css */
+
+#stage {
+  width: 400px; height: 400px;
+  background-color: skyblue;
+  position: relative;
+}
+#stage img {
+  top: 25px; left: 168px;
+  width: 64px; height: 35px;
+  /* border: solid 1px red; */    /* border‚ğ¶‚©‚·‚ÆA‰æ‘œ‚ÌƒƒN‚ªŒ©‚¦‚Ü‚· */
+  position: absolute;
+  
+  transform-origin: 32px 175px;
+  -webkit-transform-origin: 32px 175px;
+  /* transform-origin: 50% 500%;
+  -webkit-transform-origin: 50% 500%; */
+  
+  animation: anime1 5s linear 0s infinite normal;
+  -webkit-animation: anime1 5s linear 0s infinite normal;
+}
+@keyframes anime1 {
+  0% { }
+  100% { transform: rotateZ(360deg); }
+}
+@-webkit-keyframes anime1 {
+  0% { }
+  100% { -webkit-transform: rotateZ(360deg); }
+}
+

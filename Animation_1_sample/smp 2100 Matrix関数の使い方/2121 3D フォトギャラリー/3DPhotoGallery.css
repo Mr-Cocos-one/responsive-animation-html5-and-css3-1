@@ -1,0 +1,335 @@
+/* 3DPhotoGallery.css */
+
+/* matrix3d parameters
+     matrix3d( x方向の倍率, y方向の傾斜率, ｙ軸を中心とした回転角度, ｘ方向の奥行き深度,
+               x方向の傾斜率, y方向の倍率, ｘ軸を中心とした回転角度, ｙ方向の奥行き深度,
+               0, 0, 1, 0,
+               x方向の移動距離, y方向の移動距離, 0, 1 );
+     を指定します。
+     matrix3d(1, 0, 0, 0,
+              0, 1, 0, 0,
+              0, 0, 1, 0,
+              0, 0, 0, 1); 単位行列（初期値：変化無し）
+*/
+
+#stage {
+  width: 700px; height: 500px;
+  background-color: black;
+  border: solid 1px black;
+  position: relative;
+  overflow: hidden;
+  
+  perspective: 600px;
+  -webkit-perspective: 600px;
+  
+  perspective-origin: 50% 75%;
+  -webkit-perspective-origin: 50% 75%;
+}
+
+#galleryTitle {
+  top: 60px; left: 0px; right: 0px;
+  margin-left: auto; margin-right: auto;
+  padding: 0px 0px 0px 30px;
+  width: 360px; height: 250px;
+  /* border: 1px solid red; */
+  position: absolute;
+  
+  text-align: left;
+  font: bold 110px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+  color: rgba(51, 51, 51, 1.0);
+  
+  text-shadow: 10px 0px 50px rgba(255, 255, 255, 1.0),
+               -10px 0px 50px rgba(255, 255, 255, 1.0);
+}
+
+#image1 {
+  top: 340px; left: 20px;
+  width: 100px; height: 100px;
+  position: absolute;
+  
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+}
+#image1 img {
+  top: 0px; left: 0px;
+  width: 100px; height: 100px;
+  position: absolute;
+  
+  transition: 1s ease-out;
+  -webkit-transition: 1s ease-out;
+  
+  /* Y軸の正方向から見て、Y軸を中心に時計回りに60度回転 */
+  transform: matrix3d( 0.5, 0, -0.8660254, 0,
+                       0, 1, 0, 0,
+                       0.8660254, 0, 0.5, 0,
+                       0, 0, 0, 1 );
+  -webkit-transform: matrix3d( 0.5, 0, -0.8660254, 0,
+                               0, 1, 0, 0,
+                               0.8660254, 0, 0.5, 0,
+                               0, 0, 0, 1 );
+  
+  box-reflect: below 15px
+               linear-gradient( to bottom, transparent, transparent 70%, white );
+  -webkit-box-reflect: below 15px
+                       -webkit-linear-gradient( top, transparent, transparent 70%, white );
+}
+#image2 {
+  top: 347px; left: 133px;
+  width: 100px; height: 85px;
+  position: absolute;
+  
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+}
+#image2 img {
+  top: 0px; left: 0px;
+  width: 100px; height: 85px;
+  position: absolute;
+  
+  transition: 1s ease-out;
+  -webkit-transition: 1s ease-out;
+  
+  /* Y軸の正方向から見て、Y軸を中心に時計回りに45度回転 */
+  transform: matrix3d( 0.70710678, 0, -0.70710678, 0,
+                       0, 1, 0, 0,
+                       0.70710678, 0, 0.70710678, 0,
+                       0, 0, 0, 1 );
+  -webkit-transform: matrix3d( 0.70710678, 0, -0.70710678, 0,
+                               0, 1, 0, 0,
+                               0.70710678, 0, 0.70710678, 0,
+                               0, 0, 0, 1 );
+  
+  box-reflect: below 15px
+               linear-gradient( to bottom, transparent, transparent 70%, white );
+  -webkit-box-reflect: below 15px
+                       -webkit-linear-gradient( top, transparent, transparent 70%, white );
+}
+#image3 {
+  top: 350px; left: 245px;
+  width: 100px; height: 75px;
+  position: absolute;
+  
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+}
+#image3 img {
+  top: 0px; left: 0px;
+  width: 100px; height: 75px;
+  position: absolute;
+  
+  transition: 1s ease-out;
+  -webkit-transition: 1s ease-out;
+  
+  /* Y軸の正方向から見て、Y軸を中心に時計回りに30度回転 */
+  transform: matrix3d( 0.8660254, 0, -0.5, 0,
+                       0, 1, 0, 0,
+                       0.5, 0, 0.8660254, 0,
+                       0, 0, 0, 1 );
+  -webkit-transform: matrix3d( 0.8660254, 0, -0.5, 0,
+                               0, 1, 0, 0,
+                               0.5, 0, 0.8660254, 0,
+                               0, 0, 0, 1 );
+  
+  box-reflect: below 15px
+               linear-gradient( to bottom, transparent, transparent 70%, white );
+  -webkit-box-reflect: below 15px
+                       -webkit-linear-gradient( top, transparent, transparent 70%, white );
+}
+#image4 {
+  top: 350px; left: 355px;
+  width: 100px; height: 75px;
+  position: absolute;
+  
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+}
+#image4 img {
+  top: 0px; left: 0px;
+  width: 100px; height: 75px;
+  position: absolute;
+  
+  transition: 1s ease-out;
+  -webkit-transition: 1s ease-out;
+  
+  /* Y軸の正方向から見て、Y軸を中心に反時計回りに30度回転 */
+  transform: matrix3d( 0.8660254, 0, 0.5, 0,
+                       0, 1, 0, 0,
+                       -0.5, 0, 0.8660254, 0,
+                       0, 0, 0, 1 );
+  -webkit-transform: matrix3d( 0.8660254, 0, 0.5, 0,
+                               0, 1, 0, 0,
+                               -0.5, 0, 0.8660254, 0,
+                               0, 0, 0, 1 );
+  
+  box-reflect: below 15px
+               linear-gradient( to bottom, transparent, transparent 70%, white );
+  -webkit-box-reflect: below 15px
+                       -webkit-linear-gradient( top, transparent, transparent 70%, white );
+}
+#image5 {
+  top: 347px; left: 465px;
+  width: 100px; height: 85px;
+  position: absolute;
+  
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+}
+#image5 img {
+  top: 0px; left: 0px;
+  width: 100px; height: 85px;
+  position: absolute;
+  
+  transition: 1s ease-out;
+  -webkit-transition: 1s ease-out;
+  
+  /* Y軸の正方向から見て、Y軸を中心に反時計回りに45度回転 */
+  transform: matrix3d( 0.70710678, 0, 0.70710678, 0,
+                       0, 1, 0, 0,
+                       -0.70710678, 0, 0.70710678, 0,
+                       0, 0, 0, 1 );
+  -webkit-transform: matrix3d( 0.70710678, 0, 0.70710678, 0,
+                               0, 1, 0, 0,
+                               -0.70710678, 0, 0.70710678, 0,
+                               0, 0, 0, 1 );
+  
+  box-reflect: below 15px
+               linear-gradient( to bottom, transparent, transparent 70%, white );
+  -webkit-box-reflect: below 15px
+                       -webkit-linear-gradient( top, transparent, transparent 70%, white );
+}
+#image6 {
+  top: 340px; left: 575px;
+  width: 100px; height: 100px;
+  position: absolute;
+  
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+}
+#image6 img {
+  top: 0px; left: 0px;
+  width: 100px; height: 100px;
+  position: absolute;
+  
+  transition: 1s ease-out;
+  -webkit-transition: 1s ease-out;
+  
+  /* Y軸の正方向から見て、Y軸を中心に反時計回りに60度回転 */
+  transform: matrix3d( 0.5, 0, 0.8660254, 0,
+                       0, 1, 0, 0,
+                       -0.8660254, 0, 0.5, 0,
+                       0, 0, 0, 1 );
+  -webkit-transform: matrix3d( 0.5, 0, 0.8660254, 0,
+                              0, 1, 0, 0,
+                               -0.8660254, 0, 0.5, 0,
+                               0, 0, 0, 1 );
+  
+  box-reflect: below 15px
+               linear-gradient( to bottom, transparent, transparent 70%, white );
+  -webkit-box-reflect: below 15px
+                       -webkit-linear-gradient( top, transparent, transparent 70%, white );
+}
+
+/* hover action *******************************************************************/
+#image1:hover img {
+  width: 400px; height: 300px;
+  border: solid 2px gray;
+  
+  transform: matrix3d( 1, 0, 0, 0,
+                       0, 1, 0, 0,
+                       0, 0, 1, 0,
+                       130, -320, 0, 1 );
+  -webkit-transform: matrix3d( 1, 0, 0, 0,
+                               0, 1, 0, 0,
+                               0, 0, 1, 0,
+                               130, -320, 0, 1 );
+  
+  box-reflect: below 15px
+               linear-gradient( to bottom, transparent, transparent 100% );
+  -webkit-box-reflect: below 15px
+                       -webkit-linear-gradient( top, transparent, transparent 100% );
+}
+#image2:hover img {
+  width: 400px; height: 300px;
+  border: solid 2px gray;
+  
+  transform: matrix3d( 1, 0, 0, 0,
+                       0, 1, 0, 0,
+                       0, 0, 1, 0,
+                       17, -327, 0, 1 );
+  -webkit-transform: matrix3d( 1, 0, 0, 0,
+                               0, 1, 0, 0,
+                               0, 0, 1, 0,
+                               17, -327, 0, 1 );
+  box-reflect: below 15px
+               linear-gradient( to bottom, transparent, transparent 100% );
+  -webkit-box-reflect: below 15px
+                       -webkit-linear-gradient( top, transparent, transparent 100% );
+}
+#image3:hover img {
+  width: 400px; height: 300px;
+  border: solid 2px gray;
+  
+  transform: matrix3d( 1, 0, 0, 0,
+                       0, 1, 0, 0,
+                       0, 0, 1, 0,
+                       -95, -330, 0, 1 );
+  -webkit-transform: matrix3d( 1, 0, 0, 0,
+                               0, 1, 0, 0,
+                               0, 0, 1, 0,
+                               -95, -330, 0, 1 );
+  box-reflect: below 15px
+               linear-gradient( to bottom, transparent, transparent 100% );
+  -webkit-box-reflect: below 15px
+                       -webkit-linear-gradient( top, transparent, transparent 100% );
+}
+#image4:hover img {
+  width: 400px; height: 300px;
+  border: solid 2px gray;
+  
+  transform: matrix3d( 1, 0, 0, 0,
+                       0, 1, 0, 0,
+                       0, 0, 1, 0,
+                       -205, -330, 0, 1 );
+  -webkit-transform: matrix3d( 1, 0, 0, 0,
+                               0, 1, 0, 0,
+                               0, 0, 1, 0,
+                               -205, -330, 0, 1 );
+  -box-reflect: below 15px
+               linear-gradient( to bottom, transparent, transparent 100% );
+  -webkit-box-reflect: below 15px
+                       -webkit-linear-gradient( top, transparent, transparent 100% );
+}
+#image5:hover img {
+  width: 400px; height: 300px;
+  border: solid 2px gray;
+  
+  transform: matrix3d( 1, 0, 0, 0,
+                       0, 1, 0, 0,
+                       0, 0, 1, 0,
+                       -315, -327, 0, 1 );
+  -webkit-transform: matrix3d( 1, 0, 0, 0,
+                               0, 1, 0, 0,
+                               0, 0, 1, 0,
+                               -315, -327, 0, 1 );
+  box-reflect: below 15px
+               linear-gradient( to bottom, transparent, transparent 100% );
+  -webkit-box-reflect: below 15px
+                       -webkit-linear-gradient( top, transparent, transparent 100% );
+}
+#image6:hover img {
+  width: 400px; height: 300px;
+  border: solid 2px gray;
+  
+  transform: matrix3d( 1, 0, 0, 0,
+                       0, 1, 0, 0,
+                       0, 0, 1, 0,
+                       -425, -320, 0, 1 );
+  -webkit-transform: matrix3d( 1, 0, 0, 0,
+                               0, 1, 0, 0,
+                               0, 0, 1, 0,
+                               -425, -320, 0, 1 );
+  box-reflect: below 15px
+               linear-gradient( to bottom, transparent, transparent 100% );
+  -webkit-box-reflect: below 15px
+                       -webkit-linear-gradient( top, transparent, transparent 100% );
+}

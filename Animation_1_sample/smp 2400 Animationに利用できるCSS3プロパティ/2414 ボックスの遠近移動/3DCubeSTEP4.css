@@ -1,0 +1,84 @@
+/* 3DCubeSTEP4.css */
+
+/***************************************************************************
+* Cubeにtransitionを追加。hover時のアニメーションを追加。
+***************************************************************************/
+#stage {
+  width: 500px; height: 500px;
+  position: relative;
+  }
+
+#cube {
+  top: 150px; left: 150px;
+  border: dotted 3px #000000;
+  position: absolute;
+  
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  
+  transform: rotateX(-30deg) rotateY(30deg);
+  -webkit-transform: rotateX(-30deg) rotateY(30deg);
+  
+  transition: transform 15s ease-in-out;
+  -webkit-transition: -webkit-transform 15s ease-in-out;
+}
+
+#cube > span {
+  top: 0px; left: 0px;
+  width: 200px; height: 200px;
+  position: absolute;
+  opacity: 0.8;
+  
+  text-align: center;
+  font: bold 160px Verdana;
+  line-height: 180px;
+}
+
+#cube > span:nth-child(1) {
+  background-color: yellow;
+  color: red;
+  
+  transform: rotateY(0deg) translateZ(100px);
+  -webkit-transform: rotateY(0deg) translateZ(100px);
+}
+#cube > span:nth-child(2) {
+  background-color: blue;
+  color: blueviolet;
+  
+  transform: rotateY(-90deg) translateZ(100px);
+  -webkit-transform: rotateY(-90deg) translateZ(100px);
+}
+#cube > span:nth-child(3) {
+  background-color: orange;
+  color: blue;
+  
+  transform: rotateY(-180deg) translateZ(100px);
+  -webkit-transform: rotateY(-180deg) translateZ(100px);
+}
+#cube > span:nth-child(4) {
+  background-color: green;
+  color: orange;
+  
+  transform: rotateY(-270deg) translateZ(100px);
+  -webkit-transform: rotateY(-270deg) translateZ(100px);
+}
+#cube > span:nth-child(5) {
+  background-color: blueviolet;
+  color: green;
+  
+  transform: rotateX(90deg) translateZ(100px);
+  -webkit-transform: rotateX(90deg) translateZ(100px);
+}
+#cube > span:nth-child(6) {
+  background-color: red;
+  color: yellow;
+  
+  transform: rotateX(270deg) translateZ(100px);
+  -webkit-transform: rotateX(270deg) translateZ(100px);
+}
+
+#stage:hover #cube {
+  transform: rotateX(690deg) rotateY(-330deg);
+  -webkit-transform: rotateX(690deg) rotateY(-330deg);
+}
+

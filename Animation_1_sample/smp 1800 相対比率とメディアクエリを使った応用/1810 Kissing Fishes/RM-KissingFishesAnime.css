@@ -1,0 +1,209 @@
+/* R-KissingFishesAnime.css */
+
+/* Attention ********************************************************************
+*   text-stroke-width, text-stroke-color and text-fill-color are supported
+*   only by webkit browsers(Safari, Chrome). 2013-01-03
+*********************************************************************************/
+
+/*******************************************************************/
+/* screen width over 980px (Base)                                  */
+/*******************************************************************/
+#stage-wrap {
+  margin: 0%;
+  width: 100%;
+  //max-width: 600px;
+  max-width: 900px;
+  position: relative;
+}
+
+#stage {
+  //width: 600px; //height: 200px;
+  width: 100%;
+  padding-top: 33.3%;
+  background-color: dodgerblue;
+  border: solid 1px black;
+  position: relative;
+}
+
+/* PinkFish ************************************/
+#pinkFish {
+  //top: 50px; //left: 10px;
+  top: 25%; left: 1.7%;
+  //width: 165px; //height: 104px;
+  width: 27.5%; height: 52%;
+  position: absolute;
+  
+  animation: pinkAnime 4s linear 0s infinite alternate;
+  -webkit-animation: pinkAnime 4s linear 0s infinite alternate;
+}
+#pinkFish img {
+  //top: 0px; //left: 0px;
+  top: 0%; left: 0%;
+  width: 100%; height: 100%;
+  position: absolute;
+}
+
+@keyframes pinkAnime {
+  //from { }
+  //25% { left: 10px; animation-timing-function: ease-out; }
+  //75% { left: 137px; }
+  //to { left: 137px; }
+  from { }
+  25% { left: 1.7%; animation-timing-function: ease-out; }
+  75% { left: 22.8%; }
+  to { left: 22.8%; }
+}
+@-webkit-keyframes pinkAnime {
+  from { }
+  25% { left: 1.7%; -webkit-animation-timing-function: ease-out; }
+  75% { left: 22.8%; }
+  to { left: 22.8%; }
+}
+
+/* YellowFish ************************************/
+#yellowFish {
+  //top: 50px; //left: 420px;
+  top: 25%; left: 70%;
+  //width: 165px; //height: 104px;
+  width: 27.5%; height: 52%;
+  position: absolute;
+  
+  animation: yellowAnime 4s linear 0s infinite alternate;
+  -webkit-animation: yellowAnime 4s linear 0s infinite alternate;
+}
+#yellowFish img {
+  //top: 0px; //left: 0px;
+  top: 0%; left: 0%;
+  width: 100%; height: 100%;
+  position: absolute;
+}
+
+@keyframes yellowAnime {
+  //from { }
+  //25% { left: 420px; animation-timing-function: ease-out; }
+  //75% { left: 300px; }
+  //to { left: 300px; }
+  from { }
+  25% { left: 70%; animation-timing-function: ease-out; }
+  75% { left: 50%; }
+  to { left: 50%; }
+}
+@-webkit-keyframes yellowAnime {
+  from { }
+  25% { left: 70%; -webkit-animation-timing-function: ease-out; }
+  75% { left: 50%; }
+  to { left: 50%; }
+}
+
+/* ÉnÅ[Égïîï™ÇÃîwåi ************************************/
+#heartBack {
+   //margin: 0px 0px 0px 0px;
+  margin: -300px 0px 0px 0px;
+  margin-left: auto; margin-right: auto;
+  width: auto; height: auto;
+  text-align: center;
+  //font: bold 180px "ÇlÇr ÇoÉSÉVÉbÉN", Osaka, "ÉqÉâÉMÉmäpÉS Pro", Verdana;
+  font: bold 270px "ÇlÇr ÇoÉSÉVÉbÉN", Osaka, "ÉqÉâÉMÉmäpÉS Pro", Verdana;
+  color: white;
+  //line-height: 200px;
+  line-height: 300px;
+  position: relative;
+  opacity: 0.0;
+  
+  //text-shadow: 3px 3px 3px #FFFFFF, -3px 3px 3px #FFFFFF, 3px -3px 3px #FFFFFF, -3px -3px 3px #FFFFFF;
+  text-shadow: 5px 5px 5px #FFFFFF, -5px 5px 5px #FFFFFF, 5px -5px 5px #FFFFFF, -5px -5px 5px #FFFFFF;
+  
+  animation: heartBackAnime 4s linear 0s infinite alternate;
+  -webkit-animation: heartBackAnime 4s linear 0s infinite alternate;
+}
+
+@keyframes heartBackAnime {
+  from { }
+  25% { opacity: 0.0; animation-timing-function: ease-out; }
+  75% { opacity: 1.0; }
+  to { opacity: 1.0; }
+}
+@-webkit-keyframes heartBackAnime {
+  from { }
+  25% { opacity: 0.0; -webkit-animation-timing-function: ease-out; }
+  75% { opacity: 1.0; }
+  to { opacity: 1.0; }
+}
+
+/* ÉnÅ[Ég ************************************/
+#heart {
+  //margin: -200px 0px 0px 0px;
+  margin: -300px 0px 0px 0px;
+  margin-left: auto; margin-right: auto;
+  width: auto; height: auto;
+  text-align: center;
+  //font: bold 180px "ÇlÇr ÇoÉSÉVÉbÉN", Osaka, "ÉqÉâÉMÉmäpÉS Pro", Verdana;
+  font: bold 270px "ÇlÇr ÇoÉSÉVÉbÉN", Osaka, "ÉqÉâÉMÉmäpÉS Pro", Verdana;
+  color: red;
+  //line-height: 200px;
+  line-height: 300px;
+  position: relative;
+  opacity: 0.0;
+  
+  animation: heartAnime 4s linear 0s infinite alternate;
+  -webkit-animation: heartAnime 4s linear 0s infinite alternate;
+}
+
+@keyframes heartAnime {
+  from { }
+  25% { opacity: 0.0; animation-timing-function: ease-in; }
+  75% { opacity: 0.6; }
+  to { opacity: 0.6; }
+}
+@-webkit-keyframes heartAnime {
+  from { }
+  25% { opacity: 0.0; -webkit-animation-timing-function: ease-in; }
+  75% { opacity: 0.6; }
+  to { opacity: 0.6; }
+}
+
+/*******************************************************************/
+/* screen width from 600px to 979px                                */
+/*******************************************************************/
+@media only screen and (min-width:600px) and (max-width:979px) {
+  #stage-wrap {
+    max-width: 600px;
+  }
+  
+  #heartBack {
+    margin: -200px 0px 0px 0px;
+    font: bold 180px "ÇlÇr ÇoÉSÉVÉbÉN", Osaka, "ÉqÉâÉMÉmäpÉS Pro", Verdana;
+    line-height: 200px;
+    text-shadow: 3px 3px 3px #FFFFFF, -3px 3px 3px #FFFFFF, 3px -3px 3px #FFFFFF, -3px -3px 3px #FFFFFF;
+  }
+  
+  #heart {
+    margin: -200px 0px 0px 0px;
+    font: bold 180px "ÇlÇr ÇoÉSÉVÉbÉN", Osaka, "ÉqÉâÉMÉmäpÉS Pro", Verdana;
+    line-height: 200px;
+  }
+}
+
+
+/*******************************************************************/
+/* screen width under 599px                                        */
+/*******************************************************************/
+@media only screen and (max-width:599px) {
+  #stage-wrap {
+    max-width: 300px;
+  }
+  
+  #heartBack {
+    margin: -100px 0px 0px 0px;
+    font: bold 90px "ÇlÇr ÇoÉSÉVÉbÉN", Osaka, "ÉqÉâÉMÉmäpÉS Pro", Verdana;
+    line-height: 100px;
+    text-shadow: 2px 2px 2px #FFFFFF, -2px 2px 2px #FFFFFF, 2px -2px 2px #FFFFFF, -2px -2px 2px #FFFFFF;
+  }
+  
+  #heart {
+    margin: -100px 0px 0px 0px;
+    font: bold 90px "ÇlÇr ÇoÉSÉVÉbÉN", Osaka, "ÉqÉâÉMÉmäpÉS Pro", Verdana;
+    line-height: 100px;
+  }
+}
+

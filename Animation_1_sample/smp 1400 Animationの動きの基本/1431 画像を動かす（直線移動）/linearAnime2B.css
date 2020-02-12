@@ -1,0 +1,30 @@
+/* linearAnime2B.css */
+
+/* êÇíºà⁄ìÆÅAägëÂ ********************************************************/
+#stage {
+  margin: 0px;
+  width: 200px; height: 500px;
+  background-color: skyblue;
+  position: relative;
+}
+#stage img {
+  top: 20px; left: 45px;
+  width: 96px; height: 73px;
+  position: absolute;
+  
+  transform: rotateZ(90deg);
+  -webkit-transform: rotateZ(90deg);
+  
+  animation: anime2 5s ease-in-out 0s 3 normal;
+  -webkit-animation: anime2 5s ease-in-out 0s 3 normal;
+}
+@keyframes anime2 {
+  0% { }
+  //100% { top: 320px; left: 5px; width: 192px; height: 147px; }
+  100% { transform: translateY(337px) rotateZ(90deg) scale(2, 2); }
+}
+@-webkit-keyframes anime2 {
+  0% { }
+  100% { -webkit-transform: translateY(337px) rotateZ(90deg) scale(2, 2); }
+}
+

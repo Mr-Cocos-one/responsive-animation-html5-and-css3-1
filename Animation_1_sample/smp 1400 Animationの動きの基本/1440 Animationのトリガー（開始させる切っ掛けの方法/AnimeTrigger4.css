@@ -1,0 +1,71 @@
+/* AnimeTrigger4.css */
+
+#stage {
+  width: 600px; height: 250px;
+  background-color: #FFFFFF;
+  border: solid 1px #000000;
+  position: relative;
+}
+
+#guide {
+  top: 50px; left: 50px;
+  width: 500px; height: 150px;
+  /* border: 1px solid gray; */
+  text-align: center;
+  color: lightgray;
+  font: bold 140px "‚l‚r ‚oƒSƒVƒbƒN", Osaka, "ƒqƒ‰ƒMƒmŠpƒS Pro", Verdana;
+  line-height: 150px;
+  cursor: default;
+  position: absolute;
+}
+
+#pierrot {
+  top: 20px; left: 15px;
+  width: 88px; height: 117px;
+  position: absolute;
+  
+  animation: 5s ease-in-out 0s infinite alternate;
+  -webkit-animation: 5s ease-in-out 0s infinite alternate;
+}
+
+@keyframes pierrotAnime {
+  0% { }
+  100% { transform: translateX(480px); }
+}
+@-webkit-keyframes pierrotAnime {
+  0% { }
+  100% { -webkit-transform: translateX(480px); }
+}
+
+#ball {
+  top: 132px; left: 12px;
+  width: 100px; height: 100px;
+  position: absolute;
+  
+  animation: 5s ease-in-out 0s infinite alternate;
+  -webkit-animation: 5s ease-in-out 0s infinite alternate;
+}
+
+@keyframes ballAnime {
+  0% { }
+  100% { transform: translateX(480px) rotateZ(720deg); }
+}
+@-webkit-keyframes ballAnime {
+  0% { }
+  100% { -webkit-transform: translateX(480px) rotateZ(720deg); }
+}
+
+#stage:hover #guide {
+  color: rgba( 0, 0, 0, 0 );
+}
+
+#stage:hover #pierrot {
+  animation-name: pierrotAnime;
+  -webkit-animation-name: pierrotAnime;
+}
+
+#stage:hover #ball {
+  animation-name: ballAnime;
+  -webkit-animation-name: ballAnime;
+}
+

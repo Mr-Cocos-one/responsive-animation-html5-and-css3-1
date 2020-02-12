@@ -1,0 +1,67 @@
+/* Class_PierrotOnBall.css */
+
+#stage {
+  width: 600px; height: 300px;
+  background-color: midnightblue;
+  border: solid 1px black;
+  position: relative;
+}
+
+#button {
+  top: 10px; left: 460px;
+  width: 120px; height: 40px;
+  border: solid 1px black;
+  border-radius: 10px;
+  background-color: red;
+  text-align: center;
+  color: black;
+  line-height: 50px;
+  cursor: default;
+  position: absolute;
+}
+.font28GothicB {
+  font: bold 28px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+}
+
+#pierrot {
+  top: 60px; left: -439px;
+  width: 88px; height: 117px;
+  position: absolute;
+}
+#pierrot img {
+  top: 0px; left: 0px;
+  width: 100%; height: 100%;
+  position: absolute;
+}
+
+#ball {
+  top: 173px; left: -445px;
+  width: 100px; height: 100px;
+  position: absolute;
+}
+#ball img {
+  top: 0px; left: 0px;
+  width: 100%; height: 100%;
+  position: absolute;
+}
+
+/* classセレクタ（.action）にピエロとボールの動きのtransitionを指定しておく。 */
+.action {
+  transition: left 5s ease-in-out, transform 5s ease-in-out;
+  -webkit-transition: left 5s ease-in-out, -webkit-transform 5s ease-in-out;
+}
+
+#button:hover {
+  background-color: green;
+}
+
+#button:hover #ball {
+  transform: rotateZ(720deg);
+  -webkit-transform: rotateZ(720deg);
+}
+
+/* classセレクタ（.action）を使用して、ピエロとボールを一緒に動かす。 */
+#button:hover .action {
+  left: 25px;
+}
+

@@ -1,0 +1,200 @@
+/* RM-BackfaceVisibilityAnime5.css */
+
+/**************************************************************************
+ * backface-visibility Animation 5                                        *
+ **************************************************************************/
+/*******************************************************************/
+/* screen width over 980px (Base)                                  */
+/*******************************************************************/
+#stage-wrap {
+  margin: 30px 0px 0px 50px;
+  width: 100%;
+  //max-width: 480px;
+  max-width: 680px;
+  position: relative;
+}
+
+#stage {
+  //margin: 30px 0px 0px 50px;
+  margin: 0%;
+  //width: 480px; //height: 510px;
+  width: 100%;
+  padding-top: 106.3%;
+  border: solid 1px black;
+  position: relative;
+}
+
+#stage #wrapper {
+  //top: 100px; //left: 50px;
+  top: 19.6%; left: 10.4%;
+  //width: 380px; //height: 310px;
+  width: 79.2%; height: 60.8%;
+  background-color: lightgray;
+  position: absolute;
+  
+  //perspective: 500px;
+  //-webkit-perspective: 500px;
+  perspective: 700px;
+  -webkit-perspective: 700px;
+}
+
+#rect1-back {
+  //top: 0px; //left: 0px;
+  top: 0%; left: 0%;
+  //width: 280px; //height: 210px;
+  width: 73.7%; height:67.7%;
+  //border: solid 50px yellowgreen;
+  border: solid 70px yellowgreen;
+  position: absolute;
+  
+  backface-visibility: visible;
+  -webkit-backface-visibility: visible;
+  
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  
+  animation: BackFaceAnimeB 20s linear 0s infinite normal;
+  -webkit-animation: BackFaceAnimeB 20s linear 0s infinite normal;
+}
+@keyframes BackFaceAnimeB {
+  from { }
+  to { transform: rotateY(-360deg); }
+}
+@-webkit-keyframes BackFaceAnimeB {
+  from { }
+  to { -webkit-transform: rotateY(-360deg); }
+}
+
+#rect2-back {
+  //top: 0px; //left: 0px;
+  top: 0%; left: 0%;
+  //width: 280px; //height: 210px;
+  width: 100%; height: 100%;
+  background-color: orange;
+  position: absolute;
+  
+  backface-visibility: visible;
+  -webkit-backface-visibility: visible;
+  
+  animation: BackFaceAnimeB2 20s linear 0s infinite normal;
+  -webkit-animation: BackFaceAnimeB2 20s linear 0s infinite normal;
+}
+#rect2-back img {
+  //top: 0px; //left: 0px;
+  top: 0%; left: 0%;
+  width: 100%; height: 100%;
+  position: absolute;
+}
+
+@keyframes BackFaceAnimeB2 {
+  from { }
+  to { transform: rotateY(720deg); }
+}
+@-webkit-keyframes BackFaceAnimeB2 {
+  from { }
+  to { -webkit-transform: rotateY(720deg); }
+}
+
+#rect1-front {
+  //top: 0px; //left: 0px;
+  top: 0%; left: 0%;
+  //width: 280px; //height: 210px;
+  width: 73.7%; height:67.7%;
+  //border: solid 50px cyan;
+  border: solid 70px cyan;
+  position: absolute;
+  
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  
+  animation: BackFaceAnimeF 20s linear 0s infinite normal;
+  -webkit-animation: BackFaceAnimeF 20s linear 0s infinite normal;
+}
+@keyframes BackFaceAnimeF {
+  from { }
+  to { transform: rotateY(-360deg); }
+}
+@-webkit-keyframes BackFaceAnimeF {
+  from { }
+  to { -webkit-transform: rotateY(-360deg); }
+}
+
+#rect2-front {
+  //top: 0px; //left: 0px;
+  top: 0%; left: 0%;
+  //width: 280px; //height: 210px;
+  width: 100%; height: 100%;
+  background-color: yellow;
+  position: absolute;
+  
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  
+  animation: BackFaceAnimeF2 20s linear 0s infinite normal;
+  -webkit-animation: BackFaceAnimeF2 20s linear 0s infinite normal;
+}
+#rect2-front img {
+  //top: 0px; //left: 0px;
+  top: 0%; left: 0%;
+  width: 100%; height: 100%;
+  position: absolute;
+}
+
+@keyframes BackFaceAnimeF2 {
+  from { }
+  to { transform: rotateY(720deg); }
+}
+@-webkit-keyframes BackFaceAnimeF2 {
+  from { }
+  to { -webkit-transform: rotateY(720deg); }
+}
+
+
+/*******************************************************************/
+/* screen width from 600px to 979px                                */
+/*******************************************************************/
+@media only screen and (min-width:600px) and (max-width:979px) {
+  #stage-wrap {
+    max-width: 480px;
+  }
+  
+  #stage #wrapper {
+    perspective: 500px;
+    -webkit-perspective: 500px;
+  }
+  
+  #rect1-back {
+    border: solid 50px yellowgreen;
+  }
+  
+  #rect1-front {
+    border: solid 50px cyan;
+  }
+}
+
+
+/*******************************************************************/
+/* screen width under 599px                                        */
+/*******************************************************************/
+@media only screen and (max-width:599px) {
+  #stage-wrap {
+    max-width: 300px;
+  }
+  
+  #stage #wrapper {
+    perspective: 300px;
+    -webkit-perspective: 300px;
+  }
+  
+  #rect1-back {
+    border: solid 30px yellowgreen;
+  }
+  
+  #rect1-front {
+    border: solid 30px cyan;
+  }
+}
+

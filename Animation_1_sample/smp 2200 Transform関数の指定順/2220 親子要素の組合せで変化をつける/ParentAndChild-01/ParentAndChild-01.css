@@ -1,0 +1,40 @@
+/* ParentAndChild-01 */
+
+/******************************************************************************
+ * 親子の要素を組み合わせて変化をつける（０１）。                             *
+ * （３０度傾いた親要素の子要素を移動すると、３０度傾いた方向へ移動する。）   *
+ * ６０度回転、２倍に拡大しながら移動。                                       *
+ ******************************************************************************/
+#stage {
+  width: 700px; height: 500px;
+  background-color: white;
+  border: solid 1px black;
+  position: relative;
+}
+
+#box1 {
+  top: 100px; left: 150px;
+  width: 100px; height: 100px;
+  border: solid 1px cyan;
+  position: absolute;
+  
+  transform: rotateZ(30deg);
+  -webkit-transform: rotateZ(30deg);
+}
+
+#rect1 {
+  top: 0px; left: 0px;
+  width: 100px; height: 100px;
+  border: solid 1px cyan;
+  background-color: cyan;
+  position: absolute;
+  
+  transition: all 3s ease-in-out;
+  -webkit-transition: all 3s ease-in-out;
+}
+#box1:hover #rect1 {
+  transform: translateX(300px) rotateZ(60deg) scale(2, 2);
+  -webkit-transform: translateX(300px) rotateZ(60deg) scale(2, 2);
+}
+
+

@@ -1,0 +1,61 @@
+/* SpiralAnime1.css */
+
+#stage {
+  width: 400px; height: 400px;
+  background-color: skyblue;
+  position: relative;
+  overflow: hidden;
+}
+#circleBox {
+  top: 200px; left: 200px;
+  /* border: solid 1px red; */    /* borderを生かすと、円運動の中心が見えます */
+  position: absolute;
+  
+  animation: anime1 20s linear 0s infinite normal;
+  -webkit-animation: anime1 20s linear 0s infinite normal;
+}
+@keyframes anime1 {
+  0% { }
+  100% { transform: rotateZ(1440deg); }
+}
+@-webkit-keyframes anime1 {
+  0% { }
+  100% { -webkit-transform: rotateZ(1440deg); }
+}
+
+#shuttleBox {
+  top: -55px; left: -32px;    /* topの値を変えることで、中心からの距離を変えられます */
+  width: 64px; height: 35px;
+  /* border: solid 1px blue; */
+  position: absolute;
+  
+  animation: anime2 20s ease-in 0s infinite normal;
+  -webkit-animation: anime2 20s ease-in 0s infinite normal;
+}
+@keyframes anime2 {
+  0% { }
+  100% { top: -250px; }
+}
+@-webkit-keyframes anime2 {
+  0% { }
+  100% { top: -250px; }
+}
+
+#shuttleBox img {
+  top: 0px; left: 0px;
+  width: 64px; height: 35px;
+  /* border: solid 1px red; */
+  position: absolute;
+  
+  animation: anime3 20s ease-out 0s infinite normal;
+  -webkit-animation: anime3 20s ease-out 0s infinite normal;
+}
+@keyframes anime3 {
+  0% { transform: rotateZ(-10deg); }
+  100% { transform: rotateZ(0deg); }
+}
+@-webkit-keyframes anime3 {
+  0% { -webkit-transform: rotateZ(-10deg); }
+  100% { -webkit-transform: rotateZ(0deg); }
+}
+

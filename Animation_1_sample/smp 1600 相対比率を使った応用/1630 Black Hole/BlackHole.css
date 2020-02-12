@@ -1,0 +1,312 @@
+/* BlackHole.css */
+
+#stage {
+  width: 600px; height: 500px;
+  background: radial-gradient(#000000 5%, #111122 8%, #444488);
+  background: -webkit-radial-gradient(#000000 5%, #111122 8%, #444488);
+  position: relative;
+  overflow: hidden;
+}
+
+#gravity1 {
+  top: 0px; left: 0px;
+  width: 600px; height: 500px;
+  position: absolute;
+}
+#gravity1 > span:nth-child(1) {
+  top: -257px; left: -50px;
+  width: 700px; height: 500px;
+  border: 1px solid #666666;
+  border-radius: 50%;
+  background-color: transparent;
+  position: absolute;
+}
+#gravity1 > span:nth-child(2) {
+  top: 257px; left: -50px;
+  width: 700px; height: 500px;
+  border: 1px solid #666666;
+  border-radius: 50%;
+  background-color: transparent;
+  position: absolute;
+}
+#gravity1 > span:nth-child(3) {
+  top: -665px; left: 150px;
+  width: 300px; height: 900px;
+  border: 1px solid #666666;
+  border-radius: 50%;
+  background-color: transparent;
+  position: absolute;
+}
+#gravity1 > span:nth-child(4) {
+  top: 265px; left: 150px;
+  width: 300px; height: 900px;
+  border: 1px solid #666666;
+  border-radius: 50%;
+  background-color: transparent;
+  position: absolute;
+}
+#gravity1 > span:nth-child(5) {
+  top: 229px; left: 275px;
+  width: 50px; height: 42px;
+  border-radius: 50%;
+  background-color: #000000;
+  position: absolute;
+}
+
+#gravity2 {
+  top: 0px; left: 0px;
+  width: 600px; height: 500px;
+  position: absolute;
+}
+#gravity2 > span:nth-child(1) {
+  top: 21px; left: 25px;
+  width: 550px; height: 458px;
+  border: 1px solid #666666;
+  border-radius: 50%;
+  background-color: transparent;
+  position: absolute;
+}
+#gravity2 > span:nth-child(2) {
+  top: 125px; left: 150px;
+  width: 300px; height: 250px;
+  border: 1px solid #666666;
+  border-radius: 50%;
+  background-color: transparent;
+  position: absolute;
+}
+#gravity2 > span:nth-child(3) {
+  top: 188px; left: 225px;
+  width: 150px; height: 125px;
+  border: 1px solid #666666;
+  border-radius: 50%;
+  background-color: transparent;
+  position: absolute;
+}
+#gravity2 > span:nth-child(4) {
+  top: 208px; left: 250px;
+  width: 100px; height: 83px;
+  border: 1px solid #666666;
+  border-radius: 50%;
+  background-color: transparent;
+  position: absolute;
+}
+#gravity2 > span:nth-child(5) {
+  top: 225px; left: 270px;
+  width: 60px; height: 50px;
+  border: 1px solid #666666;
+  border-radius: 50%;
+  background-color: transparent;
+  position: absolute;
+}
+
+/******************************************************/
+#dotGroup1 {
+  top: 0px; left: 0px;
+  width: 600px; height: 500px;
+  position: absolute;
+}
+
+#dot01 {
+  top: -10px; left: -10px;
+  width: 5px; height: 5px;
+  background-color: red;
+  border-radius: 5px;
+  position: absolute;
+}
+#dot02 {
+  top: -120px; left: 250px;
+  width: 20px; height: 20px;
+  background-color: blue;
+  border-radius: 20px;
+  position: absolute;
+}
+#dot03 {
+  top: -10px; left: 400px;
+  width: 5px; height: 5px;
+  background-color: gray;
+  border-radius: 5px;
+  position: absolute;
+}
+#dot04 {
+  top: 20px; left: 600px;
+  width: 15px; height: 15px;
+  background-color: pink;
+  border-radius: 15px;
+  position: absolute;
+}
+#dot05 {
+  top: 220px; left: 600px;
+  width: 5px; height: 5px;
+  background-color: orange;
+  border-radius: 5px;
+  position: absolute;
+}
+#dot06 {
+  top: 600px; left: 800px;
+  width: 25px; height: 25px;
+  background-color: darkviolet;
+  border-radius: 25px;
+  position: absolute;
+}
+#dot07 {
+  top: 500px; left: 500px;
+  width: 10px; height: 10px;
+  background-color: sandybrown;
+  border-radius: 10px;
+  position: absolute;
+}
+#dot08 {
+  top: 700px; left: 100px;
+  width: 15px; height: 15px;
+  background-color: green;
+  border-radius: 15px;
+  position: absolute;
+}
+#dot09 {
+  top: 500px; left: 100px;
+  width: 5px; height: 5px;
+  background-color: yellow;
+  border-radius: 5px;
+  position: absolute;
+}
+#dot10 {
+  top: 450px; left: -20px;
+  width: 10px; height: 10px;
+  background-color: cyan;
+  border-radius: 10px;
+  position: absolute;
+}
+#dot11 {
+  top: 250px; left: -10px;
+  width: 5px; height: 5px;
+  background-color: magenta;
+  border-radius: 5px;
+  position: absolute;
+}
+#dot12 {
+  top: 80px; left: -130px;
+  width: 15px; height: 15px;
+  background-color: lightgreen;
+  border-radius: 15px;
+  position: absolute;
+}
+
+/******************************************************/
+#dotGroup2 {
+  top: 0px; left: 0px;
+  width: 600px; height: 500px;
+  position: absolute;
+  
+  transform: rotateZ(180deg);
+  -webkit-transform: rotateZ(180deg);
+}
+
+#dot13 {
+  top: -10px; left: -10px;
+  width: 5px; height: 5px;
+  background-color: red;
+  border-radius: 5px;
+  position: absolute;
+}
+#dot14 {
+  top: -120px; left: 250px;
+  width: 20px; height: 20px;
+  background-color: blue;
+  border-radius: 20px;
+  position: absolute;
+}
+#dot15 {
+  top: -10px; left: 400px;
+  width: 5px; height: 5px;
+  background-color: gray;
+  border-radius: 5px;
+  position: absolute;
+}
+#dot16 {
+  top: 20px; left: 600px;
+  width: 15px; height: 15px;
+  background-color: pink;
+  border-radius: 15px;
+  position: absolute;
+}
+#dot17 {
+  top: 220px; left: 600px;
+  width: 5px; height: 5px;
+  background-color: orange;
+  border-radius: 5px;
+  position: absolute;
+}
+#dot18 {
+  top: 600px; left: 800px;
+  width: 25px; height: 25px;
+  background-color: darkviolet;
+  border-radius: 25px;
+  position: absolute;
+}
+#dot19 {
+  top: 500px; left: 500px;
+  width: 10px; height: 10px;
+  background-color: sandybrown;
+  border-radius: 10px;
+  position: absolute;
+}
+#dot20 {
+  top: 700px; left: 100px;
+  width: 15px; height: 15px;
+  background-color: green;
+  border-radius: 15px;
+  position: absolute;
+}
+#dot21 {
+  top: 500px; left: 100px;
+  width: 5px; height: 5px;
+  background-color: yellow;
+  border-radius: 5px;
+  position: absolute;
+}
+#dot22 {
+  top: 450px; left: -20px;
+  width: 10px; height: 10px;
+  background-color: cyan;
+  border-radius: 10px;
+  position: absolute;
+}
+#dot23 {
+  top: 250px; left: -10px;
+  width: 5px; height: 5px;
+  background-color: magenta;
+  border-radius: 5px;
+  position: absolute;
+}
+#dot24 {
+  top: 80px; left: -130px;
+  width: 15px; height: 15px;
+  background-color: lightgreen;
+  border-radius: 15px;
+  position: absolute;
+}
+
+/* クラスを使用して、複数の点を一緒に動かす。***************************/
+.dots1 {
+  animation: dotsAnime 3s ease-in 0s infinite normal;
+  -webkit-animation: dotsAnime 3s ease-in 0s infinite normal;
+}
+.dots2 {
+  animation: dotsAnime 3s ease-in 1s infinite normal;
+  -webkit-animation: dotsAnime 3s ease-in 1s infinite normal;
+}
+.dots3 {
+  animation: dotsAnime 3s ease-in 2s infinite normal;
+  -webkit-animation: dotsAnime 3s ease-in 2s infinite normal;
+}
+@keyframes dotsAnime {
+  0% { }
+  99% { top: 250px; left: 300px; width: 0px; height: 0px; opacity: 0.8; }
+  100% { top: 250px; left: 300px; width: 0px; height: 0px; opacity: 0.0; }
+}
+@-webkit-keyframes dotsAnime {
+  0% { }
+  99% { top: 250px; left: 300px; width: 0px; height: 0px; opacity: 0.8; }
+  100% { top: 250px; left: 300px; width: 0px; height: 0px; opacity: 0.0; }
+}
+

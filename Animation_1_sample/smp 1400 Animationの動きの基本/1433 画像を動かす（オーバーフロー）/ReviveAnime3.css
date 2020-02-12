@@ -1,0 +1,35 @@
+/* ReviveAnime3.css */
+
+#stage {
+  margin: 0px;
+  width: 700px; height: 220px;
+  background-color: skyblue;
+  position: relative;
+  overflow: hidden;
+}
+#stage img {
+  top: 35px; left: -192px;
+  width: 192px; height: 147px;
+  position: absolute;
+}
+#stage #imageA {
+  animation: anime3 7.5s linear 0s infinite normal;
+  -webkit-animation: anime3 7.5s linear 0s infinite normal;
+}
+#stage #imageB {
+  animation: anime3 7.5s linear 2.4s infinite normal;
+  -webkit-animation: anime3 7.5s linear 2.4s infinite normal;
+}
+#stage #imageC {
+  animation: anime3 7.5s linear 4.8s infinite normal;
+  -webkit-animation: anime3 7.5s linear 4.8s infinite normal;
+}
+@keyframes anime3 {
+  0% { }
+  100% { left: 1050px; transform: rotateZ(540deg); }
+}
+@-webkit-keyframes anime3 {
+  0% { }
+  100% { left: 1050px; -webkit-transform: rotateZ(540deg); }
+}
+

@@ -1,0 +1,147 @@
+/* ViewFlowAnime.css */
+
+#stage {
+  width: 600px; height: 400px;
+  background-color: #CCCCCC;
+  border: solid 1px black;
+  position: relative;
+  overflow: hidden;
+}
+
+#stage img {
+  width: 100%; height: 100%;
+}
+
+/* ãÛÇ∆éRÇÃâÊëú ********************************************************/
+#view1A {
+  top: 14px; left: 0px;
+  width: 600px; height: 300px;
+  position: absolute;
+  
+  animation: ViewAnimeA 50s linear 0s infinite normal;
+  -webkit-animation: ViewAnimeA 50s linear 0s infinite normal;
+}
+#view1B {
+  top: 14px; left: 600px;
+  width: 600px; height: 300px;
+  position: absolute;
+  
+  animation: ViewAnimeB 50s linear 0s infinite normal;
+  -webkit-animation: ViewAnimeB 50s linear 0s infinite normal;
+}
+
+/* ëóìdê¸ÇÃâÊëú *******************************************************/
+#view2A {
+  top: 164px; left: 0px;
+  width: 600px; height: 84px;
+  position: absolute;
+  
+  animation: ViewAnimeA 20s linear 0s infinite normal;
+  -webkit-animation: ViewAnimeA 20s linear 0s infinite normal;
+}
+#view2B {
+  top: 164px; left: 600px;
+  width: 600px; height: 84px;
+  position: absolute;
+  
+  animation: ViewAnimeB 20s linear 0s infinite normal;
+  -webkit-animation: ViewAnimeB 20s linear 0s infinite normal;
+}
+
+/* åöï®Ç∆ñÿÇÃâÊëú ****************************************************/
+#view3A {
+  top: 194px; left: 0px;
+  width: 600px; height: 120px;
+  position: absolute;
+  
+  animation: ViewAnimeA 10s linear 0s infinite normal;
+  -webkit-animation: ViewAnimeA 10s linear 0s infinite normal;
+}
+#view3B {
+  top: 194px; left: 600px;
+  width: 600px; height: 120px;
+  position: absolute;
+  
+  animation: ViewAnimeB 10s linear 0s infinite normal;
+  -webkit-animation: ViewAnimeB 10s linear 0s infinite normal;
+}
+
+@keyframes ViewAnimeA {
+  0% { left: 0px; }
+  100% { left: -600px; }
+}
+@-webkit-keyframes ViewAnimeA {
+  0% { left: 0px; }
+  100% { left: -600px; }
+}
+@keyframes ViewAnimeB {
+  0% { left: 600px; }
+  100% { left: 0px; }
+}
+@-webkit-keyframes ViewAnimeB {
+  0% { left: 600px; }
+  100% { left: 0px; }
+}
+
+/* ìdé‘ÇÃëãògÇÃâÊëú *************************************************/
+#cabin {
+  top: 0px; left: 0px;
+  width: 600px; height: 400px;
+  position: absolute;
+  
+  animation: CabinAnime 10s linear 0s infinite normal;
+  -webkit-animation: CabinAnime 10s linear 0s infinite normal;
+}
+@keyframes CabinAnime {
+  0% { top: 0px; }
+  20% { top: 0px; }
+  21% { top: -3px; }
+  22% { top: 0px; }
+  23% { top: -3px; }
+  24% { top: 0px; }
+  25% { top: -3px; }
+  26% { top: 0px; }
+  40% { top: 0px; }
+  41% { top: -3px; }
+  42% { top: 0px; }
+  50% { top: 0px; }
+  51% { top: -4px; }
+  52% { top: 0px; }
+  53% { top: -4px; }
+  54% { top: 0px; }
+  55% { top: -4px; }
+  56% { top: 0px; }
+  57% { top: -4px; }
+  58% { top: 0px; }
+  80% { top: 0px; }
+  81% { top: -3px; }
+  82% { top: 0px; }
+  100% { top: 0px; }
+}
+@-webkit-keyframes CabinAnime {
+  0% { top: 0px; }
+  20% { top: 0px; }
+  21% { top: -3px; }
+  22% { top: 0px; }
+  23% { top: -3px; }
+  24% { top: 0px; }
+  25% { top: -3px; }
+  26% { top: 0px; }
+  40% { top: 0px; }
+  41% { top: -3px; }
+  42% { top: 0px; }
+  50% { top: 0px; }
+  51% { top: -4px; }
+  52% { top: 0px; }
+  53% { top: -4px; }
+  54% { top: 0px; }
+  55% { top: -4px; }
+  56% { top: 0px; }
+  57% { top: -4px; }
+  58% { top: 0px; }
+  80% { top: 0px; }
+  81% { top: -3px; }
+  82% { top: 0px; }
+  100% { top: 0px; }
+}
+

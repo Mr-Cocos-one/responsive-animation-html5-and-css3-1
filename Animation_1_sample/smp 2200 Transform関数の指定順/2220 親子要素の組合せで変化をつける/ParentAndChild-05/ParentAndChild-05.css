@@ -1,0 +1,68 @@
+/* ParentAndChild-05.css */
+
+/*************************************************************************************
+ * 親子の要素を組み合わせて変化をつける（０５）。                                    *
+ * （子要素が螺旋運動及び丸から四角へ変形しながら中心（親要素）に吸収され消滅する。）*
+ *************************************************************************************/
+#stage {
+  width: 700px; height: 500px;
+  background-color: white;
+  border: solid 1px black;
+  position: relative;
+}
+
+#wrap {
+  top: 225px; left: 325px;
+  width: 50px; height: 50px;
+  /* border: solid 1px red; */
+  position: absolute;
+}
+
+#box1 {
+  top: 0px; left: 0px;
+  width: 50px; height: 50px;
+  border: solid 2px cyan;
+  position: absolute;
+  
+  transition: opacity 5s ease-in, transform 5s ease-in-out;
+  -webkit-transition: opacity 5s ease-in, -webkit-transform 5s ease-in-out;
+}
+
+#rect1 {
+  top: -50px; left: 180px;
+  background-color: yellow;
+}
+
+#rect2 {
+  top: -50px; left: -280px;    /* leftは（自身の大きさ＋rect1の距離－親要素の大きさ）にするとrect1と同じ距離になる。 */
+  background-color: magenta;
+}
+
+.orders05 {
+  width: 150px; height: 150px;
+  border-radius: 150px;
+  position: absolute;
+  
+  transition: border-radius 5s ease-in, transform 5s ease-in-out;
+  -webkit-transition: border-radius 5s ease-in, -webkit-transform 5s ease-in-out;
+}
+
+#wrap:hover #box1 {
+  opacity: 0;
+  
+  transform: rotateZ(360deg) scale(0.2, 0.2);
+  -webkit-transform: rotateZ(360deg) scale(0.2, 0.2);
+}
+#wrap:hover #rect1 {
+  border-radius: 0px;
+  
+  transform: translateX(-230px);          /* 移動距離は親大きさの分を加えると移動後親に重なる。 */
+  -webkit-transform: translateX(-230px);  /* 移動距離は親大きさの分を加えると移動後親に重なる。 */
+}
+#wrap:hover #rect2 {
+  border-radius: 0px;
+  
+  transform: translateX(230px);           /* 移動距離は親大きさの分を加えると移動後親に重なる。 */
+  -webkit-transform: translateX(230px);   /* 移動距離は親大きさの分を加えると移動後親に重なる。 */
+}
+

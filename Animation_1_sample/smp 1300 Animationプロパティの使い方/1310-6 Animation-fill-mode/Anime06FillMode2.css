@@ -1,0 +1,70 @@
+/* Anime06FillMode2.css */
+/* how to use animation-fill-mode */
+/* sample of animation-fill-mode: backwards, forwards, backwards; */
+
+#stage {
+  width: 600px; height: 160px;
+  background-color: #FFFFFF;
+  border: solid 1px #000000;
+  position: relative;
+}
+
+#ballBox {
+  top: 5px; left: 5px;
+  width: 100px; height: 100px;
+  border: solid 2px #000000;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  
+  animation-name: trans, colorChg, sizeChg;
+  animation-duration: 5s;
+  animation-timing-function: ease-in, linear, ease-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: backwards, forwards, backwards;
+  -webkit-animation-name: trans, colorChg, sizeChg;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-timing-function: ease-in, linear, ease-out;
+  -webkit-animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
+  -webkit-animation-fill-mode: backwards, forwards, backwards;
+}
+
+@keyframes trans {
+  0% { }
+  100% { top: 50px; left: 490px; border-radius: 5%; }
+}
+@-webkit-keyframes trans {
+  0% { }
+  100% { top: 50px; left: 490px; border-radius: 5%; }
+}
+
+@keyframes colorChg {
+  0% { }
+  25% { background-color: yellow; }
+  50% { background-color: lime; }
+  75% { background-color: blue; }
+  100% { background-color: magenta; }
+}
+@-webkit-keyframes colorChg {
+  0% { }
+  25% { background-color: yellow; }
+  50% { background-color: lime; }
+  75% { background-color: blue; }
+  100% { background-color: magenta; }
+}
+
+@keyframes sizeChg {
+  0% { }
+  50% { transform: scale(0.5, 0.5);  }
+  100% { }
+}
+@-webkit-keyframes sizeChg {
+  0% { }
+  50% { -webkit-transform: scale(0.5, 0.5);  }
+  100% { }
+}
+

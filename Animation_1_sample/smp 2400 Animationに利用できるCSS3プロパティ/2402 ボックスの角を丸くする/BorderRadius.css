@@ -1,0 +1,38 @@
+/* BorderRadius.css */
+
+#stage {
+  width: 600px; height: 400px;
+  background-color: white;
+  border: solid 1px black;
+}
+
+#roundRect1 {
+  margin: 20px 0px 0px 30px;
+  width: 200px; height: 100px;
+  background-color: yellow;
+  border: solid 10px gray;
+  position: absolute;
+  
+  border-radius: 80px 30px 30px 20px / 40px 30px 50px 20px;
+}
+
+#roundRect2 {
+  margin: 20px 0px 0px 300px;
+  width: 200px; height: 100px;
+  background-color: yellow;
+  border: solid 10px gray;
+  position: absolute;
+  
+  border-radius: 50px 10px 40px 30px;
+}
+
+#roundRect3 {
+  margin: 160px 0px 0px 30px;
+  width: 200px; height: 100px;
+  background-color: yellow;
+  border: solid 10px gray;
+  position: absolute;
+  
+  border-radius: 50px;
+}
+

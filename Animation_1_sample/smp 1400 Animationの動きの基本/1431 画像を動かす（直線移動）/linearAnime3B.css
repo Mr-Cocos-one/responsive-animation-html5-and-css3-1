@@ -1,0 +1,30 @@
+/* linearAnime3.css */
+
+/* éŒÇﬂà⁄ìÆÅAägëÂ ********************************************************/
+#stage {
+  margin: 0px;
+  width: 700px; height: 300px;
+  background-color: skyblue;
+  position: relative;
+}
+#stage img {
+  top: 10px; left: 10px;
+  width: 96px; height: 73px;
+  position: absolute;
+  
+  transform: rotateZ(20deg);
+  -webkit-transform: rotateZ(20deg);
+  
+  animation: anime3 5s ease-in-out 0s 3 normal;
+  -webkit-animation: anime3 5s ease-in-out 0s 3 normal;
+}
+@keyframes anime3 {
+  0% { }
+  //100% { top: 140px; left: 500px; width: 192px; height: 147px; }
+  100% { transform: translateX(538px) translateY(167px) rotateZ(20deg) scale(2, 2); }
+}
+@-webkit-keyframes anime3 {
+  0% { }
+  100% { -webkit-transform: translateX(538px) translateY(167px) rotateZ(20deg) scale(2, 2); }
+}
+

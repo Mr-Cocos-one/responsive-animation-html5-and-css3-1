@@ -1,0 +1,67 @@
+/* TextShadow2.css */
+
+#stage {
+  width: 600px; height: 450px;
+  background-color: #FFFFFF;
+  border: solid 1px #000000;
+  position: relative;
+}
+
+#button {
+  top: 20px; left: 247px;
+  width: 100px; height: 50px;
+  border: solid 3px #CCCCCC;
+  border-radius: 10px;
+  text-align: center;
+  color: #CCCCCC;
+  line-height: 55px;
+  cursor: default;
+  position: absolute;
+}
+
+#shadow1 {
+  top: 348px; left: -180px;
+  width: 450px; height: 60px;
+  position: absolute;
+  text-align: center;
+  /* color: rgba( 255, 255, 255, 0.0 ); */
+  color: transparent;
+  font: bold 48px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+  text-shadow: 0px 5px 2px dimgray;
+  
+  transition: 2s linear;
+  -webkit-transition: 2s linear;
+}
+
+#div1 {
+  top: 350px; left: -180px;
+  width: 450px; height: 60px;
+  position: absolute;
+  text-align: center;
+  color: #99FF00;
+  font: bold 48px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+  
+  transition: 2s linear;
+  -webkit-transition: 2s linear;
+}
+
+#button:hover {
+  background-color: #EEEEEE;
+  color: #999999;
+}
+
+#button:hover #shadow1 {
+  top: 300px; left: -250px;
+  width: 600px; height: 120px;
+  font-size: 80px;
+  text-shadow: 0px 20px 30px gray, 0px 20px 50px gray;
+}
+
+#button:hover #div1 {
+  top: 100px;
+  color: #00FFFF;
+}
+
+.font28GothicB {
+  font: bold 28px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+}

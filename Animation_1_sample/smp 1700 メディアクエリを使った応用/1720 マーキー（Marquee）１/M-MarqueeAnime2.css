@@ -1,0 +1,125 @@
+/* M-MarqueeAnime2.css */
+
+/*******************************************************************/
+/* screen width over 980px (Base)                                  */
+/*******************************************************************/
+#stage {
+  margin: 0px;
+  width: 900px; height: 300px;
+  //border: 1px solid #000000;
+  position: relative;
+}
+
+#div1 {
+  top: 120px; left: 570px;
+  width: 450px; height: 50px;
+  position: absolute;
+  overflow: hidden;
+  
+  background-image: linear-gradient(to right, red, yellow);
+  background-image: -webkit-gradient(linear, left center, right center,
+                     from(red), to(yellow), color-stop(0.3, orange));
+  
+  transform: perspective(200px) rotateY(45deg);
+  -webkit-transform: perspective(200px) rotateY(45deg);
+}
+#div1 span {
+  top: 0px; left: 0px;
+  padding: 10px 0px 0px 0px;
+  width: 1300px; height: 50px;  /* text長が1300px位になる。 */
+  text-align: left;
+  font: bold 32px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+  color: black;
+  position: absolute;
+  
+  transform: translateX(450px);
+  -webkit-transform: translateX(450px);
+  
+  animation: telop1anime 20s linear 0s infinite normal;
+  -webkit-animation: telop1anime 20s linear 0s infinite normal;
+}
+@keyframes telop1anime {
+  0% { }
+  100% { transform: translateX(-1300px); }
+}
+@-webkit-keyframes telop1anime {
+  0% { }
+  100% { -webkit-transform: translateX(-1300px); }
+}
+
+
+/*******************************************************************/
+/* screen width from 600px to 979px                                */
+/*******************************************************************/
+@media only screen and (min-width:600px) and (max-width:979px) {
+  #stage {
+    width: 600px; height: 200px;
+  }
+  
+  #div1 {
+    top: 80px; left: 380px;
+    width: 300px; height: 33px;
+    
+    transform: perspective(133px) rotateY(45deg);
+    -webkit-transform: perspective(133px) rotateY(45deg);
+    
+  }
+  #div1 span {
+    padding: 7px 0px 0px 0px;
+    width: 867px; height: 33px;
+    font: bold 20px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+    
+    transform: translateX(300px);
+    -webkit-transform: translateX(300px);
+  
+    animation: telop1anime-m 20s linear 0s infinite normal;
+    -webkit-animation: telop1anime-m 20s linear 0s infinite normal;
+  }
+  @keyframes telop1anime-m {
+    0% { }
+    100% { transform: translateX(-867px); }
+  }
+  @-webkit-keyframes telop1anime-m {
+    0% { }
+    100% { -webkit-transform: translateX(-867px); }
+  }
+}
+
+
+/*******************************************************************/
+/* screen width under 599px                                        */
+/*******************************************************************/
+@media only screen and (max-width:599px) {
+  #stage {
+    width: 400px; height: 133px;
+  }
+  
+  #div1 {
+    top: 53px; left: 253px;
+    width: 200px; height: 22px;
+    
+    transform: perspective(89px) rotateY(45deg);
+    -webkit-transform: perspective(89px) rotateY(45deg);
+    
+  }
+  #div1 span {
+    padding: 4px 0px 0px 0px;
+    width: 577px; height: 22px;
+    font: bold 14px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+    
+    transform: translateX(200px);
+    -webkit-transform: translateX(200px);
+    
+    animation: telop1anime-s 20s linear 0s infinite normal;
+    -webkit-animation: telop1anime-s 20s linear 0s infinite normal;
+  }
+  @keyframes telop1anime-s {
+    0% { }
+    100% { transform: translateX(-577px); }
+  }
+  @-webkit-keyframes telop1anime-s {
+    0% { }
+    100% { -webkit-transform: translateX(-577px); }
+  }
+}
+

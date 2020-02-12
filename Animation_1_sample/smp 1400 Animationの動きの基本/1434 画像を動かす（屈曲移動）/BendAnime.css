@@ -1,0 +1,34 @@
+/* BendAnime.css */
+
+/* ‹ü‹ÈˆÚ“® ***************************************************************/
+#stage {
+  margin: 0px;
+  width: 700px; height: 350px;
+  background-color: skyblue;
+  position: relative;
+}
+#stage img {
+  top: 10px; left: 10px;
+  width: 192px; height: 147px;
+  position: absolute;
+  
+  animation: anime1 10s linear 0s infinite normal;
+  -webkit-animation: anime1 10s linear 0s infinite normal;
+}
+@keyframes anime1 {
+  0% { }
+  20% { top: 10px; left: 500px; }
+  40% { top: 190px; left: 500px; }
+  60% { top: 30px; left: 250px; }
+  80% { top: 190px; left: 10px; }
+  100% { top: 10px;  left: 10px; }
+}
+@-webkit-keyframes anime1 {
+  0% { }
+  20% { top: 10px; left: 500px; }
+  40% { top: 190px; left: 500px; }
+  60% { top: 30px; left: 250px; }
+  80% { top: 190px; left: 10px; }
+  100% { top: 10px;  left: 10px; }
+}
+

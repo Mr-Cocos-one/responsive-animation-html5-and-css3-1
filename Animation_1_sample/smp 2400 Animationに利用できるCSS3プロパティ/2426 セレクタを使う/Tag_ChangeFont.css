@@ -1,0 +1,100 @@
+/* Tag_ChangeFont.css */
+
+#stage {
+  width: 600px; height: 500px;
+  background-color: black;
+  border: solid 1px black;
+  position: relative;
+}
+
+#button {
+  top: 10px; left:460px;
+  width: 120px; height: 40px;
+  border: solid 2px #CCCCCC;
+  border-radius: 10px;
+  text-align: center;
+  color: #CCCCCC;
+  line-height: 50px;
+  cursor: default;
+  position: absolute;
+}
+.font28GothicB {
+  font: bold 28px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+}
+
+#text01 {
+  top: 50px; left: -445px;
+  width: 280px; height: 210px;
+  text-align: center;
+  position: absolute;
+}
+.font01 {
+  color: red;
+  font: bold 180px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+  line-height: 200px;
+  
+  transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+}
+
+#text02 {
+  top: 50px; left: -155px;
+  width: 280px; height: 210px;
+  text-align: center;
+  position: absolute;
+}
+.font02 {
+  color: yellow;
+  font: bold 180px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+  line-height: 200px;
+  
+  transition: all 1s linear;
+  -webkit-transition: all 1s linear;
+}
+
+#text03 {
+  top: 270px; left: -155px;
+  width: 280px; height: 210px;
+  text-align: center;
+  position: absolute;
+}
+.font03 {
+  color: green;
+  font: bold 180px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+  line-height: 200px;
+  
+  transition: all 1.5s linear;
+  -webkit-transition: all 1.5s linear;
+}
+
+#text04 {
+  top: 270px; left: -445px;
+  width: 280px; height: 210px;
+  text-align: center;
+  position: absolute;
+}
+.font04 {
+  color: blue;
+  font: bold 180px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+  line-height: 200px;
+  
+  transition: all 2s linear;
+  -webkit-transition: all 2s linear;
+}
+
+#button:hover {
+  border-color: #555555;
+}
+/* button は font の一括変更の影響を受けないようにする。 */
+#button:hover .font28GothicB {
+  font-size: 28px;
+  line-height: 40px;
+  color: #555555;
+}
+
+/* font Tagを使用して、フォントを一括して変更する。 */
+#button:hover font {
+  color: magenta;
+  font-size: 24px;
+  line-height: 250px;
+}

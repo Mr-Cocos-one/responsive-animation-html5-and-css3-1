@@ -1,0 +1,61 @@
+/* ParentAndChild-03A.css */
+
+/******************************************************************************
+ * 親子の要素を組み合わせて変化をつける（０３Ａ）。                           *
+ * （親要素から子要素が螺旋運動しながら飛び出してくる。）                     *
+ ******************************************************************************/
+
+#stage {
+  width: 700px; height: 500px;
+  background-color: white;
+  border: solid 1px black;
+  position: relative;
+}
+
+#box1 {
+  top: 200px; left: 300px;
+  width: 100px; height: 100px;
+  border: solid 2px cyan;
+  position: absolute;
+  
+  transition: transform 3s ease-in-out;
+  -webkit-transition: -webkit-transform 3s ease-in-out;
+}
+
+#rect1 {
+  background-color: yellow;
+}
+
+#rect2 {
+  background-color: magenta;
+}
+
+.orders03 {
+  top: 0px; left: 0px;
+  width: 100px; height: 100px;
+  position: absolute;
+  opacity: 0;
+  
+  transition: opacity 3s ease-in, border-radius 3s ease-in, transform 3s ease-in-out;
+  -webkit-transition: opacity 3s ease-in, border-radius 3s ease-in, -webkit-transform 3s ease-in-out;
+}
+
+#box1:hover {
+  transform: scale(1.5, 1.5);
+  -webkit-transform: scale(1.5, 1.5);
+}
+#box1:hover #rect1 {
+  opacity: 1;
+  border-radius: 100px;
+  
+  transform: rotateZ(360deg) translateX(150px);
+  -webkit-transform: rotateZ(360deg) translateX(150px);
+}
+#box1:hover #rect2 {
+  opacity: 1;
+  border-radius: 100px;
+  
+  transform: rotateZ(360deg) translateX(-150px);
+  -webkit-transform: rotateZ(360deg) translateX(-150px);
+}
+

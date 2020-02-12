@@ -1,0 +1,151 @@
+/* R-MoonOrbitAnime.css */
+
+#stage-wrap {
+  margin: 0px;
+  width: 100%;
+  max-width: 600px;
+  max-width: 900px;
+  position: relative;
+}
+
+#stage {
+  //width: 600px; //height: 300px;
+  width: 100%;
+  padding-top: 50%;
+  background: url("images/Stars.png");
+  //background-size: 100px 100px;
+  background-size: 16.7% 33.3%;
+  position: relative;
+}
+
+#moonH {
+  //top: 135px; //left: 30px;
+  top: 45%; left: 5%;
+  //width: 30px; //height: 30px;
+  width: 5%; height: 10%;
+  position: absolute;
+  z-index: 1;
+  
+  animation: moonAnimeH 20s linear 0s infinite normal;
+  -webkit-animation: moonAnimeH 20s linear 0s infinite normal;
+}
+@keyframes moonAnimeH {
+  //from { animation-timing-function: ease-in; }
+  //1% { left: 31px; animation-timing-function: ease-in; }
+  //25% { left: 250px; animation-timing-function: ease-out; }
+  //50% { left: 480px; animation-timing-function: ease-in; }
+  //75% { left: 250px; animation-timing-function: ease-out; z-index: 3; }
+  //99% { left: 31px; animation-timing-function: ease-out; z-index: 3; }
+  //to { left: 30px; z-index: 3; }
+  from { animation-timing-function: ease-in; }
+  1% { left: 5.2%; animation-timing-function: ease-in; }
+  25% { left: 41.7%; animation-timing-function: ease-out; }
+  50% { left: 80%; animation-timing-function: ease-in; }
+  75% { left: 41.7%; animation-timing-function: ease-out; z-index: 3; }
+  99% { left: 5.2%; animation-timing-function: ease-out; z-index: 3; }
+  to { left: 5%; z-index: 3; }
+}
+@-webkit-keyframes moonAnimeH {
+  from { -webkit-animation-timing-function: ease-in; }
+  1% { left: 5.2%; -webkit-animation-timing-function: ease-in; }
+  25% { left: 41.7%; -webkit-animation-timing-function: ease-out; }
+  50% { left: 80%; -webkit-animation-timing-function: ease-in; }
+  75% { left: 41.7%; -webkit-animation-timing-function: ease-out; z-index: 3; }
+  99% { left: 5.2%; -webkit-animation-timing-function: ease-out; z-index: 3; }
+  to { left: 5%; z-index: 3; }
+}
+
+#moonV {
+  //top: 0px; //left:0px;
+  top: 0%; left:0%;
+  //width: 30px; //height: 30px;
+  width: 100%; height: 100%;
+  position: absolute;
+  z-index: 1;
+  
+  animation: moonAnimeV 20s linear 0s infinite normal;
+  -webkit-animation: moonAnimeV 20s linear 0s infinite normal;
+}
+@keyframes moonAnimeV {
+  //from { animation-timing-function: ease-in; }
+  //1% { top: -2px; animation-timing-function: ease-out; }
+  //25% { top: -60px; animation-timing-function: ease-in; }
+  //50% { top: 0px; animation-timing-function: ease-out; }
+  //75% { top: 60px; animation-timing-function: ease-in; z-index: 3; }
+  //99% { top: 2px; animation-timing-function: ease-out; z-index: 3; }
+  //to { top: 0px; z-index: 3; }
+  from { animation-timing-function: ease-in; }
+  1% { top: -6.7%; animation-timing-function: ease-out; }
+  25% { top: -200%; animation-timing-function: ease-in; }
+  50% { top: 0%; animation-timing-function: ease-out; }
+  75% { top: 200%; animation-timing-function: ease-in; z-index: 3; }
+  99% { top: 6.7%; animation-timing-function: ease-out; z-index: 3; }
+  to { top: 0%; z-index: 3; }
+}
+@-webkit-keyframes moonAnimeV {
+  from { -webkit-animation-timing-function: ease-in; }
+  1% { top: -6.7%; -webkit-animation-timing-function: ease-out; }
+  25% { top: -200%; -webkit-animation-timing-function: ease-in; }
+  50% { top: 0%; -webkit-animation-timing-function: ease-out; }
+  75% { top: 200%; -webkit-animation-timing-function: ease-in; z-index: 3; }
+  99% { top: 6.7%; -webkit-animation-timing-function: ease-out; z-index: 3; }
+  to { top: 0%; z-index: 3; }
+}
+
+#moon {
+  //top: 0px; //left: 0px;
+  top: 0%; left: 0%;
+  //width: 30px; //height: 30px;
+  width: 100%; height: 100%;
+  position: absolute;
+  z-index: 1;
+  
+  animation: moonAnime2 20s ease-in 0s infinite normal;
+  -webkit-animation: moonAnime2 20s ease-in 0s infinite normal;
+}
+
+@keyframes moonAnime2 {
+  from { animation-timing-function: ease-in; }
+  50% { transform: scale(6.0, 6.0); animation-timing-function: ease-out; z-index: 3; }
+  to { z-index: 3; }
+}
+@-webkit-keyframes moonAnime2 {
+  from { -webkit-animation-timing-function: ease-in; }
+  50% { -webkit-transform: scale(6.0, 6.0); -webkit-animation-timing-function: ease-out; z-index: 3; }
+  to { z-index: 3; }
+}
+
+#moon img {
+  //top: 0px; //left: 0px;
+  top: 0%; left: 0%;
+  width: 100%; height: 100%;
+  position: absolute;
+}
+
+#earth {
+  //top: 100px; //left: 150px;
+  top: 33.3%; left: 25%;
+  //width: 100px; //height: 100px;
+  width: 16.7%; height: 33.3%;
+  position: absolute;
+  z-index: 2;
+  
+  animation: earthAnime 10s linear 0s infinite normal;
+  -webkit-animation: earthAnime 10s linear 0s infinite normal;
+}
+@keyframes earthAnime {
+  from { }
+  to { transform: rotateZ(360deg); }
+}
+@-webkit-keyframes earthAnime {
+  from { }
+  to { -webkit-transform: rotateZ(360deg); }
+}
+
+#earth img {
+  //top: 0px; //left: 0px;
+  top: 0%; left: 0%;
+  width: 100%; height: 100%;
+  position: absolute;
+}
+

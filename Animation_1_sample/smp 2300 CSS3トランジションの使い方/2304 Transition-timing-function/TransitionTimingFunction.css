@@ -1,0 +1,39 @@
+/* TransitionTimingFunction.css */
+
+#box1 {
+  margin: 30px 0px 0px 50px;
+  width: 100px; height: 100px;
+  background-color: lightgray;
+  border: solid 5px gray;
+  
+  transition-property: all;
+  transition-duration: 3s;
+  transition-timing-function: steps(3, start);
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 3s;
+  -webkit-transition-timing-function: steps(3, start);
+}
+#box1.anime1 {
+  width:150px; height:150px;
+  background-color: yellow;
+  border-color: orange;
+}
+
+#box2 {
+  margin: 30px 0px 0px 50px;
+  width: 100px; height: 100px;
+  background-color: lightgray;
+  border: solid 5px gray;
+  
+  transition-property: all;
+  transition-duration: 2s;
+  transition-timing-function: ease-out;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 2s;
+  -webkit-transition-timing-function: ease-out;
+}
+#box2:hover {
+  width:150px; height:150px;
+  background-color: pink;
+  border-color: magenta;
+}

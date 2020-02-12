@@ -1,0 +1,60 @@
+/* Anime01.css */
+
+/* how to use animation-name and animation-duration */
+
+#stage {
+  width: 600px; height: 160px;
+  background-color: #FFFFFF;
+  border: solid 1px #000000;
+  position: relative;
+}
+
+#ballBox {
+  top: 5px; left: 5px;
+  width: 100px; height: 100px;
+  border: solid 2px #000000;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  
+  animation-name: trans, colorChg, sizeChg;
+  animation-duration: 5s, 5s, 3s;
+  -webkit-animation-name: trans, colorChg, sizeChg;
+  -webkit-animation-duration: 5s, 5s, 3s;
+}
+
+@keyframes trans {
+  0% { }
+  100% { top: 50px; left: 490px; border-radius: 5%; }
+}
+@-webkit-keyframes trans {
+  0% { }
+  100% { top: 50px; left: 490px; border-radius: 5%; }
+}
+
+@keyframes colorChg {
+  0% { }
+  25% { background-color: yellow; }
+  50% { background-color: lime; }
+  75% { background-color: blue; }
+  100% { background-color: magenta; }
+}
+@-webkit-keyframes colorChg {
+  0% { }
+  25% { background-color: yellow; }
+  50% { background-color: lime; }
+  75% { background-color: blue; }
+  100% { background-color: magenta; }
+}
+
+@keyframes sizeChg {
+  0% { }
+  50% { transform: scale(0.5, 0.5);  }
+  100% { }
+}
+@-webkit-keyframes sizeChg {
+  0% { }
+  50% { -webkit-transform: scale(0.5, 0.5);  }
+  100% { }
+}
+

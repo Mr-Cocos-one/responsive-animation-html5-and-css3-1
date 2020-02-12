@@ -1,0 +1,81 @@
+/* MultiplyMatrix3D.css */
+
+/**********************************************************************************************
+ * 画像の変形と回転を同時に行いたい場合（3x3matrixの掛け算をして3x3matrixを合成する。）             *
+ *********************************************************************************************/
+#stage {
+  width: 700px; height: 550px;
+  border: solid 1px black;
+  position: relative;
+}
+
+#button {
+  top: 10px; left: 300px;
+  width: 120px; height: 50px;
+  border: solid 1px black;
+  border-radius: 10px;
+  background-color: red;
+  text-align: center;
+  cursor: default;
+  position: absolute;
+}
+
+/******************************************************************************
+* matrix3dを使用しない場合（ｘ方向へ400px移動、ｚ方向へ100px移動、Y軸を       *
+* 時計回り120度回転、幅と高さ2倍拡大、Y軸方向へ10度傾斜）                     *
+*******************************************************************************/
+#box1 {
+  top: 80px; left:-250px;
+  width: 100px; height: 100px;
+  background-color: orange;
+  position: absolute;
+  
+  transition: transform 3s ease-in-out;
+  -webkit-transition: -webkit-transform 3s ease-in-out;
+}
+#button:hover #box1 {
+  transform: perspective(800px) translateX(400px) translateZ(100px)
+             rotateY(120deg) scale(2.0, 2.0) skewY(10deg);
+  -webkit-transform: perspective(800px) translateX(400px) translateZ(100px)
+                     rotateY(120deg) scale(2.0, 2.0) skewY(10deg);
+}
+
+/******************************************************************************
+* matrix3dを使用する場合（ｘ方向へ400px移動、ｚ方向へ100px移動、Y軸を         *
+* 時計回り120度回転、幅と高さ2倍拡大、Y軸方向へ10度傾斜）                     *
+* matrix3dで傾斜、拡大、回転を同時に行うときは、3x3matrixの掛け算が必要。     *
+* perspectiveはmatrix3dでの指定は難しいので、matrix3dとは別に指定すると良い。 *
+*******************************************************************************/
+#box2 {
+  top: 360px; left: -250px;
+  width: 100px; height: 100px;
+  background-color: cyan;
+  position: absolute;
+  
+  transition: transform 3s ease-in-out;
+  -webkit-transition: -webkit-transform 3s ease-in-out;
+}
+#button:hover #box2 {
+  transform: perspective(800px)
+             matrix3d(     -1,     0.36, -1.7320508, 0,
+                            0,      2.0,      0,     0,
+                        0.8660254,   0,    -0.5,     0,
+                           400,      0,     100,     1 );
+  -webkit-transform: perspective(800px)
+                     matrix3d(     -1,     0.36, -1.7320508, 0,
+                                    0,      2.0,      0,     0,
+                                0.8660254,   0,    -0.5,     0,
+                                   400,      0,     100,     1 );
+}
+
+/***************************************************************************/
+#button:hover {
+  background-color: green;
+}
+
+.font1 {
+  color: black;
+  font: bold 28px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+  line-height: 50px;
+}
+

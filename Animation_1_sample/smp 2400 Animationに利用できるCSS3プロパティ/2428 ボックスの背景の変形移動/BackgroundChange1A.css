@@ -1,0 +1,45 @@
+/* BackgroundChange1A.css */
+
+#stage {
+  width: 454px;
+  height: 354px;
+  background-color: #FFFFFF;
+  position: relative;
+}
+
+/*****************************************************************************
+* バックグラウンドの画像を動かす１Ａ （repeat画像）
+******************************************************************************/
+#div1 {
+  top: 0px; left: 0px;
+  width: 450px; height: 350px;
+  border: solid 2px #000000;
+  text-align: center;
+  line-height: 350px;
+  color: yellow;
+  position: absolute;
+  
+  background-color: lightgreen;
+  background-image: url("images/DSC00149L.jpg");
+  background-position: 30% 20%;
+  background-size: 80% 80%;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-origin: content-box;
+  background-clip: border-box;
+  
+  transition: 2s linear 0s;
+  -webkit-transition: 2s linear 0s;
+}
+
+#div1:hover {
+  color: transparent;
+  background-color: pink;
+  background-position: right bottom;
+  background-size: 25% 25%;
+}
+
+.font28GothicB {
+  font: bold 28px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+}
+

@@ -1,0 +1,191 @@
+/* LinearGradationSpec.css */
+#stage {
+  width: 700px;
+  height: 870px;
+  background-color: #000000;
+  position: relative;
+}
+
+/*****************************************************************************
+* 線形グラデーション１ （リニア to bottom / (from)top ）
+******************************************************************************/
+#div1 {
+  top: 20px; left: 20px;
+  width: 200px; height: 150px;
+  border: solid 1px #000000;
+  background: linear-gradient( to bottom, yellow, blue );
+  background: -webkit-linear-gradient( top, yellow, blue );
+  background: -moz-linear-gradient( top, yellow, blue );
+  position: absolute;
+}
+/*****************************************************************************
+* 線形グラデーション２ （リニア to right bottom / (from)left top ）
+******************************************************************************/
+#div2 {
+  top: 20px; left: 240px;
+  width: 200px; height: 150px;
+  border: solid 1px #000000;
+  background: linear-gradient( to right bottom, yellow, blue );
+  background: -webkit-linear-gradient( left top, yellow, blue );
+  background: -moz-linear-gradient( left top, yellow, blue );
+  position: absolute;
+}
+/*****************************************************************************
+* 線形グラデーション３ （リニア 開始位置・角度指定なし、配色割合指定）
+******************************************************************************/
+#div3 {
+  top: 20px; left: 460px;
+  width: 200px; height: 150px;
+  border: solid 1px #000000;
+  background: linear-gradient( yellow 0%, blue 20%, #00FF00 );
+  background: -webkit-linear-gradient( yellow 0%, blue 20%, #00FF00 );
+  background: -moz-linear-gradient( yellow 0%, blue 20%, #00FF00 );
+  position: absolute;
+}
+/*****************************************************************************
+* 線形グラデーション４ （リニア to right bottom / (from)left bottom 対角線に平行にならない）
+******************************************************************************/
+#div4 {
+  top: 190px; left: 20px;
+  width: 200px; height: 150px;
+  border: solid 1px #000000;
+  background: linear-gradient( to right top, red, white, blue );
+  background: -webkit-linear-gradient( left bottom, red, white, blue );
+  background: -moz-linear-gradient( left bottom, red, white, blue );
+  position: absolute;
+}
+/*****************************************************************************
+* 線形グラデーション５ （リニア 長方形の対角線に平行に色が変化）
+******************************************************************************/
+#div5 {
+  top: 190px; left: 240px;
+  width: 200px; height: 150px;
+  border: solid 1px #000000;
+  background: linear-gradient( 37deg, red, white, blue );
+  background: -webkit-linear-gradient( 53deg, red, white, blue );
+  background: -moz-linear-gradient( 53deg, red, white, blue );
+  position: absolute;
+}
+/*****************************************************************************
+* 線形グラデーション６ （リニア 配色割合が０％以下、１００％以上を指定）
+******************************************************************************/
+#div6 {
+  top: 190px; left: 460px;
+  width: 200px; height: 150px;
+  border: solid 1px #000000;
+  background: linear-gradient( to right bottom, red -20%, #00FF00 50%, blue 120% );
+  background: -webkit-linear-gradient( left top, red -20%, #00FF00 50%, blue 120% );
+  background: -moz-linear-gradient( left top, red -20%, #00FF00 50%, blue 120% );
+  position: absolute;
+}
+/*****************************************************************************
+* 線形グラデーション７ （リニア レインボーカラー）
+******************************************************************************/
+#div7 {
+  top: 360px; left: 20px;
+  width: 200px; height: 150px;
+  border: solid 1px #000000;
+  background: linear-gradient( to right bottom, #F00, #FF0, #0F0, #0FF, #00F, #F0F );
+  background: -webkit-linear-gradient( left top, #F00, #FF0, #0F0, #0FF, #00F, #F0F );
+  background: -moz-linear-gradient( left top, #F00, #FF0, #0F0, #0FF, #00F, #F0F );
+  position: absolute;
+}
+/*****************************************************************************
+* 線形グラデーション８ （リピート）
+******************************************************************************/
+#div8 {
+  top: 360px; left: 240px;
+  width: 200px; height: 150px;
+  border: solid 1px #000000;
+  background: repeating-linear-gradient( to right bottom, red 0%, #00FF00 10%, blue 20% );
+  background: -webkit-repeating-linear-gradient( left top, red 0%, #00FF00 10%, blue 20% );
+  background: -moz-repeating-linear-gradient( left top, red 0%, #00FF00 10%, blue 20% );
+  position: absolute;
+}
+/*****************************************************************************
+* 線形グラデーション９ （リピート１回＝リニア）
+******************************************************************************/
+#div9 {
+  top: 360px; left: 460px;
+  width: 200px; height: 150px;
+  border: solid 1px #000000;
+  background: repeating-linear-gradient( to right bottom, red 0%, #00FF00 50%, blue 100% );
+  background: -webkit-repeating-linear-gradient( left top, red 0%, #00FF00 50%, blue 100% );
+  /* background: -webkit-linear-gradient( left top, red 0%, #00FF00 50%, blue 100% ); */
+  /* background: -webkit-linear-gradient( left top, red, #00FF00, blue ); */
+  background: -moz-repeating-linear-gradient( left top, red 0%, #00FF00 50%, blue 100% );
+  position: absolute;
+}
+/*****************************************************************************
+* 線形グラデーション１０ （リピート 角度で指定）
+******************************************************************************/
+#div10 {
+  top: 530px; left: 20px;
+  width: 200px; height: 150px;
+  border: solid 1px #000000;
+  background: repeating-linear-gradient( 90deg, red 0%, #00FF00 10%, blue 20% );
+  background: -webkit-repeating-linear-gradient( 0deg, red 0%, #00FF00 10%, blue 20% );
+  background: -moz-repeating-linear-gradient( 0deg, red 0%, #00FF00 10%, blue 20% );
+  position: absolute;
+}
+/*****************************************************************************
+* 線形グラデーション１１ （リニア 終了色の指定位置以降は完全な終了色で満たされる）
+******************************************************************************/
+#div11 {
+  top: 530px; left: 240px;
+  width: 200px; height: 150px;
+  border: solid 1px #000000;
+  background: linear-gradient(red, blue 10px, yellow 20px, red 30px);
+  background: -webkit-linear-gradient(red, blue 10px, yellow 20px, red 30px);
+  background: -moz-linear-gradient(red, blue 10px, yellow 20px, red 30px);
+  position: absolute;
+}
+/*****************************************************************************
+* 線形グラデーション１２ （リピート 終了色の指定位置以降はリピートされる）
+******************************************************************************/
+#div12 {
+  top: 530px; left: 460px;
+  width: 200px; height: 150px;
+  border: solid 1px #000000;
+  background: repeating-linear-gradient(red, blue 10px, yellow 20px, red 30px);
+  background: -webkit-repeating-linear-gradient(red, blue 10px, yellow 20px, red 30px);
+  background: -moz-repeating-linear-gradient(red, blue 10px, yellow 20px, red 30px);
+  position: absolute;
+}
+/*****************************************************************************
+* 線形グラデーション１３ （リピート １２の配色を％で指定）
+******************************************************************************/
+#div13 {
+  top: 700px; left: 20px;
+  width: 200px; height: 150px;
+  border: solid 1px #000000;
+  background: repeating-linear-gradient(to bottom, red, blue 10px, yellow 20px, red 30px);
+  background: -webkit-repeating-linear-gradient(top, red, blue 10%, yellow 20%, red 30%);
+  background: -moz-repeating-linear-gradient(top, red, blue 10px, yellow 20px, red 30px);
+  position: absolute;
+}
+/*****************************************************************************
+* 線形グラデーション１４ （リニア 180deg / -90deg ）
+******************************************************************************/
+#div14 {
+  top: 700px; left: 240px;
+  width: 200px; height: 150px;
+  border: solid 1px #000000;
+  background: linear-gradient( 180deg, red, yellow, #00FF00 );
+  background: -webkit-linear-gradient( -90deg, red, yellow, #00FF00 );
+  background: -moz-linear-gradient( -90deg, red, yellow, #00FF00 );
+  position: absolute;
+}
+/*****************************************************************************
+* 線形グラデーション１５ （リニア to right bottom / (from)left top ）
+******************************************************************************/
+#div15 {
+  top: 700px; left: 460px;
+  width: 200px; height: 150px;
+  border: solid 1px #000000;
+  background: linear-gradient( to right bottom, red, yellow, #00FF00 );
+  background: -webkit-linear-gradient( left top, red, yellow, #00FF00 );
+  background: -moz-linear-gradient( left top, red, yellow, #00FF00 );
+  position: absolute;
+}
+

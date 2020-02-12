@@ -1,0 +1,65 @@
+/* BackfaceVisibility2B.css */
+
+/**************************************************************************
+ * backface-visibilityの使い方２Ｂ。                                      *
+ * （perspectiveをtransformプロパティで指定した場合）                     *
+ **************************************************************************/
+#stage {
+  margin: 30px 0px 0px 50px;
+  width: 300px; height: 300px;
+  position: relative;
+}
+
+#rect1 {
+  top: 0px; left: 0px;
+  width: 200px; height: 200px;
+  background-color: darkgray;
+  border: solid 50px cyan;
+  position: absolute;
+}
+
+#rect2-back {
+  top: 0px; left: 0px;
+  width: 200px; height: 200px;
+  background-color: orange;
+  position: absolute;
+  
+  transform: perspective(500px) rotateY(0deg);
+  -webkit-transform: perspective(500px) rotateY(0deg);
+  /* 注意！ rotateY(0deg) を指定しておかないと、アニメーションさせた時に
+     perspectiveプロパティで指定した場合（BackfaceVisibility1.css）と逆回転になる。 */
+  
+  transition: transform 5s ease-in-out;
+  -webkit-transition: -webkit-transform 5s ease-in-out;
+}
+#rect2-front {
+  top: 0px; left: 0px;
+  width: 200px; height: 200px;
+  background-color: yellow;
+  position: absolute;
+  
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  
+  transform: perspective(500px) rotateY(0deg);
+  -webkit-transform: perspective(500px) rotateY(0deg);
+  
+  transition: transform 5s ease-in-out;
+  -webkit-transition: -webkit-transform 5s ease-in-out;
+}
+
+#rect1:hover #rect2-back {
+  transform: perspective(500px) rotateY(225deg);
+  -webkit-transform: perspective(500px) rotateY(225deg);
+}
+#rect1:hover #rect2-front {
+  transform: perspective(500px) rotateY(225deg);
+  -webkit-transform: perspective(500px) rotateY(225deg);
+}
+
+code {
+  color: blue;
+  font: bold 16px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+  line-height: 25px;
+}
+

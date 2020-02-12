@@ -1,0 +1,63 @@
+/* ParentAndChild-06.css */
+
+/*************************************************************************************
+ * 親子の要素を組み合わせて変化をつける（０６）。                                    *
+ * （２つの子要素が円軌道を描きながら水平移動する。）                                *
+ *************************************************************************************/
+#stage {
+  width: 700px; height: 500px;
+  background-color: white;
+  border: solid 1px black;
+  position: relative;
+}
+
+#box1 {
+  top: 225px; left: 190px;
+  width: 50px; height: 50px;
+  border: solid 2px cyan;
+  position: absolute;
+}
+
+#wrap1 {
+  top: -1px; left: -1px;
+  width: 50px; height: 50px;
+  position: absolute;
+  
+  transition: transform 10s ease-in-out 10s;
+  -webkit-transition: -webkit-transform 10s ease-in-out 10s;
+}
+
+#wrap2 {
+  top: 0px; left: 0px;
+  width: 50px; height: 50px;
+  position: absolute;
+  
+  transition: transform 25s ease-in-out;
+  -webkit-transition: -webkit-transform 25s ease-in-out;
+}
+
+#rect1 {
+  top: -170px; left: -25px;
+  width: 100px; height: 100px;
+  border-radius: 50px;
+  background-color: magenta;
+  position: absolute;
+}
+
+#rect2 {
+  top: 120px; left: -25px;
+  width: 100px; height: 100px;
+  border-radius: 50px;
+  background-color: yellow;
+  position: absolute;
+}
+
+#box1:hover #wrap1 {
+  transform: translateX(270px);
+  -webkit-transform: translateX(270px);
+}
+#box1:hover #wrap2 {
+  transform: rotateZ(4320deg);
+  -webkit-transform: rotateZ(4320deg);
+}
+

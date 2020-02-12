@@ -1,0 +1,84 @@
+/* ZeroSizeBox.css */
+
+#stage {
+  width: 500px; height: 500px;
+  background-color: black;
+  position: relative;
+  
+  text-align: center;
+  font: bold 80px Verdana;
+  line-height: 90px;
+}
+
+#parent1 {
+  top: 20px; left: 30px;
+  position: absolute;
+  
+  animation: p1-anime 3s ease-in-out 0s infinite alternate;
+  -webkit-animation: p1-anime 3s ease-in-out 0s infinite alternate;
+}
+@keyframes p1-anime {
+  0% { }
+  100% { left: 350px; }
+}
+@-webkit-keyframes p1-anime {
+  0% { }
+  100% { left: 350px; }
+}
+#p1Child1 {
+  top: 0px; left: 0px;
+  width: 100px; height: 100px;
+  background-color: yellow;
+  position: absolute;
+  color: red;
+}
+#p1Child2 {
+  top: 110px; left: 0px;
+  width: 100px; height: 100px;
+  background-color: red;
+  position: absolute;
+  color: yellow;
+}
+
+#parent2 {
+  top: 250px; left: 30px;
+  border: solid 10px white;
+  position: absolute;
+  
+  animation: p2-anime 3s ease-in-out 0s infinite alternate;
+  -webkit-animation: p2-anime 3s ease-in-out 0s infinite alternate;
+}
+@keyframes p2-anime {
+  0% { }
+  100% { transform: rotateZ(-70deg); }
+}
+@-webkit-keyframes p2-anime {
+  0% { }
+  100% { -webkit-transform: rotateZ(-70deg); }
+}
+#p2Child1 {
+  top: 0px; left: 0px;
+  width: 100px; height: 100px;
+  background-color: green;
+  position: absolute;
+  color: orange;
+}
+#p2Child2 {
+  top: 110px; left: 0px;
+  width: 100px; height: 100px;
+  background-color: orange;
+  position: absolute;
+  color: green;
+  
+  animation: p2c2-anime 3s ease-in-out 0s infinite alternate;
+  -webkit-animation: p2c2-anime 3s ease-in-out 0s infinite alternate;
+}
+@keyframes p2c2-anime {
+  0% { }
+  100% { transform:  translateY(100px) rotateZ(-90deg); }
+}
+@-webkit-keyframes p2c2-anime {
+  0% { }
+  100% { -webkit-transform:  translateY(100px) rotateZ(-90deg); }
+}
+

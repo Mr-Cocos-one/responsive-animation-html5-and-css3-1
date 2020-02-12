@@ -1,0 +1,45 @@
+/* AnimeAuto.css */
+
+#stage {
+  width: 600px; height: 250px;
+  background-color: #FFFFFF;
+  border: solid 1px #000000;
+  position: relative;
+}
+
+#pierrot {
+  top: 20px; left: 15px;
+  width: 88px; height: 117px;
+  position: absolute;
+  
+  animation: pierrotAnime 5s ease-in-out 0s infinite alternate;
+  -webkit-animation: pierrotAnime 5s ease-in-out 0s infinite alternate;
+}
+
+@keyframes pierrotAnime {
+  0% { }
+  100% { transform: translateX(480px); }
+}
+@-webkit-keyframes pierrotAnime {
+  0% { }
+  100% { -webkit-transform: translateX(480px); }
+}
+
+#ball {
+  top: 132px; left: 12px;
+  width: 100px; height: 100px;
+  position: absolute;
+  
+  animation: ballAnime 5s ease-in-out 0s infinite alternate;
+  -webkit-animation: ballAnime 5s ease-in-out 0s infinite alternate;
+}
+
+@keyframes ballAnime {
+  0% { }
+  100% { transform: translateX(480px) rotateZ(720deg); }
+}
+@-webkit-keyframes ballAnime {
+  0% { }
+  100% { -webkit-transform: translateX(480px) rotateZ(720deg); }
+}
+

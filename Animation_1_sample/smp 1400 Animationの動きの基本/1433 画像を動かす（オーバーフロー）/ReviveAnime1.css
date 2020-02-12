@@ -1,0 +1,26 @@
+/* ReviveAnime1.css */
+
+#stage {
+  margin: 0px;
+  width: 700px; height: 220px;
+  background-color: skyblue;
+  position: relative;
+  overflow: hidden;
+}
+#stage img {
+  top: 35px; left: -192px;
+  width: 192px; height: 147px;
+  position: absolute;
+  
+  animation: anime1 5s linear 0s infinite normal;
+  -webkit-animation: anime1 5s linear 0s infinite normal;
+}
+@keyframes anime1 {
+  0% { }
+  100% { left: 700px; transform: rotateZ(360deg); }
+}
+@-webkit-keyframes anime1 {
+  0% { }
+  100% { left: 700px; -webkit-transform: rotateZ(360deg); }
+}
+

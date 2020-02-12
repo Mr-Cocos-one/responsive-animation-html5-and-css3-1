@@ -1,0 +1,104 @@
+/* FlyingText2D.css */
+
+#stage {
+  width: 600px; height: 400px;
+  background-color: #000000;
+  position: relative;
+  overflow: hidden;
+}
+
+#button {
+  top: 20px; left: 247px;
+  width: 100px; height: 50px;
+  border: solid 3px #666666;
+  border-radius: 10px;
+  text-align: center;
+  color: #666666;
+  line-height: 55px;
+  cursor: default;
+  position: absolute;
+}
+#button:hover {
+  background-color: #555555;
+  color: #000000;
+}
+
+/* 「あ」 ******************************************************************/
+#div1 {
+  top: -20px; left: -300px;
+  position: absolute;
+  /* border: solid 3px yellow; */
+  
+  transition: 10s ease-in;
+  -webkit-transition: 10s ease-in;
+}
+
+#div1 span {
+  top: 400px; left: 0px;
+  width: 256px; height: 256px;
+  color: yellow;
+  font: bold 512px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+  opacity: 0.7;
+  position: absolute;
+  /* border: solid 3px blue; */
+  
+  transform-origin: 30% 20%;
+  -webkit-transform-origin: 30% 20%;
+  
+  transition: 10s ease-out;
+  -webkit-transition: 10s ease-out;
+}
+
+#button:hover #div1 {
+  left: 250px;
+}
+#button:hover #div1 span {
+  top: 0px;
+  font-size: 0px;
+  opacity: 1.0;
+  
+  transform: rotateZ(1080deg);
+  -webkit-transform: rotateZ(1080deg);
+}
+
+/* 「A」 ******************************************************************/
+#div2 {
+  top: -20px; left: -380px;
+  position: absolute;
+  /* border: solid 3px red; */
+  
+  transition: 10s ease-out;
+  -webkit-transition: 10s ease-out;
+}
+
+#div2 span {
+  top: 0px; left: 0px;
+   width: 256px; height: 256px;
+  color: hotpink;
+  font: bold 0px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+  opacity: 1.0;
+  position: absolute;
+  /* border: solid 3px green; */
+  
+  transform-origin: 30% 50%;
+  -webkit-transform-origin: 30% 50%;
+        
+  transition: 10s ease-out;
+  -webkit-transition: 10s ease-out;
+}
+
+#button:hover #div2 {
+  left: 300px;
+}
+#button:hover #div2 span {
+  top: 300px;
+  font-size: 512px;
+  opacity: 0.7;
+  
+  transform: rotateZ(720deg);
+  -webkit-transform: rotateZ(720deg);
+}
+
+.font28GothicB {
+  font: bold 28px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+}

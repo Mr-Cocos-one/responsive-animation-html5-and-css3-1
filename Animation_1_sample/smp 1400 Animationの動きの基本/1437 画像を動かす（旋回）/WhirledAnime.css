@@ -1,0 +1,51 @@
+/* WhirledAnime.css */
+
+#stage {
+  width: 600px; height: 400px;
+  background-image: url(images/SkyView.png);
+  border: solid 1px black;
+  position: relative;
+}
+
+#slideBox {
+  top: 50px; left: 10px;
+  width: 300px; height: 300px;
+  //border: solid 1px red;    /* borderを生かすと、スライドするボックスが見えます */
+  position: absolute;
+  
+  animation: slideAnime 15s ease-in-out 0s infinite alternate;
+  -webkit-animation: slideAnime 15s ease-in-out 0s infinite alternate;
+}
+@keyframes slideAnime {
+  from { }
+  to { left: 280px; }
+}
+@-webkit-keyframes slideAnime {
+  from { }
+  to { left: 280px; }
+}
+
+#slideBox img {
+  top: 0px; left: 125px;
+  width: 50px; height: 74px;
+  //border: solid 1px green;
+  position: absolute;
+  
+  transform-origin: 25px 150px;
+  -webkit-transform-origin: 25px 150px;
+  
+  transform: rotateZ(-90deg);
+  -webkit-transform: rotateZ(-90deg);
+  
+  animation: circleAnime 6s linear 0s infinite normal;
+  webkit-animation: circleAnime 6s linear 0s infinite normal;
+}
+@keyframes circleAnime {
+  0% { }
+  100% { transform: rotateZ(270deg); }
+}
+@-webkit-keyframes circleAnime {
+  0% { }
+  100% { -webkit-transform: rotateZ(270deg); }
+}
+

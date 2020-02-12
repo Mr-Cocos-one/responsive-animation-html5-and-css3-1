@@ -1,0 +1,49 @@
+/* R-CircleAnimation2.css */
+
+#stage-wrap {
+  margin: 0p;
+  width: 100%;
+  max-width: 400px;
+  //border: 1px solid #000000;
+  position: relative;
+}
+
+#stage {
+  //width: 400px; //height: 400px;
+  width: 100%;
+  padding-top: 100%;
+  background-color: skyblue;
+  position: relative;
+}
+#circleBox {
+  //top: 0px; //left: 168px;
+  top: 0%; left: 42%;
+  //width: 64px; //height: 200px;
+  width: 16%; height: 50%;
+  /* border: solid 1px red; */    /* borderを生かすと、回転するボックスが見えます */
+  position: absolute;
+  
+  transform-origin: 50% 100%;            /* または 50% bottom */
+  -webkit-transform-origin: 50% 100%;    /* または 50% bottom */
+  
+  animation: anime1 5s linear 0s infinite normal;
+  -webkit-animation: anime1 5s linear 0s infinite normal;
+}
+@keyframes anime1 {
+  0% { }
+  100% { transform: rotateZ(360deg); }
+}
+@-webkit-keyframes anime1 {
+  0% { }
+  100% { -webkit-transform: rotateZ(360deg); }
+}
+
+#circleBox img {
+  //top: 20px; //left: 0px;     /* topの値を変えることで、親ボックスの上辺からの距離を変えられます */
+  top: 10%; left: 0%;
+  //width: 64px; //height: 35px;
+  width: 100%; height: auto;
+  /* border: solid 1px blue; */
+  position: absolute;
+}
+

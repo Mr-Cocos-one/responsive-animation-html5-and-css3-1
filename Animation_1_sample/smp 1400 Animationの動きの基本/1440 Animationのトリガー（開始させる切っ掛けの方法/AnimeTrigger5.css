@@ -1,0 +1,85 @@
+/* AnimeTrigger5.css */
+
+#stage {
+  width: 600px; height: 250px;
+  background-color: #FFFFFF;
+  border: solid 1px #000000;
+  position: relative;
+}
+
+#button {
+  top: 10px; left: 460px;
+  width: 120px; height: 50px;
+  border: solid 1px black;
+  border-radius: 10px;
+  background-color: red;
+  text-align: center;
+  cursor: default;
+  position: absolute;
+}
+
+#pierrot {
+  top: 10px; left: -445px;
+  width: 88px; height: 117px;
+  position: absolute;
+  
+  animation: pierrotAnime 5s ease-in-out 0s infinite alternate;
+  -webkit-animation: pierrotAnime 5s ease-in-out 0s infinite alternate;
+  
+  animation-play-state: paused;
+  -webkit-animation-play-state: paused;
+}
+
+@keyframes pierrotAnime {
+  0% { }
+  100% { transform: translateX(480px); }
+}
+@-webkit-keyframes pierrotAnime {
+  0% { }
+  100% { -webkit-transform: translateX(480px); }
+}
+
+#ball {
+  top: 122px; left: -448px;
+  width: 100px; height: 100px;
+  position: absolute;
+  
+  animation: ballAnime 5s ease-in-out 0s infinite alternate;
+  -webkit-animation: ballAnime 5s ease-in-out 0s infinite alternate;
+  
+  animation-play-state: paused;
+  -webkit-animation-play-state: paused;
+}
+
+@keyframes ballAnime {
+  0% { }
+  100% { transform: translateX(480px) rotateZ(720deg); }
+}
+@-webkit-keyframes ballAnime {
+  0% { }
+  100% { -webkit-transform: translateX(480px) rotateZ(720deg); }
+}
+
+#button:hover {
+  border: solid 1px rgba( 0, 0, 0, 0.1 );
+  background-color: rgba( 255, 0, 0, 0.1 );
+}
+#button:hover .font1 {
+  color: rgba( 0, 0, 0, 0.1 );
+}
+
+#button:hover #pierrot {
+  animation-play-state: running;
+  -webkit-animation-play-state: running;
+}
+#button:hover #ball {
+  animation-play-state: running;
+  -webkit-animation-play-state: running;
+}
+
+.font1 {
+  color: black;
+  font: bold 28px "‚l‚r ‚oƒSƒVƒbƒN", Osaka, "ƒqƒ‰ƒMƒmŠpƒS Pro", Verdana;
+  line-height: 50px;
+}
+

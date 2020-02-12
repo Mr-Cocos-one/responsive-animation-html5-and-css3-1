@@ -1,0 +1,132 @@
+/* Class_VanishingDots.css */
+
+#stage {
+  width: 600px; height: 500px;
+  background-color: black;
+  border: solid 1px black;
+  position: relative;
+}
+
+#button {
+  top: 230px; left:240px;
+  width: 120px; height: 40px;
+  border: solid 2px gray;
+  border-radius: 10px;
+  text-align: center;
+  color: gray;
+  line-height: 50px;
+  cursor: default;
+  position: absolute;
+}
+.font28GothicB {
+  font: bold 28px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+}
+
+#dot01 {
+  top: -60px; left: -200px;
+  width: 50px; height: 50px;
+  background-color: red;
+  border-radius: 25px;
+  position: absolute;
+}
+#dot02 {
+  top: 100px; left: 220px;
+  width: 100px; height: 100px;
+  background-color: blue;
+  border-radius: 50px;
+  position: absolute;
+}
+#dot03 {
+  top: -200px; left: 200px;
+  width: 50px; height: 50px;
+  background-color: gray;
+  border-radius: 25px;
+  position: absolute;
+}
+#dot04 {
+  top: 200px; left: 100px;
+  width: 50px; height: 50px;
+  background-color: pink;
+  border-radius: 25px;
+  position: absolute;
+}
+#dot05 {
+  top: 120px; left: -220px;
+  width: 50px; height: 50px;
+  background-color: orange;
+  border-radius: 25px;
+  position: absolute;
+}
+#dot06 {
+  top: -150px; left: 30px;
+  width: 80px; height: 80px;
+  background-color: darkviolet;
+  border-radius: 40px;
+  position: absolute;
+}
+#dot07 {
+  top: -220px; left: -100px;
+  width: 50px; height: 50px;
+  background-color: sandybrown;
+  border-radius: 25px;
+  position: absolute;
+}
+#dot08 {
+  top: 80px; left: 30px;
+  width: 30px; height: 30px;
+  background-color: green;
+  border-radius: 15px;
+  position: absolute;
+}
+#dot09 {
+  top: -100px; left: 200px;
+  width: 120px; height: 120px;
+  background-color: yellow;
+  border-radius: 60px;
+  position: absolute;
+}
+#dot10 {
+  top: 160px; left: -100px;
+  width: 80px; height: 80px;
+  background-color: cyan;
+  border-radius: 40px;
+  position: absolute;
+}
+#dot11 {
+  top: 50px; left: -140px;
+  width: 80px; height: 80px;
+  background-color: magenta;
+  border-radius: 40px;
+  position: absolute;
+}
+#dot12 {
+  top: -120px; left: -120px;
+  width: 100px; height: 100px;
+  background-color: lightgreen;
+  border-radius: 50px;
+  position: absolute;
+}
+
+/* classセレクタ（.dots）に点の動きのtransitionを指定しておく。 */
+.dots {
+  transition: top 3s ease-in, left 3s ease-in,
+              width 3s ease-in, height 3s ease-in,
+              transform 3s ease-in;
+  -webkit-transition: top 3s ease-in, left 3s ease-in,
+                      width 3s ease-in, height 3s ease-in,
+                      -webkit-transform 3s ease-in;
+}
+
+#button:hover {
+  border-color: black;
+  color: black;
+}
+
+/* classセレクタ（.dots）を使用して、複数の点を一緒に動かす。 */
+#button:hover .dots {
+  top: 20px;
+  left: 60px;
+  width: 0px;
+  height: 0px;
+}
+

@@ -1,0 +1,39 @@
+/* FunctionOrder2.css */
+
+/**************************************************************************
+ * transformŠÖ”‚Ìw’è‡”Ô‚É‚æ‚é•Ï‰»‚Ìˆá‚¢B                              *
+ **************************************************************************/
+#stage {
+  width: 700px; height: 500px;
+  background-color: white;
+  /* border: solid 1px black; */
+  position: relative;
+}
+
+#box1 {
+  top: 150px; left: 50px;
+  width: 100px; height: 100px;
+  border: solid 1px cyan;
+  position: absolute;
+}
+
+/*****************************************************************************
+* translateX, rotateZ, scale ‚Ì‡”Ô‚ğ•Ï‚¦‚é                                  *
+******************************************************************************/
+/* ‚QDscale, translateX, rotateZ ‚Ì‡iŠî–{lŠpŒ`‚ğ2”{‚ÉŠg‘å‚µA300pxˆÚ“®‚µA
+       30“x‰ñ“]‚³‚¹ Ë 2”{‚ÉŠg‘åA‚U‚O‚OpxˆÚ“®‚É‚È‚Á‚Ä‚µ‚Ü‚¤A30“x‰ñ“] ********/
+#rect1 {
+  top: 0px; left: 0px;
+  width: 100px; height: 100px;
+  border: solid 1px cyan;
+  background-color: cyan;
+  position: absolute;
+  
+  transition: transform 3s ease-in-out;
+  -webkit-transition: -webkit-transform 3s ease-in-out;
+}
+#box1:hover #rect1 {
+  transform: scale(2, 2) translateX(300px) rotateZ(30deg);
+  -webkit-transform: scale(2, 2) translateX(300px) rotateZ(30deg);
+}
+

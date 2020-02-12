@@ -1,0 +1,89 @@
+/* Perspective2.css */
+
+#stage {
+  width: 700px; height: 400px;
+  background-color: lightgray;
+  border: solid 1px black;
+  position: relative;
+}
+
+#button {
+  top: 20px; left: 300px;
+  width: 120px; height: 50px;
+  border: solid 1px black;
+  border-radius: 10px;
+  background-color: red;
+  text-align: center;
+  cursor: default;
+  position: absolute;
+}
+.font1 {
+  color: black;
+  font: bold 28px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+  line-height: 50px;
+}
+
+#wrap {
+  top: 70px; left: -290px;
+  width: 678px; height: 298px;
+  background-color: gray;
+  position: absolute;
+  
+  perspective: 500px;
+  -webkit-perspective: 500px;
+  
+  perspective-origin: 50% 80%;
+  -webkit-perspective-origin: 50% 80%;
+}
+#wrap > :first-child {
+  top: 40px; left: 60px;
+  width: 280px; height: 210px;
+  position: absolute;
+  
+  transform-origin: 50% 70%;
+  -webkit-transform-origin: 50% 70%;
+  
+  transform: rotateX(30deg);
+  -webkit-transform: rotateX(30deg);
+  
+  transition: transform 3s ease-in-out;
+  -webkit-transition: -webkit-transform 3s ease-in-out;
+}
+#wrap > :first-child img {
+  top: 0px; left: 0px;
+  width: 100%; height: 100%;
+  position: absolute;
+}
+
+#wrap > :last-child {
+  top: 40px; left: 360px;
+  width: 280px; height: 210px;
+  position: absolute;
+  
+  transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+  
+  transform: rotateY(-10deg) rotateZ(-10deg);
+  -webkit-transform: rotateY(-10deg) rotateZ(-10deg);
+  
+  transition: transform 3s ease-in-out;
+  -webkit-transition: -webkit-transform 3s ease-in-out;
+}
+#wrap > :last-child img {
+  top: 0px; left: 0px;
+  width: 100%; height: 100%;
+  position: absolute;
+}
+
+#button:hover {
+  background-color: green;
+}
+#button:hover div#wrap > :first-child {
+  transform: rotateX(-30deg);
+  -webkit-transform: rotateX(-30deg);
+}
+#button:hover div#wrap > :last-child {
+  transform: rotateY(50deg) rotateZ(30deg);
+  -webkit-transform: rotateY(50deg) rotateZ(30deg);
+}
+

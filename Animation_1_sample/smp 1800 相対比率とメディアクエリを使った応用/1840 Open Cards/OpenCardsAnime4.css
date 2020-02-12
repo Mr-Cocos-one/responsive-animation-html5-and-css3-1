@@ -1,0 +1,209 @@
+/* OpenCardsAnime4.css */
+
+#stage {
+  width: 750px; height: 400px;
+  background-color: white;
+  border: solid 1px black;
+  position: relative;
+}
+/* 1st card *********************************************************************/
+#card1 {
+  top: 60px; left: 40px;
+  width: 178px; height: 271px;
+  position: absolute;
+  
+  perspective: 500px;
+  -webkit-perspective: 500px;
+}
+#card1-front {
+  top: 0px; left: 0px;
+  width: 178px; height: 271px;
+  position: absolute;
+  
+  backface-visibility: visible;
+  -webkit-backface-visibility: visible;
+  
+  animation: card1Anime 5s ease-in-out 0s infinite alternate;
+  -webkit-animation: card1Anime 5s ease-in-out 0s infinite alternate;
+  
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+#card1-front img {
+  top: 0px; left: 0px;
+  width: 100%; height: 100%;
+  position: absolute;
+  
+  transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+}
+#card1-back {
+  top: 0px; left: 0px;
+  width: 178px; height: 271px;
+  position: absolute;
+  
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  
+  animation: card1Anime 5s ease-in-out 0s infinite alternate;
+  -webkit-animation: card1Anime 5s ease-in-out 0s infinite alternate;
+  
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+#card1-back img {
+  top: 0px; left: 0px;
+  width: 100%; height: 100%;
+  position: absolute;
+}
+
+@keyframes card1Anime {
+  from { }
+  15% { transform: rotateY( 0deg ); }
+  85% { transform: rotateY( 180deg ); }
+  to { transform: rotateY( 180deg ); }
+}
+@-webkit-keyframes card1Anime {
+  from { }
+  15% { -webkit-transform: rotateY( 0deg ); }
+  85% { -webkit-transform: rotateY( 180deg ); }
+  to { -webkit-transform: rotateY( 180deg ); }
+}
+
+/* 2nd card *********************************************************************/
+#card2 {
+  top: 60px; left: 270px;
+  width: 178px; height: 271px;
+  position: absolute;
+  
+  perspective: 500px;
+  -webkit-perspective: 500px;
+}
+#card2-front {
+  top: 0px; left: 0px;
+  width: 178px; height: 271px;
+  position: absolute;
+  
+  backface-visibility: visible;
+  -webkit-backface-visibility: visible;
+  
+  animation: card2Anime 5s ease-in-out 0s infinite alternate;
+  -webkit-animation: card2Anime 5s ease-in-out 0s infinite alternate;
+  
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+#card2-front img {
+  top: 0px; left: 0px;
+  width: 100%; height: 100%;
+  position: absolute;
+  
+  transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+}
+#card2-back {
+  top: 0px; left: 0px;
+  width: 178px; height: 271px;
+  position: absolute;
+  
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  
+  animation: card2Anime 5s ease-in-out 0s infinite alternate;
+  -webkit-animation: card2Anime 5s ease-in-out 0s infinite alternate;
+  
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+#card2-back img {
+  top: 0px; left: 0px;
+  width: 100%; height: 100%;
+  position: absolute;
+}
+
+@keyframes card2Anime {
+  from { }
+  15% { transform: rotateX( 0deg ); }
+  85% { transform: rotateX( -180deg ); }
+  to { transform: rotateX( -180deg ); }
+}
+@-webkit-keyframes card2Anime {
+  from { }
+  15% { -webkit-transform: rotateX( 0deg ); }
+  85% { -webkit-transform: rotateX( -180deg ); }
+  to { -webkit-transform: rotateX( -180deg ); }
+}
+
+/* 3rd card *********************************************************************/
+#card3 {
+  top: 60px; left: 510px;
+  width: 178px; height: 271px;
+  position: absolute;
+  
+  perspective: 1000px;
+  -webkit-perspective: 1000px;
+}
+#card3-front {
+  top: 0px; left: 0px;
+  width: 178px; height: 271px;
+  position: absolute;
+  
+  transform-origin: 50% 100%;
+  -webkit-transform-origin: 50% 100%;
+  
+  transform: rotateX(-90deg);
+  -webkit-transform: rotateX(-90deg);
+  
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  
+  animation: card3Anime 5s ease-in-out 0s infinite alternate;
+  -webkit-animation: card3Anime 5s ease-in-out 0s infinite alternate;
+  
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+#card3-front img {
+  top: 0px; left: 0px;
+  width: 100%; height: 100%;
+  position: absolute;
+}
+#card3-back {
+  top: 0px; left: 0px;
+  width: 178px; height: 271px;
+  position: absolute;
+  
+  transform-origin: 50% 100%;
+  -webkit-transform-origin: 50% 100%;
+  
+  backface-visibility: visible;
+  -webkit-backface-visibility: visible;
+  
+  transform: rotateX(-90deg);
+  -webkit-transform: rotateX(-90deg);
+  
+  animation: card3Anime 5s ease-in-out 0s infinite alternate;
+  -webkit-animation: card3Anime 5s ease-in-out 0s infinite alternate;
+  
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+#card3-back img {
+  top: 0px; left: 0px;
+  width: 100%; height: 100%;
+  position: absolute;
+}
+
+@keyframes card3Anime {
+  from { }
+  15% { transform: rotateX( -90deg ); }
+  85% { transform: rotateX( 0deg ); }
+  to { transform: rotateX( 0deg ); }
+}
+@-webkit-keyframes card3Anime {
+  from { }
+  15% { -webkit-transform: rotateX( -90deg ); }
+  85% { -webkit-transform: rotateX( 0deg ); }
+  to { -webkit-transform: rotateX( 0deg ); }
+}
+

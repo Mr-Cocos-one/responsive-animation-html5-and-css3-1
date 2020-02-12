@@ -1,0 +1,65 @@
+/* CurveAnime1.css */
+
+#stage {
+  width: 400px; height: 500px;
+  background-color: skyblue;
+  position: relative;
+  overflow: hidden;
+}
+
+#boxX {
+  top: 0px; left: 0px;
+  width: 64px; height: 500px;
+  /* border: 1px solid red; */
+  position: absolute;
+  
+  animation: moveXAnime 5s ease-in 0s infinite normal;
+  -webkit-animation: moveXAnime 5s ease-in 0s infinite normal;
+}
+@keyframes moveXAnime {
+  0% { }
+  100% { left: 400px; }
+}
+@-webkit-keyframes moveXAnime {
+  0% { }
+  100% { left: 400px; }
+}
+
+#boxY {
+  top: 464px; left: 0px;
+  width: 64px; height: 35px;
+  /* border: 1px solid red; */
+  position: absolute;
+  
+  animation: moveYAnime 5s ease-out 0s infinite normal;
+  -webkit-animation: moveYAnime 5s ease-out 0s infinite normal;
+}
+@keyframes moveYAnime {
+  0% { }
+  100% { top: 20px; }
+}
+@-webkit-keyframes moveYAnime {
+  0% { }
+  100% { top: 20px; }
+}
+
+#boxY img {
+  top: 0px; left: 0px;
+  width: 64px; height: 35px;
+  position: absolute;
+  
+  transform: rotateZ(-90deg);
+  -webkit-transform: rotateZ(-90deg);
+  
+  animation: rotateAnime 5s linear 0s infinite normal;
+  -webkit-animation: rotateAnime 5s linear 0s infinite normal;
+}
+@keyframes rotateAnime {
+  0% { }
+  100% { transform: rotateZ(0deg); }
+}
+@-webkit-keyframes rotateAnime {
+  0% { }
+  100% { -webkit-transform: rotateZ(0deg); }
+}
+

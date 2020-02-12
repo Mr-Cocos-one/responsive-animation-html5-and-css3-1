@@ -1,0 +1,80 @@
+/* RoundImagesAnime5.css */
+
+#stage {
+  width: 360px; height: 550px;
+  background-color: #000000;
+  position: relative;
+  
+  perspective: 1000px;
+  -webkit-perspective: 1000px;
+  perspective-origin: 120% 50%;
+  -webkit-perspective-origin: 120% 50%;
+}
+
+#goRound {
+  top: 275px; left: 120px;
+  /* border: 4px solid red; */
+  position: absolute;
+  
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  
+  transform-origin: 0px 0px;
+  -webkit-transform-origin: 0px 0px;
+
+  animation: goRoundAnime 60s linear 0s infinite normal;
+  -webkit-animation: goRoundAnime 60s linear 0s infinite normal;
+}
+
+@keyframes goRoundAnime {
+  0% { transform: rotateX(0deg); }
+  100% { transform: rotateX(-360deg); }
+}
+@-webkit-keyframes goRoundAnime {
+  0% { -webkit-transform: rotateX(0deg); }
+  100% { -webkit-transform: rotateX(-360deg); }
+}
+
+#goRound img {
+  top: 0px; left: 0px;
+  width: 180px; height: 135px;
+  border: solid 1px gray;
+  position: absolute;
+  
+  transform-origin: 0% 0%;
+  -webkit-transform-origin: 0% 0%;
+}
+
+#goRound > img:nth-child(1) {
+  transform: rotateX(-0deg) translateY(-68px) translateZ(220px);
+  -webkit-transform: rotateX(-0deg) translateY(-68px) translateZ(220px);
+}
+#goRound > img:nth-child(2) {
+  transform: rotateX(-45deg) translateY(-68px) translateZ(220px);
+  -webkit-transform: rotateX(-45deg) translateY(-68px) translateZ(220px);
+}
+#goRound > img:nth-child(3) {
+  transform: rotateX(-90deg) translateY(-68px) translateZ(220px);
+  -webkit-transform: rotateX(-90deg) translateY(-68px) translateZ(220px);
+}
+#goRound > img:nth-child(4) {
+  transform: rotateX(-135deg) translateY(-68px) translateZ(220px);
+  -webkit-transform: rotateX(-135deg) translateY(-68px) translateZ(220px);
+}
+#goRound > img:nth-child(5) {
+  transform: rotateX(-180deg) translateY(-68px) translateZ(220px);
+  -webkit-transform: rotateX(-180deg) translateY(-68px) translateZ(220px);
+}
+#goRound > img:nth-child(6) {
+  transform: rotateX(-225deg) translateY(-68px) translateZ(220px);
+  -webkit-transform: rotateX(-225deg) translateY(-68px) translateZ(220px);
+}
+#goRound > img:nth-child(7) {
+  transform: rotateX(-270deg) translateY(-68px) translateZ(220px);
+  -webkit-transform: rotateX(-270deg) translateY(-68px) translateZ(220px);
+}
+#goRound > img:nth-child(8) {
+  transform: rotateX(-315deg) translateY(-68px) translateZ(220px);
+  -webkit-transform: rotateX(-315deg) translateY(-68px) translateZ(220px);
+}
+

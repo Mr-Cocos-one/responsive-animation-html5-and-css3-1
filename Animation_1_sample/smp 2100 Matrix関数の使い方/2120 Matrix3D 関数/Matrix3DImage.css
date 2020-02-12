@@ -1,0 +1,96 @@
+/* TestMatrix3d.css */
+
+#stage {
+  width: 700px; height: 400px;
+  background-color: white;
+  border: solid 1px black;
+  position: relative;
+}
+
+#button {
+  top: 20px; left: 300px;
+  width: 120px; height: 50px;
+  border: solid 1px black;
+  border-radius: 10px;
+  background-color: red;
+  text-align: center;
+  cursor: default;
+  position: absolute;
+}
+.font1 {
+  color: black;
+  font: bold 28px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+  line-height: 50px;
+}
+
+#image1 {
+  top: 110px; left:-260px;
+  width: 280px; height: 210px;
+  border: solid 1px red;
+  position: absolute;
+}
+#image1 img {
+  top: 0px; left: 0px;
+  width: 280px; height: 210px;
+  position: absolute;
+  
+  transition: transform 3s ease-in-out;
+  -webkit-transition: -webkit-transform 3s ease-in-out;
+}
+
+#image2 {
+  top: 110px; left: 70px;
+  width: 280px; height: 210px;
+  border: solid 1px blue;
+  position: absolute;
+}
+#image2 img {
+  top: 0px; left: 0px;
+  width: 280px; height: 210px;
+  position: absolute;
+  
+  transition: transform 3s ease-in-out;
+  -webkit-transition: -webkit-transform 3s ease-in-out;
+}
+
+/* hover statement **************************************************/
+#button:hover {
+  background-color: green;
+}
+
+/***********************************************************************
+ ・m24(Y方向への深度):プラス値はX軸の正方向から見て反時計回りで
+   Yのマイナス方向へパースが大きくなる。マイナス値はX軸の正方向から
+   見て、時計回りでYのプラス方向へパースが大きくなる。
+ ・画像に時計回りで３０度回転を加えた。
+************************************************************************/
+#button:hover #image1 img {
+  transform: matrix3d( 0.8660254,   0.5,    0,   0,
+                         -0.5,   0.8660254, 0, 0.003,
+                          0,         0,     1,   0,
+                          0,         0,     0,   1 );
+  -webkit-transform: matrix3d( 0.8660254,   0.5,    0,   0,
+                                 -0.5,   0.8660254, 0, 0.003,
+                                  0,         0,     1,   0,
+                                  0,         0,     0,   1 );
+}
+
+/************************************************************************
+ ・m14(X方向への深度):プラス値はY軸の正方向から見て時計回りで
+   Xのマイナス方向へパースが大きくなる。マイナス値はY軸の正方向から
+   見て、反時計回りでXのプラス方向へパースが大きくなる。
+ ・m33(X方向への拡大・縮小率):正の値は等倍で変化なし。負の値は１回転し
+   ながら１度縮小消滅、出現拡張。出現後のサイズは元のサイズと同じ
+   （ただしm14の影響でX方向へパースが大きくなる）。
+************************************************************************/
+#button:hover #image2 img {
+  transform: matrix3d( 1, 0,   0, -0.003,
+                       0, 1,   0,    0,
+                       0, 0, -1.0,   0,
+                       0, 0,   0,    1 );
+  -webkit-transform: matrix3d( 1, 0,   0, -0.003,
+                               0, 1,   0,    0,
+                               0, 0, -1.0,   0,
+                               0, 0,   0,    1 );
+}
+

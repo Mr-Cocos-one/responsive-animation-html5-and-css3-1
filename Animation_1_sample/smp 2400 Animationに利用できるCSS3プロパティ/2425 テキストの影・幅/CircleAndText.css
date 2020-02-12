@@ -1,0 +1,64 @@
+/* CircleAndText.css */
+
+#stage {
+  width: 600px; height: 400px;
+  background-color: #000000;
+  position: relative;
+}
+
+#button {
+  top: 172px; left: 247px;
+  width: 100px; height: 50px;
+  border: solid 3px #666666;
+  border-radius: 10px;
+  text-align: center;
+  color: #666666;
+  line-height: 55px;
+  cursor: default;
+  position: absolute;
+}
+
+#div1 {
+  top: -178px; left: -253px;
+  width: 0px; height: 0px;
+  background-color: #CCECF4;
+  border: solid 1px #7FCFE2;
+  border-radius: 50%;
+  opacity: 1.0;
+  position: absolute;
+  
+  transition: 2s linear;
+  -webkit-transition: 2s linear;
+}
+
+#div1 span {
+  top: 0px; left: 0px;
+  text-align: center;
+  color: #FF9900;
+  font: bold 0px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+  opacity: 0.0;
+  position: absolute;
+  
+  transition: 2s linear;
+  -webkit-transition: 2s linear;
+}
+
+#button.anime1 {
+  background-color: #555555;
+  color: #000000;
+}
+#button.anime1 #div1 {
+  top: -90px; left: -60px;
+  width: 200px; height: 200px;
+  border: solid 10px #7FCFE2;
+}
+#button.anime1 #div1 span {
+  top: 35px; left: 0px;
+  font: bold 64px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+  opacity: 1.0;
+}
+
+.font28GothicB {
+  font: bold 28px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+}
+

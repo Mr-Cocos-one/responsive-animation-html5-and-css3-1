@@ -1,0 +1,201 @@
+/* MorphAndTextAnime.css */
+
+#stage {
+  width: 600px; height: 400px;
+  background-color: #000000;
+  position: relative;
+  overflow: hidden;
+  
+  perspective: 500px;
+  -webkit-perspective: 500px;
+}
+
+#div1 {
+  top: -8px; left: -8px;
+  width: 0px; height: 0px;
+  background-color: #CCECF4;
+  border: solid 1px #7FCFE2;
+  position: absolute;
+  
+  animation: RoundRectAnime1A 4s linear 0s 1 normal,
+             RoundRectAnime1B 4s linear 4s 1 normal,
+             RoundRectAnime1C 4s linear 8s 1 normal,
+             RoundRectAnime1D 10s linear 12s 1 normal,
+             RoundRectAnime1E 10s linear 22s infinite normal,
+             RoundRectAnime1F 12s linear 0s 1 normal;
+  
+  -webkit-animation: RoundRectAnime1A 4s linear 0s 1 normal,
+                     RoundRectAnime1B 4s linear 4s 1 normal,
+                     RoundRectAnime1C 4s linear 8s 1 normal,
+                     RoundRectAnime1D 10s linear 12s 1 normal,
+                     RoundRectAnime1E 10s linear 22s infinite normal,
+                     RoundRectAnime1F 12s linear 0s 1 normal;
+  
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes RoundRectAnime1A {
+  0% { }
+  50% { top: 122px; left: 87px; width: 400px; height: 150px;
+         border: solid 10px #7FCFE2; border-radius: 50px; }
+  100% { top: 122px; left: 87px; width: 400px; height: 150px;
+         border: solid 10px #7FCFE2; border-radius: 50px; }
+}
+@-webkit-keyframes RoundRectAnime1A {
+  0% { }
+  50% { top: 122px; left: 87px; width: 400px; height: 150px;
+         border: solid 10px #7FCFE2; border-radius: 50px; }
+  100% { top: 122px; left: 87px; width: 400px; height: 150px;
+         border: solid 10px #7FCFE2; border-radius: 50px; }
+}
+
+@keyframes RoundRectAnime1B {
+  0% { top: 122px; left: 87px; width: 400px; height: 150px;
+       border: solid 10px #7FCFE2; border-radius: 50px; }
+  50% { top: 122px; left: 87px; width: 400px; height: 150px;
+         border: solid 10px #7FCFE2; border-radius: 210px / 85px; }
+  100% { top: 122px; left: 87px; width: 400px; height: 150px;
+         border: solid 10px #7FCFE2; border-radius:  210px / 85px; }
+}
+@-webkit-keyframes RoundRectAnime1B {
+  0% { top: 122px; left: 87px; width: 400px; height: 150px;
+       border: solid 10px #7FCFE2; border-radius: 50px; }
+  50% { top: 122px; left: 87px; width: 400px; height: 150px;
+         border: solid 10px #7FCFE2; border-radius: 210px / 85px; }
+  100% { top: 122px; left: 87px; width: 400px; height: 150px;
+         border: solid 10px #7FCFE2; border-radius:  210px / 85px; }
+}
+
+@keyframes RoundRectAnime1C {
+  0% { top: 122px; left: 87px; width: 400px; height: 150px;
+         border: solid 10px #7FCFE2; border-radius:  210px / 85px; }
+  50% { top: 40px; left: 130px; width: 300px; height: 300px;
+         border: solid 10px #7FCFE2; border-radius: 160px; }
+  100% { top: 40px; left: 130px; width: 300px; height: 300px;
+         border: solid 10px #7FCFE2; border-radius: 160px; }
+}
+@-webkit-keyframes RoundRectAnime1C {
+  0% { top: 122px; left: 87px; width: 400px; height: 150px;
+         border: solid 10px #7FCFE2; border-radius:  210px / 85px; }
+  50% { top: 40px; left: 130px; width: 300px; height: 300px;
+         border: solid 10px #7FCFE2; border-radius: 160px; }
+  100% { top: 40px; left: 130px; width: 300px; height: 300px;
+         border: solid 10px #7FCFE2; border-radius: 160px; }
+}
+
+@keyframes RoundRectAnime1D {
+  0% { top: 40px; left: 130px; width: 300px; height: 300px;
+         border: solid 10px #7FCFE2; border-radius: 160px; }
+  100% { top: 40px; left: 130px; width: 300px; height: 300px;
+         border: solid 10px #7FCFE2; border-radius: 160px;
+         transform: rotateZ(360deg) rotateY(720deg) rotateX(1080deg); }
+}
+@-webkit-keyframes RoundRectAnime1D {
+  0% { top: 40px; left: 130px; width: 300px; height: 300px;
+         border: solid 10px #7FCFE2; border-radius: 160px; }
+  100% { top: 40px; left: 130px; width: 300px; height: 300px;
+         border: solid 10px #7FCFE2; border-radius: 160px;
+         -webkit-transform: rotateZ(360deg) rotateY(720deg) rotateX(1080deg); }
+}
+
+@keyframes RoundRectAnime1E {
+  0% { top: 40px; left: 130px; width: 300px; height: 300px;
+       border: solid 10px #7FCFE2; border-radius: 160px; }
+  100% { top: 40px; left: 130px; width: 300px; height: 300px;
+         border: solid 10px #7FCFE2; border-radius: 160px;
+         transform: rotateY(-360deg); }
+}
+@-webkit-keyframes RoundRectAnime1E {
+  0% { top: 40px; left: 130px; width: 300px; height: 300px;
+       border: solid 10px #7FCFE2; border-radius: 160px; }
+  100% { top: 40px; left: 130px; width: 300px; height: 300px;
+         border: solid 10px #7FCFE2; border-radius: 160px;
+         -webkit-transform: rotateY(-360deg); }
+}
+
+@keyframes RoundRectAnime1F {
+  0% { background-color: #000000; border: solid 1px #000000; }
+  25% { background-color: #0000FF; border: solid 10px #00FF99; }
+  50% { background-color: #00FFFF; border: solid 10px #9900FF; }
+  75% { background-color: #FFFF00; border: solid 10px #0099FF; }
+  100% { background-color: #FF0000; border: solid 10px #7FCFE2; }
+}
+@-webkit-keyframes RoundRectAnime1F {
+  0% { background-color: #000000; border: solid 1px #000000; }
+  25% { background-color: #0000FF; border: solid 10px #00FF99; }
+  50% { background-color: #00FFFF; border: solid 10px #9900FF; }
+  75% { background-color: #FFFF00; border: solid 10px #0099FF; }
+  100% { background-color: #FF0000; border: solid 10px #7FCFE2; }
+}
+
+#div2 {
+  top: 40px; left: 0px;
+  width: 400px; height: 150px;
+  text-align: center;
+  color: #FF9900;
+  font: bold 64px "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro", Verdana;
+  opacity: 0.0;
+  position: absolute;
+  
+  animation: RoundRectAnime2A 4s linear 0s 1 normal,
+                     RoundRectAnime2B 4s linear 4s 1 normal,
+                     RoundRectAnime2C 4s linear 8s 1 normal,
+                     RoundRectAnime2D 12s linear 0s 1 normal;
+  -webkit-animation: RoundRectAnime2A 4s linear 0s 1 normal,
+                     RoundRectAnime2B 4s linear 4s 1 normal,
+                     RoundRectAnime2C 4s linear 8s 1 normal,
+                     RoundRectAnime2D 12s linear 0s 1 normal;
+  
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes RoundRectAnime2A {
+  0% { opacity: 0.0; }
+  50% { opacity: 0.0; }
+  70% { opacity: 1.0; }
+  100% { opacity: 1.0; }
+}
+@-webkit-keyframes RoundRectAnime2A {
+  0% { opacity: 0.0; }
+  50% { opacity: 0.0; }
+  70% { opacity: 1.0; }
+  100% { opacity: 1.0; }
+}
+
+@keyframes RoundRectAnime2B {
+  0% { opacity: 1.0; }
+  100% { opacity: 1.0; }
+}
+@-webkit-keyframes RoundRectAnime2B {
+  0% { opacity: 1.0; }
+  100% { opacity: 1.0; }
+}
+
+@keyframes RoundRectAnime2C {
+  0% { opacity: 1.0; }
+  50% { opacity: 1.0; top: 80px; left: 50px; width: 200px; }
+  100% { opacity: 1.0; top: 80px; left: 50px; width: 200px; }
+}
+@-webkit-keyframes RoundRectAnime2C {
+  0% { opacity: 1.0; }
+  50% { opacity: 1.0; top: 80px; left: 50px; width: 200px; }
+  100% { opacity: 1.0; top: 80px; left: 50px; width: 200px; }
+}
+
+@keyframes RoundRectAnime2D {
+  0% { color: #FF9900; }
+  25% { color: #FF9900; }
+  50% { color: #9900FF; }
+  75% { color: #0099FF; }
+  100% { color: #00FF99; }
+}
+@-webkit-keyframes RoundRectAnime2D {
+  0% { color: #FF9900; }
+  25% { color: #FF9900; }
+  50% { color: #9900FF; }
+  75% { color: #0099FF; }
+  100% { color: #00FF99; }
+}
+

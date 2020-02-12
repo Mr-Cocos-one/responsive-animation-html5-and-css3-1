@@ -1,0 +1,401 @@
+/* R-BlackHole.css */
+
+#stage-wrap {
+  margin: 0px;
+  width: 100%;
+  max-width: 600px;
+  max-width: 900px;
+  position: relative;
+}
+
+#stage {
+  //width: 600px; //height: 500px;
+  width: 100%;
+  padding-top: 83.3%;
+  background: radial-gradient(#000000 5%, #111122 8%, #444488);
+  background: -webkit-radial-gradient(#000000 5%, #111122 8%, #444488);
+  position: relative;
+  overflow: hidden;
+}
+
+#gravity1 {
+  //top: 0px; //left: 0px;
+  top: 0%; left: 0%;
+  //width: 600px; //height: 500px;
+  width: 100%; height: 100%;
+  position: absolute;
+}
+#gravity1 > span:nth-child(1) {
+  //top: -257px; //left: -50px;
+  top: -51.4%; left: -8.3%;
+  //width: 700px; //height: 500px;
+  width: 116.7%; height: 100%;
+  border: 1px solid #666666;
+  border-radius: 50%;
+  background-color: transparent;
+  position: absolute;
+}
+#gravity1 > span:nth-child(2) {
+  //top: 257px; //left: -50px;
+  top: 51.4%; left: -8.3%;
+  //width: 700px; //height: 500px;
+  width: 116.7%; height: 100%;
+  border: 1px solid #666666;
+  border-radius: 50%;
+  background-color: transparent;
+  position: absolute;
+}
+#gravity1 > span:nth-child(3) {
+  //top: -665px; //left: 150px;
+  top: -133%; left: 25%;
+  //width: 300px; //height: 900px;
+  width: 50%; height: 180%;
+  border: 1px solid #666666;
+  border-radius: 50%;
+  background-color: transparent;
+  position: absolute;
+}
+#gravity1 > span:nth-child(4) {
+  //top: 265px; //left: 150px;
+  top: 53%; left: 25%;
+  //width: 300px; //height: 900px;
+  width: 50%; height: 180%;
+  border: 1px solid #666666;
+  border-radius: 50%;
+  background-color: transparent;
+  position: absolute;
+}
+#gravity1 > span:nth-child(5) {
+  //top: 229px; //left: 275px;
+  top: 45.8%; left: 45.8%;
+  //width: 50px; //height: 42px;
+   width: 8.3%; height: 8.4%;
+  border-radius: 50%;
+  background-color: #000000;
+  position: absolute;
+}
+
+#gravity2 {
+  //top: 0px; //left: 0px;
+  top: 0%; left: 0%;
+  //width: 600px; //height: 500px;
+  width: 100%; height: 100%;
+  position: absolute;
+}
+#gravity2 > span:nth-child(1) {
+  //top: 21px; //left: 25px;
+  top: 4.2%; left:4.2%;
+  //width: 550px; //height: 458px;
+  width: 91.7%; height: 91.6%;
+  border: 1px solid #666666;
+  border-radius: 50%;
+  background-color: transparent;
+  position: absolute;
+}
+#gravity2 > span:nth-child(2) {
+  //top: 125px; //left: 150px;
+  top: 25%; left: 25%;
+  //width: 300px; //height: 250px;
+  width: 50%; height: 50%;
+  border: 1px solid #666666;
+  border-radius: 50%;
+  background-color: transparent;
+  position: absolute;
+}
+#gravity2 > span:nth-child(3) {
+  //top: 188px; //left: 225px;
+  top: 37.6%; left: 37.5%;
+  //width: 150px; //height: 125px;
+  width: 25%; height: 25%;
+  border: 1px solid #666666;
+  border-radius: 50%;
+  background-color: transparent;
+  position: absolute;
+}
+#gravity2 > span:nth-child(4) {
+  //top: 208px; //left: 250px;
+  top: 41.6%; left: 41.7%;
+  //width: 100px; //height: 83px;
+  width: 16.7%; height: 16.6%;
+  border: 1px solid #666666;
+  border-radius: 50%;
+  background-color: transparent;
+  position: absolute;
+}
+#gravity2 > span:nth-child(5) {
+  //top: 225px; //left: 270px;
+  top: 45%; left: 45%;
+  //width: 60px; //height: 50px;
+  width: 10%; height: 10%;
+  border: 1px solid #666666;
+  border-radius: 50%;
+  background-color: transparent;
+  position: absolute;
+}
+
+/******************************************************/
+#dotGroup1 {
+  //top: 0px; //left: 0px;
+  top: 0%; left: 0%;
+  //width: 600px; //height: 500px;
+  width: 100%; height: 100%;
+  position: absolute;
+}
+
+#dot01 {
+  //top: -10px; //left: -10px;
+  top: -2%; left: -1.7%;
+  //width: 5px; //height: 5px;
+  width: 0.8%; height: 1%;
+  background-color: red;
+  border-radius: 5px;
+  position: absolute;
+}
+#dot02 {
+  //top: -120px; //left: 250px;
+  top: -24%; left: 41.7%;
+  //width: 20px; //height: 20px;
+  width:3.3%; height: 4%;
+  background-color: blue;
+  border-radius: 20px;
+  position: absolute;
+}
+#dot03 {
+  //top: -10px; //left: 400px;
+  top: -2%; left: 66.7%;
+  //width: 5px; //height: 5px;
+  width: 0,8%; height: 1%;
+  background-color: gray;
+  border-radius: 5px;
+  position: absolute;
+}
+#dot04 {
+  //top: 20px; //left: 600px;
+  top: 4%; left: 100%;
+  //width: 15px; //height: 15px;
+  width: 2.5%; height: 3%;
+  background-color: pink;
+  border-radius: 15px;
+  position: absolute;
+}
+#dot05 {
+  //top: 220px; //left: 600px;
+  top: 44%; left: 100%;
+  //width: 5px; //height: 5px;
+  width: 0.8%; height: 1%;
+  background-color: orange;
+  border-radius: 5px;
+  position: absolute;
+}
+#dot06 {
+  //top: 600px; //left: 800px;
+  top: 120%; left: 133.3%;
+  //width: 25px; //height: 25px;
+  width: 4.2%; height: 5%;
+  background-color: darkviolet;
+  border-radius: 25px;
+  position: absolute;
+}
+#dot07 {
+  //top: 500px; //left: 500px;
+  top: 100%; left: 83.3%;
+  //width: 10px; //height: 10px;
+  width: 1.7%; height: 2%;
+  background-color: sandybrown;
+  border-radius: 10px;
+  position: absolute;
+}
+#dot08 {
+  //top: 700px; //left: 100px;
+  top: 140%; left: 16.7%;
+  //width: 15px; //height: 15px;
+  width: 2.5%; height: 3%;
+  background-color: green;
+  border-radius: 15px;
+  position: absolute;
+}
+#dot09 {
+  //top: 500px; //left: 100px;
+  top: 100%; left: 16.7%;
+  //width: 5px; //height: 5px;
+  width: 0.8%; height: 1%;
+  background-color: yellow;
+  border-radius: 5px;
+  position: absolute;
+}
+#dot10 {
+  //top: 450px; //left: -20px;
+  top: 90%; left: -3.3%;
+  //width: 10px; //height: 10px;
+  width: 1.7%; height: 2%;
+  background-color: cyan;
+  border-radius: 10px;
+  position: absolute;
+}
+#dot11 {
+  //top: 250px; //left: -10px;
+  top: 50%; left: -1.7%;
+  //width: 5px; //height: 5px;
+  width: 0.8%; height: 1%;
+  background-color: magenta;
+  border-radius: 5px;
+  position: absolute;
+}
+#dot12 {
+  //top: 80px; //left: -130px;
+  top: 16%; left: -21.7%;
+  //width: 15px; //height: 15px;
+  width: 2.5%; height: 3%;
+  background-color: lightgreen;
+  border-radius: 15px;
+  position: absolute;
+}
+
+/******************************************************/
+#dotGroup2 {
+  //top: 0px; //left: 0px;
+  top: 0%; left: 0%;
+  //width: 600px; //height: 500px;
+  width: 100%; height: 100%;
+  position: absolute;
+  
+  transform: rotateZ(180deg);
+  -webkit-transform: rotateZ(180deg);
+}
+
+#dot13 {
+  //top: -10px; //left: -10px;
+  top: -2%; left: -1.7%;
+  //width: 5px; //height: 5px;
+  width: 0.8%; height: 1%;
+  background-color: red;
+  border-radius: 5px;
+  position: absolute;
+}
+#dot14 {
+  //top: -120px; //left: 250px;
+  top: -24%; left: 41.7%;
+  //width: 20px; //height: 20px;
+  width:3.3%; height: 4%;
+  background-color: blue;
+  border-radius: 20px;
+  position: absolute;
+}
+#dot15 {
+  //top: -10px; //left: 400px;
+  top: -2%; left: 66.7%;
+  //width: 5px; //height: 5px;
+  width: 0,8%; height: 1%;
+  background-color: gray;
+  border-radius: 5px;
+  position: absolute;
+}
+#dot16 {
+  //top: 20px; //left: 600px;
+  top: 4%; left: 100%;
+  //width: 15px; //height: 15px;
+  width: 2.5%; height: 3%;
+  background-color: pink;
+  border-radius: 15px;
+  position: absolute;
+}
+#dot17 {
+  //top: 220px; //left: 600px;
+  top: 44%; left: 100%;
+  //width: 5px; //height: 5px;
+  width: 0.8%; height: 1%;
+  background-color: orange;
+  border-radius: 5px;
+  position: absolute;
+}
+#dot18 {
+  //top: 600px; //left: 800px;
+  top: 120%; left: 133.3%;
+  //width: 25px; //height: 25px;
+  width: 4.2%; height: 5%;
+  background-color: darkviolet;
+  border-radius: 25px;
+  position: absolute;
+}
+#dot19 {
+  //top: 500px; //left: 500px;
+  top: 100%; left: 83.3%;
+  //width: 10px; //height: 10px;
+  width: 1.7%; height: 2%;
+  background-color: sandybrown;
+  border-radius: 10px;
+  position: absolute;
+}
+#dot20 {
+  //top: 700px; //left: 100px;
+  top: 140%; left: 16.7%;
+  //width: 15px; //height: 15px;
+  width: 2.5%; height: 3%;
+  background-color: green;
+  border-radius: 15px;
+  position: absolute;
+}
+#dot21 {
+  //top: 500px; //left: 100px;
+  top: 100%; left: 16.7%;
+  //width: 5px; //height: 5px;
+  width: 0.8%; height: 1%;
+  background-color: yellow;
+  border-radius: 5px;
+  position: absolute;
+}
+#dot22 {
+  //top: 450px; //left: -20px;
+  top: 90%; left: -3.3%;
+  //width: 10px; //height: 10px;
+  width: 1.7%; height: 2%;
+  background-color: cyan;
+  border-radius: 10px;
+  position: absolute;
+}
+#dot23 {
+  //top: 250px; //left: -10px;
+  top: 50%; left: -1.7%;
+  //width: 5px; //height: 5px;
+  width: 0.8%; height: 1%;
+  background-color: magenta;
+  border-radius: 5px;
+  position: absolute;
+}
+#dot24 {
+  //top: 80px; //left: -130px;
+  top: 16%; left: -21.7%;
+  //width: 15px; //height: 15px;
+  width: 2.5%; height: 3%;
+  background-color: lightgreen;
+  border-radius: 15px;
+  position: absolute;
+}
+
+/* クラスを使用して、複数の点を一緒に動かす。***************************/
+.dots1 {
+  animation: dotsAnime 3s ease-in 0s infinite normal;
+  -webkit-animation: dotsAnime 3s ease-in 0s infinite normal;
+}
+.dots2 {
+  animation: dotsAnime 3s ease-in 1s infinite normal;
+  -webkit-animation: dotsAnime 3s ease-in 1s infinite normal;
+}
+.dots3 {
+  animation: dotsAnime 3s ease-in 2s infinite normal;
+  -webkit-animation: dotsAnime 3s ease-in 2s infinite normal;
+}
+@keyframes dotsAnime {
+  //0% { }
+  //99% { top: 250px; left: 300px; width: 0px; height: 0px; opacity: 0.8; }
+  //100% { top: 250px; left: 300px; width: 0px; height: 0px; opacity: 0.0; }
+  0% { }
+  99% { top: 50%; left: 50%; width: 0%; height: 0%; opacity: 0.8; }
+  100% { top: 50%; left: 50%; width: 0%; height: 0%; opacity: 0.0; }
+}
+@-webkit-keyframes dotsAnime {
+  0% { }
+  99% { top: 50%; left: 50%; width: 0%; height: 0%; opacity: 0.8; }
+  100% { top: 50%; left: 50%; width: 0%; height: 0%; opacity: 0.0; }
+}
+

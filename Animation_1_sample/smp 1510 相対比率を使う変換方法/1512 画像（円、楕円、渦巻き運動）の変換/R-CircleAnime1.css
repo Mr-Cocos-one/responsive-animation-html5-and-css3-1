@@ -1,0 +1,42 @@
+/* R-CircleAnime1.css */
+
+#stage-wrap {
+  margin: 0px;
+  width: 100%;
+  max-width: 400px;
+  //border: 1px solid #000000;
+  position: relative;
+}
+
+#stage {
+  //width: 400px; //height: 400px;
+  width: 100%;
+  padding-top: 100%;
+  background-color: skyblue;
+  position: relative;
+}
+#stage img {
+  //top: 25px; //left: 168px;
+  top: 6%; left: 42%;
+  //width: 64px; //height: 35px;
+  width: 16%; height: auto;
+  /* border: solid 1px red; */    /* border‚ğ¶‚©‚·‚ÆA‰æ‘œ‚ÌƒƒN‚ªŒ©‚¦‚Ü‚· */
+  position: absolute;
+  
+  //transform-origin: 32px 175px;
+  //-webkit-transform-origin: 32px 175px;
+  transform-origin: 50% 500%;
+  -webkit-transform-origin: 50% 500%;
+  
+  animation: anime1 5s linear 0s infinite normal;
+  -webkit-animation: anime1 5s linear 0s infinite normal;
+}
+@keyframes anime1 {
+  0% { }
+  100% { transform: rotateZ(360deg); }
+}
+@-webkit-keyframes anime1 {
+  0% { }
+  100% { -webkit-transform: rotateZ(360deg); }
+}
+

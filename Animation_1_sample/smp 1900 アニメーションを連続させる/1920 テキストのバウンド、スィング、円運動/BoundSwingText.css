@@ -1,0 +1,203 @@
+/* BoundSwingText.css */
+
+#stage {
+  width: 500px; height: 300px;
+  border: solid 1px #000000;
+  background-color: #DDDDDD;
+  text-shadow: 1px 1px #999999;
+  font: 16px "‚l‚r ‚oƒSƒVƒbƒN", Osaka, "ƒqƒ‰ƒMƒmŠpƒS Pro", Verdana;
+  color: #000000;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.txt_base {
+  top: 270px; left: 150px;
+  width: 200px; height: 30px;
+  /* border: 1px solid red; */
+  position: absolute;
+}
+.txt_base span {
+  top: 0px; left: 0px;
+  width: 200px; height: 30px;
+  /* border: 1px solid blue; */
+  position: absolute;
+}
+
+/***********************************************************************/
+#txt_base1 {
+  opacity: 1.0;
+  
+  animation: up_down_anime 4s linear 0s 1 normal,
+             opacity0_anime 23s linear 4s 1 normal;
+  -webkit-animation: up_down_anime 4s linear 0s 1 normal,
+                     opacity0_anime 23s linear 4s 1 normal;
+}
+@keyframes up_down_anime {
+  0% { animation-timing-function: ease-out; }
+  10% { transform: translateY(-260px); animation-timing-function: ease-in; }
+  20% { transform: translateY(0px); animation-timing-function: ease-out; }
+  30% { transform: translateY(-160px); animation-timing-function: ease-in; }
+  40% { transform: translateY(0px); animation-timing-function: ease-out; }
+  50% { transform: translateY(-90px); animation-timing-function: ease-in; }
+  60% { transform: translateY(0px); animation-timing-function: ease-out; }
+  70% { transform: translateY(-40px); animation-timing-function: ease-in; }
+  80% { transform: translateY(0px); animation-timing-function: ease-out; }
+  90% { transform: translateY(-10px); animation-timing-function: ease-in; }
+  100% { transform: translateY(0px); }
+}
+@-webkit-keyframes up_down_anime {
+  0% { animation-timing-function: ease-out; }
+  10% { -webkit-transform: translateY(-260px); -webkit-animation-timing-function: ease-in; }
+  20% { -webkit-transform: translateY(0px); -webkit-animation-timing-function: ease-out; }
+  30% { -webkit-transform: translateY(-160px); -webkit-animation-timing-function: ease-in; }
+  40% { -webkit-transform: translateY(0px); -webkit-animation-timing-function: ease-out; }
+  50% { -webkit-transform: translateY(-90px); -webkit-animation-timing-function: ease-in; }
+  60% { -webkit-transform: translateY(0px); -webkit-animation-timing-function: ease-out; }
+  70% { -webkit-transform: translateY(-40px); -webkit-animation-timing-function: ease-in; }
+  80% { -webkit-transform: translateY(0px); -webkit-animation-timing-function: ease-out; }
+  90% { -webkit-transform: translateY(-10px); -webkit-animation-timing-function: ease-in; }
+  100% { -webkit-transform: translateY(0px); }
+}
+
+/***********************************************************************/
+#txt_base2 {
+  opacity: 0.0;
+  
+  animation: bound_anime 4s linear 4s 2 normal,
+             opacity1_anime 8s linear 4s 1 normal;
+  -webkit-animation: bound_anime 4s linear 4s 2 normal,
+                     opacity1_anime 8s linear 4s 1 normal;
+}
+@keyframes bound_anime {
+  0% { transform: translateX(0px); animation-timing-function: ease-in; }
+  12.5% { transform: translateX(-80px); animation-timing-function: ease-out; }
+  25% { transform: translateX(-160px); animation-timing-function: ease-in; }
+  37.5% { transform: translateX(-80px); animation-timing-function: ease-out; }
+  50% { transform: translateX(0px); animation-timing-function: ease-in; }
+  62.5% { transform: translateX(80px); animation-timing-function: ease-out; }
+  75% { transform: translateX(160px); animation-timing-function: ease-in; }
+  87.5% { transform: translateX(80px); animation-timing-function: ease-out; }
+  100% { transform: translateX(0px); }
+}
+@-webkit-keyframes bound_anime {
+  0% { -webkit-transform: translateX(0px); -webkit-animation-timing-function: ease-in; }
+  12.5% { -webkit-transform: translateX(-80px); -webkit-animation-timing-function: ease-out; }
+  25% { -webkit-transform: translateX(-160px); -webkit-animation-timing-function: ease-in; }
+  37.5% { -webkit-transform: translateX(-80px); -webkit-animation-timing-function: ease-out; }
+  50% { -webkit-transform: translateX(0px); -webkit-animation-timing-function: ease-in; }
+  62.5% { -webkit-transform: translateX(80px); -webkit-animation-timing-function: ease-out; }
+  75% { -webkit-transform: translateX(160px); -webkit-animation-timing-function: ease-in; }
+  87.5% { -webkit-transform: translateX(80px); -webkit-animation-timing-function: ease-out; }
+  100% { -webkit-transform: translateX(0px); }
+}
+#txt_base2 span {
+  animation: bound_anime_A 4s linear 4s 2 normal;
+  -webkit-animation: bound_anime_A 4s linear 4s 2 normal;
+}
+@keyframes bound_anime_A {
+  0% { transform: translateY(0px); animation-timing-function: ease-out; }
+  12.5% { transform: translateY(-250px); animation-timing-function: ease-in; }
+  25% { transform: translateY(0px); animation-timing-function: ease-out; }
+  37.5% { transform: translateY(-250px); animation-timing-function: ease-in; }
+  50% { transform: translateY(0px); animation-timing-function: ease-out; }
+  62.5% { transform: translateY(-250px); animation-timing-function: ease-in; }
+  75% { transform: translateY(0px); animation-timing-function: ease-out; }
+  87.5% { transform: translateY(-250px); animation-timing-function: ease-in; }
+  100% { transform: translateY(0px); }
+}
+@-webkit-keyframes bound_anime_A {
+  0% { -webkit-transform: translateY(0px); -webkit-animation-timing-function: ease-out; }
+  12.5% { -webkit-transform: translateY(-250px); -webkit-animation-timing-function: ease-in; }
+  25% { -webkit-transform: translateY(0px); -webkit-animation-timing-function: ease-out; }
+  37.5% { -webkit-transform: translateY(-250px); -webkit-animation-timing-function: ease-in; }
+  50% { -webkit-transform: translateY(0px); -webkit-animation-timing-function: ease-out; }
+  62.5% { -webkit-transform: translateY(-250px); -webkit-animation-timing-function: ease-in; }
+  75% { -webkit-transform: translateY(0px); -webkit-animation-timing-function: ease-out; }
+  87.5% { -webkit-transform: translateY(-250px); -webkit-animation-timing-function: ease-in; }
+  100% { -webkit-transform: translateY(0px); }
+}
+
+/***********************************************************************/
+#txt_base3 {
+  opacity: 0.0;
+  
+  transform-origin: center -250px;
+  -webkit-transform-origin: center -250px;
+  
+  animation: swing_anime 2s linear 12s 3 normal,
+             opacity1_anime 6s linear 12s 1 normal;
+  -webkit-animation: swing_anime 2s linear 12s 3 normal,
+                     opacity1_anime 6s linear 12s 1 normal;
+}
+@keyframes swing_anime {
+  0% { animation-timing-function: ease-out; }
+  25% { transform: rotateZ(45deg); animation-timing-function: ease-in; }
+  50% { transform: rotateZ(0deg); animation-timing-function: ease-out; }
+  75% { transform: rotateZ(-45deg); animation-timing-function: ease-in; }
+  100% { }
+}
+@-webkit-keyframes swing_anime {
+  0% { -webkit-animation-timing-function: ease-out; }
+  25% { -webkit-transform: rotateZ(45deg); -webkit-animation-timing-function: ease-in; }
+  50% { -webkit-transform: rotateZ(0deg); -webkit-animation-timing-function: ease-out; }
+  75% { -webkit-transform: rotateZ(-45deg); -webkit-animation-timing-function: ease-in; }
+  100% { }
+}
+
+/***********************************************************************/
+#txt_base4 {
+  opacity: 0.0;
+  
+  transform-origin: center -110px;
+  -webkit-transform-origin: center -110px;
+  
+  animation: circle_anime 9s ease-out 18s 1 normal,
+             opacity1_anime 9s linear 18s 1 normal;
+  -webkit-animation: circle_anime 9s ease-out 18s 1 normal,
+                     opacity1_anime 9s linear 18s 1 normal;
+}
+@keyframes circle_anime {
+  0% { }
+  100% { transform: rotateZ(1080deg); }
+}
+@-webkit-keyframes circle_anime {
+  0% { }
+  100% { -webkit-transform: rotateZ(1080deg); }
+}
+
+#txt_base4 span {
+  animation: circle_anime_A 9s ease-out 18s 1 normal;
+  -webkit-animation: circle_anime_A 9s ease-out 18s 1 normal;
+}
+@keyframes circle_anime_A {
+  0% { }
+  100% { transform: rotateZ(-1080deg); }
+}
+@-webkit-keyframes circle_anime_A {
+  0% { }
+  100% { -webkit-transform: rotateZ(-1080deg); }
+}
+
+/***********************************************************************/
+@keyframes opacity0_anime {
+  0% { opacity: 0.0; }
+  100% { opacity: 0.0; }
+}
+@-webkit-keyframes opacity0_anime {
+  0% { opacity: 0.0; }
+  100% { opacity: 0.0; }
+}
+
+@keyframes opacity1_anime {
+  0% { opacity: 1.0; }
+  98% { opacity: 1.0; }
+  100% { opacity: 0.0; }
+}
+@-webkit-keyframes opacity1_anime {
+  0% { opacity: 1.0; }
+  98% { opacity: 1.0; }
+  100% { opacity: 0.0; }
+}
+
