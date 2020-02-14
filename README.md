@@ -25,6 +25,6 @@ Then the animations you run on your web blog or homepage must be "Responsive Ani
 The size of the animation changes automatically according to the screen size.
 Can you do that?
 The answer to that question is in this book.
-This book "Responsive animation by HTML5 and CSS3 for PC smartphone and tablet" can be purchased on Amazon (https://www.amazon.co.jp/dp/B07VC1YWLB).
+This book "Responsive animation by HTML5 and CSS3 for PC smartphone and tablet" can be purchased on Amazon (https://www.amazon.com/Responsive-animation-smartphone-tablet-Japanese-ebook/dp/B07VC1YWLB).
 
 HTML5 + CSS3 animations and other technical information that could not be included in this document are summarized in a separate volume (https://github.com/Mr-Cocos-one/responsive-animation-html5-and-css3-2). I would be grateful if you could read the separate volume.
