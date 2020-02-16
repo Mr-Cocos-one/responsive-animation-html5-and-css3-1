@@ -11,7 +11,7 @@ HTML5+CSS3アニメーションは、HTMLとCSSを書けるエディタソフト
 そんなことできるの？
 その疑問に対する答えが本書に書かれているのです。
 
-本書籍「HTML5+CSS3レスポンシブアニメーション for PC，スマートフォン＆タブレットサイト」は、アマゾンで購入できます。(https://www.amazon.co.jp/dp/B07VC1YWLB)
+本書籍『HTML5+CSS3レスポンシブアニメーション for PC，スマートフォン＆タブレットサイト』は、アマゾンで購入できます。(https://www.amazon.co.jp/dp/B07VC1YWLB)
 
 本書に収録し切れなかったHTML5+CSS3アニメーションやその他技術情報については、別冊にまとめました。
 (https://github.com/Mr-Cocos-one/responsive-animation-html5-and-css3-2)
