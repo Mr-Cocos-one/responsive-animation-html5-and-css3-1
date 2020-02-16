@@ -1,5 +1,5 @@
 # responsive-animation-html5-and-css3-1
-「HTML5+CSS3レスポンシブアニメーション for PC，スマートフォン＆タブレットサイト」
+『HTML5+CSS3レスポンシブアニメーション for PC，スマートフォン＆タブレットサイト』
  "Responsive animation by HTML5 and CSS3 for PC smartphone and tablet."
 
 HTML5+CSS3アニメーションは、HTMLとCSSを書けるエディタソフト（無料のエディタソフトで可）だけあれば簡単に作れます。この本で紹介しているようにかなり高度なアニメーションを作ることができます。
